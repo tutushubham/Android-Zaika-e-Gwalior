@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iiitm.android.zaika_e_gwalior.Main7Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearlayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#dddd">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/iiitm"
+            android:scaleType="fitXY"
+
+            android:id="@+id/imageView4" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/cardview">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout">
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="ABV-IIITM Gwalior"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="27dp"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview2"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout2">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:text="ABOUT APPLICATION"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:textColor="#607d8b"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginBottom="20dp"
+                    android:text="Zayka-E-Gwalior is an android application providing the detailed information about the best old and known delicacies of Gwalior that defines the city.Apart from the restaurants and Hotels these rich old places are the food joints and of cultural importance that defines the taste of the city as a blend of Maratha,Mughal and North Indian Food Culture.
+Initial version 1 is launched and this version only gives information about the Food Places.In near future the next version aims to bring the all segments as Heritage,Worship Sites,Musical Gharana and Events of City. " />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview3"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="12dp"
+                    android:text="TIIC"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="22dp"/>
+
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView33"
+                    android:layout_alignLeft="@+id/textView33"
+                    android:layout_below="@+id/textView33"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="18dp"
+                    android:textColor="#607d8b"
+                    android:text="Technology Innovation and Incubation Centre is the Industrial Interface of Atal Bihari Vajpayee-Indian Institute of Information Technology and Management, Gwalior established in 2008. A registered society under MP Act 1973. This centre has been set up due the initiatives taken by IIITM faculty,students and strong alumni base. "/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/cardview4"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout4">
+
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="DEVELOPERS"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="22dp"
+
+                    android:layout_alignBottom="@+id/textView34"
+                    android:layout_marginBottom="8dp"
+                    android:text="The Application is developed by students of ABV-IIITM Gwalior pursuing Integrated Post Graduate-4th year under the guidance of Dr. Anurag Shrivastava ,Associate Professor at ABV-IIITM Gwalior.Feel Free to contact us for any feedback or suggestions are warm welcome. \n Faculty Mentor : Dr. Anurag Shrivastava \n Developer Team: \n 1.Akash Soni \n 2.Rohit Kumar Prajapati \n 3.Mona Singh "
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/cardview5"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout5">
+
+
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="ABV_IIITM"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_alignBottom="@+id/textView36"
+                    android:layout_marginBottom="08dp"
+                    android:text=" Atal Bihari Vajpayee Indian Institute of Information Technology and Management,Gwalior (ABV-IIITM Gwalior),is a university located in Gwalior, Madhya Pradesh, India, and has been ranked 22nd in the Management (B-School) category of National Institutional Ranking Framework (NIRF) rankings, published by Ministry of Human Resource Development (MHRD), Government of India in 2016.Established in 1997 and named for Atal Bihari Vajpayee, the institute obtained the status of Deemed University in 2001 and was recognized as an Institute of National Importance."
+                    android:textColor="#607d8b"
+                    android:textSize="17sp"/>
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview6"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearlayout2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="CONTACT US"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:layout_alignParentLeft="true"
+
+
+                    android:layout_alignBottom="@+id/textView44"
+                    android:layout_marginLeft="22dp"
+                    android:text="MENTOR- Dr. Anurag Shrivastava"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView38"
+                    android:layout_alignLeft="@+id/textView38"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="09826189049"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview7"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout7">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Developer-Akash Soni"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView40"
+                    android:layout_alignLeft="@+id/textView40"
+                    android:layout_marginBottom="20dp"
+                    android:text="08989472401"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview8"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout8">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Developer-Rohit Kumar Prajapati"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView42"
+                    android:layout_alignLeft="@+id/textView42"
+                    android:layout_marginBottom="20dp"
+                    android:text="08210051410"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview9"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout9">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="Developer-Mona Singh"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView50"
+                    android:layout_alignLeft="@+id/textView50"
+                    android:layout_marginBottom="20dp"
+                    android:text="08210051410"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>
