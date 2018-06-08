@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iiitm.android.zaika_e_gwalior.Main7Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearlayout"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#dddd">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/iiitm"
+            android:scaleType="fitXY"
+
+            android:id="@+id/imageView4" />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/cardview">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout">
+
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center"
+
+                    android:text="ABV-IIITM Gwalior"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview2"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout2">
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:text="एप्लिकेशन के बारे में"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#607d8b"
+                    android:textSize="19sp"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginBottom="20dp"
+                    android:text="ग्वालियर-झरोख़ा एक एंड्रॉइड एप्लिकेशन है जो ग्वालियर के सबसे पुराना और ज्ञात व्यंजनों के बारे में विस्तृत जानकारी प्रदान करता है जो शहर को परिभाषित करता है। रेस्तरां और होटल के अलावा इन अमीर पुराने स्थान भोजन जोड़ों और सांस्कृतिक महत्व हैं जो शहर के स्वाद को परिभाषित करता है। मराठा, मुगल और उत्तर भारतीय खाद्य संस्कृति के मिश्रण के रूप में
+आरंभिक संस्करण 1 लॉन्च किया गया है और यह संस्करण केवल खाद्य स्थानों के बारे में जानकारी देता है। निकट भविष्य में अगले संस्करण का उद्देश्य सभी क्षेत्रों को विरासत, पूजा स्थल, संगीत घर और घटनाक्रम सिटी के रूप में लाने का लक्ष्य है।" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview3"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="150dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="12dp"
+                    android:text="TIIC"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="12dp"/>
+
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView33"
+                    android:layout_alignLeft="@+id/textView33"
+                    android:layout_below="@+id/textView33"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="16dp"
+                    android:textColor="#607d8b"
+                    android:text=" तकनीकी नवाचार एवं उद्भावन केन्द्र अटल बिहारी वाजपयी भारतीय सूचना प्रौद्योगिकी एवं प्रबंधन संस्थान, ग्वालियर ने 2008 में स्थापित किया था। एमपी एक्ट 1973 के तहत एक पंजीकृत समाज। आईआईटीएम संकाय मजबूत पूर्व छात्रों द्वारा उठाए गए प्रयासों के कारण यह केंद्र स्थापित किया गया है।"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/cardview4"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout4">
+
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="11dp"
+                    android:text="DEVELOPERS"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="22dp"
+                    android:padding="08dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/textView34"
+                    android:layout_marginBottom="0dp"
+                    android:text="एवीवी-आईआईआईटीएम ग्वालियर के विद्यार्थियों ने एसोसिएट प्रोफेसर डॉ अनुराग श्रीवास्तव के मार्गदर्शन में एकीकृत स्नातकोत्तर का पीछा करते हुए डेवलप किया है। किसी भी प्रतिक्रिया या सुझावों के लिए हमसे संपर्क करने के लिए स्वतंत्र महसूस करें गर्मजोशी से स्वागत है| संकाय सलाहकार: डॉ अनुराग श्रीवास्तव  डेवलपर टीम:1. अंसुल शर्मा 2.रोहित कुमार प्रजापति 3. आकाश सोनी  4.मोना सिंह  5.शिवम राठौड़"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/cardview5"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout5">
+
+
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="ABV-IIITM"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="05dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_below="@+id/textView36"
+                    android:layout_marginBottom="0dp"
+                    android:text="अटल बिहारी वाजपयी भारतीय सूचना प्रौद्योगिकी एवं प्रबंधन संस्थान, ग्वालियर (एबीवी-आईआईटीएम ग्वालियर), एक विश्वविद्यालय है जो ग्वालियर, मध्य प्रदेश, भारत में स्थित है और इसे नेशनल इंस्टीट्यूशनल रैंकिंग फ्रेमवर्क के प्रबंधन (बी-स्कूल) श्रेणी में 22 वां स्थान दिया गया है। (एनआईआरएफ) रैंकिंग, मानव संसाधन विकास मंत्रालय (एमएचआरडी), भारत सरकार द्वारा 2016 में प्रकाशित। 1997 में स्थापित और अटल बिहारी वाजपेयी के नाम पर, संस्थान ने 2001 में डीम्ड यूनिवर्सिटी का दर्जा प्राप्त किया और इसे राष्ट्रीय संस्थान महत्त्व दिया गया|"
+                    android:textColor="#607d8b"
+                    android:textSize="17sp"/>
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview6"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearlayout2"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="CONTACT US"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+
+                    android:layout_alignParentLeft="true"
+
+
+                    android:layout_alignBottom="@+id/textView44"
+                    android:layout_marginLeft="22dp"
+                    android:text="संकाय गुरु- डॉ। अनुराग श्रीवास्तव"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView38"
+                    android:layout_alignLeft="@+id/textView38"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="profanurag@gmail.com"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview13"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout12">
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="डेवलपर-अंसुल शर्मा"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView49"
+                    android:layout_alignLeft="@+id/textView49"
+                    android:layout_marginBottom="20dp"
+                    android:text="ansulsharma1312@gmail.com"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview8"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout8">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="डेवलपर-रोहित कुमार प्रजापति"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView42"
+                    android:layout_alignLeft="@+id/textView42"
+                    android:layout_marginBottom="20dp"
+                    android:text="rohitppt175@gmail.com"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview7"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout7">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="डेवलपर-आकाश सोनी"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView40"
+                    android:layout_alignLeft="@+id/textView40"
+                    android:layout_marginBottom="20dp"
+                    android:text="akashsoni@gmail.com"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview9"
+            android:layout_marginTop="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout9">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="डेवलपर-मोना सिंह"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView50"
+                    android:layout_alignLeft="@+id/textView50"
+                    android:layout_marginBottom="20dp"
+                    android:text="monuiiitm@gmail.com"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/cardview11"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativelayout10">
+
+
+
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="14dp"
+                    android:text="डेवलपर-शिवम राठौड़"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="260dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="04dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="shivamrathore307@gmail.com"
+                    android:textColor="#607d8b"
+                    android:textSize="17dp"/>
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview10"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="12dp"
+                    android:text="अभिस्वीकृति"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="22dp"/>
+
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView60"
+                    android:layout_alignLeft="@+id/textView60"
+                    android:layout_below="@+id/textView60"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="18dp"
+                    android:textColor="#607d8b"
+                    android:text="1. नाईम कुरैशी और उनके प्रकाशन 'आओ देखें ग्वालियर', 2. श्री. एस.आर. वर्मा, उप निदेशक, राज्य पुरातात्विक विभाग, ग्वालियर 3. श्री.अशोक त्यागी, राज्य पुरातात्विक विभाग, ग्वालियर"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

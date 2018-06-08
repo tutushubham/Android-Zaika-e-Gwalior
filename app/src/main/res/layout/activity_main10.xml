@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iiitm.android.zaika_e_gwalior.Main10Activity">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.78"
+        app:srcCompat="@drawable/background"
+        android:scaleType="fitXY"/>
+
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Language"
+        android:textSize="40dp"
+        android:textColor="#000"
+        android:fontFamily="cursive"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="191dp" />
+
+
+    <Button
+        android:background="@drawable/ripple_effect"
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Hindi"
+        android:textStyle="italic"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/textView17"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:background="@drawable/ripple_effect"
+        android:id="@+id/button3"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:layout_width="200dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+
+</RelativeLayout>
