@@ -25,6 +25,8 @@ public class MainworshipActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+
         movieAdapterworship = new MovieAdapterworship(adapterworshipList,this);
         recyclerView.setAdapter(movieAdapterworship);
 

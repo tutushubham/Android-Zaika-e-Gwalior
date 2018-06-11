@@ -29,7 +29,7 @@ public class CardsUpdater extends DefaultViewUpdater {
             ViewCompat.setAlpha(imageView, 1f);
         }
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP) {
             final CardSliderLayoutManager lm =  getLayoutManager();
             final float ratio = (float) lm.getDecoratedLeft(view) / lm.getActiveCardLeft();
 

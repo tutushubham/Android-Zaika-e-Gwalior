@@ -15,39 +15,31 @@
         app:srcCompat="@drawable/btp"
         android:scaleType = "centerCrop"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="200dp"
         android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
         android:text="Gwalior"
-        android:textSize="50dp"
         android:textColor="#000"
-        android:fontFamily="cursive"
-        android:textStyle="bold"
-        android:layout_marginTop="196dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignEnd="@+id/textView2"
-        android:layout_marginEnd="54dp" />
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="190dp"
         android:layout_height="60dp"
-        android:text="Jharokha"
-        android:textSize="50dp"
-        android:textColor="#000"
-        android:fontFamily="cursive"
-        android:gravity="center_vertical"
-        android:textStyle="bold"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="86dp"
         android:layout_below="@+id/textView"
-        android:layout_alignParentEnd="true" />
-
-
-
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="झरोखा"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

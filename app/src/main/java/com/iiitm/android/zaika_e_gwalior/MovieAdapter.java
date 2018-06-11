@@ -70,7 +70,7 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             if(position==0)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, MainActivitySlider.class);
+                Intent intent = new Intent(this.mContext, MainActivitySlider.class); //historical
                 this.mContext.startActivity(intent);
             }
 

@@ -3,6 +3,7 @@ package com.iiitm.android.zaika_e_gwalior.cardslidertry;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.ActivityOptions;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.os.Build;
@@ -23,6 +24,7 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
+import com.iiitm.android.zaika_e_gwalior.Mainshopping2Activity;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
 import com.iiitm.android.zaika_e_gwalior.R;
@@ -328,17 +330,19 @@ public class MainActivitySlider extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
-                //final Intent intent = new Intent(MainActivitySlider.this, DetailsActivity.class);
-               // intent.putExtra(DetailsActivity.BUNDLE_IMAGE_ID, pics[activeCardPosition % pics.length]);
+                final Intent intent = new Intent(MainActivitySlider.this, Mainshopping2Activity.class);
+               intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
+               intent.putExtra("textView1", descriptions[activeCardPosition % descriptions.length]);
+               intent.putExtra("textView2", places[activeCardPosition % places.length] );
 
-                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
-                    //startActivity(intent);
+                if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP) {
+                    startActivity(intent);
                 } else {
                     final CardView cardView = (CardView) view;
                     final View sharedView = cardView.getChildAt(cardView.getChildCount() - 1);
                     final ActivityOptions options = ActivityOptions
                             .makeSceneTransitionAnimation(MainActivitySlider.this, sharedView, "shared");
-                    //startActivity(intent, options.toBundle());
+                    startActivity(intent, options.toBundle());
                 }
             } else if (clickedPosition > activeCardPosition) {
                 recyclerView.smoothScrollToPosition(clickedPosition);

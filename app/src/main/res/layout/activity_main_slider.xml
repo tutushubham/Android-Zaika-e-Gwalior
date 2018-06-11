@@ -64,7 +64,7 @@
         android:layout_height="210dp"
         android:layout_marginTop="18dp"
         android:layout_marginStart="@dimen/recycler_view_left_offset"
-        android:clipChildren="false"
+        android:clipChildren="true"
         android:overScrollMode="never"
         app:layoutManager="com.iiitm.android.zaika_e_gwalior.cardslidertry.CardSliderLayoutManager"
         app:viewUpdater="com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.CardsUpdater"
