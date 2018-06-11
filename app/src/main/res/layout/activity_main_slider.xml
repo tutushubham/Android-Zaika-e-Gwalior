@@ -120,7 +120,7 @@
         <TextSwitcher
             android:id="@+id/ts_description"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginStart="@dimen/left_offset"
             android:layout_marginEnd="10dp"/>
 
