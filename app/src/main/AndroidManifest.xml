@@ -8,56 +8,57 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/appicon"
         android:label="Gwalior-Jharokha"
-android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MainsplashActivity">
+        <activity android:name=".MainsplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MainActivity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MainfoodActivity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MainhistoricalActivity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MainworshipActivity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MainshoppingActivity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main2Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main3Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main4Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main5Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Mainfood2Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main2historicalActivity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Mainworship2Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Mainshopping2Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main22Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main32Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main52Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main42Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main6Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main7Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main8Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main9Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main82Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MaintransportationActivity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main10Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main11Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main12Activity" />
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.worshipHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.Main122Activity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.NearByPlacesHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.HotelsHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.ToiletsHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.MedicalHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.KeyNumbersHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.FeedbackHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.TransportationHindiActivity"/>
-        <activity android:name="com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySlider"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainfoodActivity" />
+        <activity android:name=".MainhistoricalActivity" />
+        <activity android:name=".MainworshipActivity" />
+        <activity android:name=".MainshoppingActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".Main5Activity" />
+        <activity android:name=".Mainfood2Activity" />
+        <activity android:name=".Main2historicalActivity" />
+        <activity android:name=".Mainworship2Activity" />
+        <activity android:name=".Mainshopping2Activity" />
+        <activity android:name=".Main22Activity" />
+        <activity android:name=".Main32Activity" />
+        <activity android:name=".Main52Activity" />
+        <activity android:name=".Main42Activity" />
+        <activity android:name=".Main6Activity" />
+        <activity android:name=".Main7Activity" />
+        <activity android:name=".Main8Activity" />
+        <activity android:name=".Main9Activity" />
+        <activity android:name=".Main82Activity" />
+        <activity android:name=".MaintransportationActivity" />
+        <activity android:name=".Main10Activity" />
+        <activity android:name=".Main11Activity" />
+        <activity android:name=".Main12Activity" />
+        <activity android:name=".worshipHindiActivity" />
+        <activity android:name=".Main122Activity" />
+        <activity android:name=".NearByPlacesHindiActivity" />
+        <activity android:name=".HotelsHindiActivity" />
+        <activity android:name=".ToiletsHindiActivity" />
+        <activity android:name=".MedicalHindiActivity" />
+        <activity android:name=".KeyNumbersHindiActivity" />
+        <activity android:name=".FeedbackHindiActivity" />
+        <activity android:name=".TransportationHindiActivity" />
+        <activity android:name=".cardslidertry.MainActivitySlider" />
+        <activity android:name=".cardslidertry.MainActivitySliderWorship"></activity>
     </application>
 
 </manifest>

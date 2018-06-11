@@ -39,22 +39,6 @@
 
         </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="85dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:background="@drawable/temperature_background"
-            android:layout_centerVertical="true"
-            android:id="@+id/frameLayout"
-            android:layout_alignParentRight="true">
-
-            <TextSwitcher
-                android:id="@+id/ts_temperature"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"/>
-
-        </FrameLayout>
 
     </RelativeLayout>
 

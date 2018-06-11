@@ -74,7 +74,7 @@ public class MainActivitySlider extends AppCompatActivity {
     private CardSliderLayoutManager layoutManger;
     private RecyclerView recyclerView;
     private ImageSwitcher mapSwitcher;
-    private TextSwitcher temperatureSwitcher;
+    //private TextSwitcher temperatureSwitcher;
     private TextSwitcher placeSwitcher;
     private TextSwitcher clockSwitcher;
     private TextSwitcher descriptionsSwitcher;
@@ -129,11 +129,11 @@ public class MainActivitySlider extends AppCompatActivity {
     }
 
     private void initSwitchers() {
-        temperatureSwitcher = (TextSwitcher) findViewById(R.id.ts_temperature);
-        temperatureSwitcher.setFactory(new TextViewFactory(R.style.TemperatureTextView, true));
-//        temperatureSwitcher.setCurrentText(temperatures[0]);
-
-        temperatureSwitcher.setText("View More");
+//        temperatureSwitcher = (TextSwitcher) findViewById(R.id.ts_temperature);
+//        temperatureSwitcher.setFactory(new TextViewFactory(R.style.TemperatureTextView, true));
+//       temperatureSwitcher.setCurrentText(temperatures[0]);
+//
+//        temperatureSwitcher.setText("View More");
 
         placeSwitcher = (TextSwitcher) findViewById(R.id.ts_place);
         placeSwitcher.setFactory(new TextViewFactory(R.style.PlaceTextView, false));

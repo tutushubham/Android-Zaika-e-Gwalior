@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySlider;
+import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderWorship;
 
 import java.util.List;
 
@@ -77,7 +78,7 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             if(position==1)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, MainworshipActivity.class);
+                Intent intent = new Intent(this.mContext, MainActivitySliderWorship.class);
                 this.mContext.startActivity(intent);
             }
             if(position==2)

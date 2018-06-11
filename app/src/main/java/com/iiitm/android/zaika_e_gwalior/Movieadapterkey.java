@@ -72,8 +72,8 @@ public class Movieadapterkey extends RecyclerView.Adapter<Movieadapterkey.MyView
 
             String url= adapter.getName2();
 
-                    Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:url"));
-                    this.mContext.startActivity(intent);
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:url"));
+            this.mContext.startActivity(intent);
 
 
 
