@@ -36,7 +36,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Hindi"
+        android:text="HINDI"
         android:textStyle="italic"
         android:textSize="15dp"
 

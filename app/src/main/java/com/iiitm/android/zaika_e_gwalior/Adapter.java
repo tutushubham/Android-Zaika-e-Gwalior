@@ -2,7 +2,8 @@ package com.iiitm.android.zaika_e_gwalior;
 
 public class Adapter {
     public  String name;
-       public int image;
+    public int image;
+
     Adapter(String name,int image)
     {
         this.name= name;

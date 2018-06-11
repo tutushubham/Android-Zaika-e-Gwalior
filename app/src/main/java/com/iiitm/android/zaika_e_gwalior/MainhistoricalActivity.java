@@ -14,6 +14,7 @@ public class MainhistoricalActivity extends AppCompatActivity {
      public List<Adapterhistorical> adapterhistoricalList = new ArrayList<>();
       Context mcontext;
       MovieAdapterhistorical movieAdapterhistorical;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +24,10 @@ public class MainhistoricalActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-              recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setLayoutManager(layoutManager);
+
         movieAdapterhistorical = new MovieAdapterhistorical(adapterhistoricalList,this);
-         recyclerView.setAdapter(movieAdapterhistorical);
+        recyclerView.setAdapter(movieAdapterhistorical);
 
         prepareMovieData();
     }
