@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
-        collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
+        collapsingToolbarLayout.setTitle("Gwalior झरोखा");
         collapsingToolbarLayout.setCollapsedTitleTextColor(Color.WHITE);
-        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.holo_purple));
+        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(R.color.green_dot_small));
 
         Bitmap bitmap = BitmapFactory.decodeResource(getApplicationContext().getResources(), R.drawable.i14);
         Palette.generateAsync(bitmap,

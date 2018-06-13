@@ -58,7 +58,9 @@
         <activity android:name=".FeedbackHindiActivity" />
         <activity android:name=".TransportationHindiActivity" />
         <activity android:name=".cardslidertry.MainActivitySlider" />
-        <activity android:name=".cardslidertry.MainActivitySliderWorship"></activity>
+        <activity android:name=".cardslidertry.MainActivitySliderWorship" />
+        <activity android:name=".cardslidertry.MainActivitySliderNear" />
+        <activity android:name=".cardslidertry.MainActivitySliderHotels"></activity>
     </application>
 
 </manifest>
