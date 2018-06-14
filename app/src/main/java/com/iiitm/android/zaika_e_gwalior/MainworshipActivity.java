@@ -19,10 +19,10 @@ public class MainworshipActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainworship);
-        Toolbar toolbar= (Toolbar)findViewById(R.id.toolbar);
+        Toolbar toolbar= findViewById(R.id.toolbar);
         toolbar.setTitle("Worship Attraction");
 
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 

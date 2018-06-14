@@ -32,7 +32,7 @@
         <activity android:name=".Main4Activity" />
         <activity android:name=".Main5Activity" />
         <activity android:name=".Mainfood2Activity" />
-        <activity android:name=".Main2historicalActivity" />
+        <activity android:name=".Mainhistorical2Activity" />
         <activity android:name=".Mainworship2Activity" />
         <activity android:name=".Mainshopping2Activity" />
         <activity android:name=".Main22Activity" />
@@ -47,7 +47,7 @@
         <activity android:name=".MaintransportationActivity" />
         <activity android:name=".Main10Activity" />
         <activity android:name=".Main11Activity" />
-        <activity android:name=".Main12Activity" />
+        <!--<activity android:name=".Main12Activity" />-->
         <activity android:name=".worshipHindiActivity" />
         <activity android:name=".Main122Activity" />
         <activity android:name=".NearByPlacesHindiActivity" />
@@ -57,10 +57,11 @@
         <activity android:name=".KeyNumbersHindiActivity" />
         <activity android:name=".FeedbackHindiActivity" />
         <activity android:name=".TransportationHindiActivity" />
-        <activity android:name=".cardslidertry.MainActivitySlider" />
+        <activity android:name=".cardslidertry.MainActivitySliderHistorical" />
         <activity android:name=".cardslidertry.MainActivitySliderWorship" />
         <activity android:name=".cardslidertry.MainActivitySliderNear" />
         <activity android:name=".cardslidertry.MainActivitySliderHotels"></activity>
+        <activity android:name=".cardslidertry.MainActivitySliderHindi" />
     </application>
 
 </manifest>

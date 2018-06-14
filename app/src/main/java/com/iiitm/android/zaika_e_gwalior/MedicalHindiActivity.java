@@ -26,9 +26,9 @@ public class MedicalHindiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
 
-        Toolbar toolbar= (Toolbar)findViewById(R.id.toolbar);
+        Toolbar toolbar= findViewById(R.id.toolbar);
         toolbar.setTitle("मेडिकल");
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         mContext=this;

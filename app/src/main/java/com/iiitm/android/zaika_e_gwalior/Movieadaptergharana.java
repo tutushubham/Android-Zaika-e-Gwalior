@@ -55,8 +55,8 @@ public class Movieadaptergharana extends RecyclerView.Adapter<Movieadaptergharan
             this.adaptergharanaList=adaptergharanaList;
             this.mContext=mContext;
             itemView.setOnClickListener(this);
-            imageView = (ImageView)itemView.findViewById(R.id.imageView);
-            textView= (TextView)itemView.findViewById(R.id.textView);
+            imageView = itemView.findViewById(R.id.imageView);
+            textView= itemView.findViewById(R.id.textView);
         }
 
         @Override

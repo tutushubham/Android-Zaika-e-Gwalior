@@ -21,10 +21,10 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        Toolbar toolbar= (Toolbar)findViewById(R.id.toolbar);
+        Toolbar toolbar= findViewById(R.id.toolbar);
         toolbar.setTitle("Event of Gwalior");
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
           recyclerView.setLayoutManager(layoutManager);
         movieAdapterevent = new MovieAdapterevent(adaptereventList,this);

@@ -18,8 +18,8 @@ public class Main8Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main8);
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        Toolbar toolbar= (Toolbar)findViewById(R.id.toolbar);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        Toolbar toolbar= findViewById(R.id.toolbar);
         toolbar.setTitle("Hotels");
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

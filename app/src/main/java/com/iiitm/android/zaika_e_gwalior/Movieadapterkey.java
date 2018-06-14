@@ -18,7 +18,7 @@ import java.util.List;
 public class Movieadapterkey extends RecyclerView.Adapter<Movieadapterkey.MyViewHolder>{
     List<Adapterkey> adapterkeyList;
     Context mContext;
-    Movieadapterkey( List<Adapterkey> adapterkeyList,Context mContext)
+    public Movieadapterkey(List<Adapterkey> adapterkeyList, Context mContext)
     {
         this.adapterkeyList=adapterkeyList;
         this.mContext=mContext;
@@ -59,8 +59,8 @@ public class Movieadapterkey extends RecyclerView.Adapter<Movieadapterkey.MyView
 
             itemView.setOnClickListener(this);
 
-            textView1= (TextView)itemView.findViewById(R.id.textView1);
-            textView2= (TextView)itemView.findViewById(R.id.textView2);
+            textView1= itemView.findViewById(R.id.textView1);
+            textView2= itemView.findViewById(R.id.textView2);
         }
 
         @Override

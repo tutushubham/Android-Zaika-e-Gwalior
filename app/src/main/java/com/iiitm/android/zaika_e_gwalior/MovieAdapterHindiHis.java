@@ -65,10 +65,10 @@ class MovieAdapterHindiHis extends RecyclerView.Adapter<MovieAdapterHindiHis.MyV
             itemView.setOnClickListener(this);
 
 
-            imageView = (ImageView)itemView.findViewById(R.id.imageView);
-            textView1= (TextView)itemView.findViewById(R.id.textView1);
-            textView2= (TextView)itemView.findViewById(R.id.textView2);
-            textView3= (TextView)itemView.findViewById(R.id.textView3);
+            imageView = itemView.findViewById(R.id.imageView);
+            textView1= itemView.findViewById(R.id.textView1);
+            textView2= itemView.findViewById(R.id.textView2);
+            textView3= itemView.findViewById(R.id.textView3);
         }
 
         @Override
@@ -78,7 +78,7 @@ class MovieAdapterHindiHis extends RecyclerView.Adapter<MovieAdapterHindiHis.MyV
 
             int position = getAdapterPosition();
             AdapterHindiHistorical adapter = adapterhistoricalList.get(position);
-            Intent intent = new Intent(this.mcontext, Main2historicalActivity.class);
+            Intent intent = new Intent(this.mcontext, Mainhistorical2Activity.class);
 
             intent.putExtra("imageView",adapter.getImage());
             intent.putExtra("textView1",adapter.getName4());

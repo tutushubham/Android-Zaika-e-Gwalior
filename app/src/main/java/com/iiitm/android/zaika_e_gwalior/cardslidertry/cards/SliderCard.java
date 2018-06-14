@@ -21,7 +21,7 @@ public class SliderCard extends RecyclerView.ViewHolder implements DecodeBitmapT
 
     public SliderCard(View itemView) {
         super(itemView);
-        imageView = (ImageView) itemView.findViewById(R.id.image);
+        imageView = itemView.findViewById(R.id.image);
     }
 
     void setContent(@DrawableRes final int resId) {

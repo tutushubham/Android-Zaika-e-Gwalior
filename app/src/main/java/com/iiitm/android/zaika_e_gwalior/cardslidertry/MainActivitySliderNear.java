@@ -25,11 +25,9 @@ import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
 import com.iiitm.android.zaika_e_gwalior.Main22Activity;
-import com.iiitm.android.zaika_e_gwalior.Main2historicalActivity;
-import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
+import com.iiitm.android.zaika_e_gwalior.R;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
-import com.iiitm.android.zaika_e_gwalior.R;
 
 import java.util.Random;
 
@@ -100,7 +98,7 @@ public class MainActivitySliderNear extends AppCompatActivity {
     }
 
     private void initRecyclerView() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setAdapter(sliderAdapter);
         recyclerView.setHasFixedSize(true);
 
@@ -133,21 +131,21 @@ public class MainActivitySliderNear extends AppCompatActivity {
 
 //        temperatureSwitcher.setText("View More");
 
-        placeSwitcher = (TextSwitcher) findViewById(R.id.ts_place);
+        placeSwitcher = findViewById(R.id.ts_place);
         placeSwitcher.setFactory(new TextViewFactory(R.style.PlaceTextView, false));
         placeSwitcher.setCurrentText(places[0]);
 
-        clockSwitcher = (TextSwitcher) findViewById(R.id.ts_clock);
+        clockSwitcher = findViewById(R.id.ts_clock);
         clockSwitcher.setFactory(new TextViewFactory(R.style.ClockTextView, false));
         clockSwitcher.setCurrentText(times[0]);
 
-        descriptionsSwitcher = (TextSwitcher) findViewById(R.id.ts_description);
+        descriptionsSwitcher = findViewById(R.id.ts_description);
         descriptionsSwitcher.setInAnimation(this, android.R.anim.fade_in);
         descriptionsSwitcher.setOutAnimation(this, android.R.anim.fade_out);
         descriptionsSwitcher.setFactory(new TextViewFactory(R.style.DescriptionTextView, false));
         descriptionsSwitcher.setCurrentText(descriptions[0]);
 
-        mapSwitcher = (ImageSwitcher) findViewById(R.id.ts_map);
+        mapSwitcher = findViewById(R.id.ts_map);
         mapSwitcher.setInAnimation(this, R.anim.fade_in);
         mapSwitcher.setOutAnimation(this, R.anim.fade_out);
         mapSwitcher.setFactory(new ImageViewFactory());
@@ -183,8 +181,8 @@ public class MainActivitySliderNear extends AppCompatActivity {
         countryAnimDuration = getResources().getInteger(R.integer.labels_animation_duration);
         countryOffset1 = getResources().getDimensionPixelSize(R.dimen.left_offset);
         countryOffset2 = getResources().getDimensionPixelSize(R.dimen.card_width);
-        country1TextView = (TextView) findViewById(R.id.tv_country_1);
-        country2TextView = (TextView) findViewById(R.id.tv_country_2);
+        country1TextView = findViewById(R.id.tv_country_1);
+        country2TextView = findViewById(R.id.tv_country_2);
 
         country1TextView.setX(countryOffset1);
         country2TextView.setX(countryOffset2);

@@ -18,7 +18,7 @@ import java.util.List;
 public class MovieAdapterhotel extends RecyclerView.Adapter<MovieAdapterhotel.MyViewHolder> {
     List<Adapterhotel> adapterhotelList;
     Context mContext;
-    MovieAdapterhotel( List<Adapterhotel> adapterhotelList, Context mContext)
+    public MovieAdapterhotel(List<Adapterhotel> adapterhotelList, Context mContext)
     {
         this.adapterhotelList=adapterhotelList;
         this.mContext=mContext;
@@ -57,10 +57,10 @@ public class MovieAdapterhotel extends RecyclerView.Adapter<MovieAdapterhotel.My
             this.adapterhotelList=adapterhotelList;
             this.mContext=mContext;
             itemView.setOnClickListener(this);
-            imageView = (ImageView)itemView.findViewById(R.id.imageView);
-            textView1= (TextView)itemView.findViewById(R.id.textView1);
-            textView2= (TextView)itemView.findViewById(R.id.textView2);
-            textView3= (TextView)itemView.findViewById(R.id.textView3);
+            imageView = itemView.findViewById(R.id.imageView);
+            textView1= itemView.findViewById(R.id.textView1);
+            textView2= itemView.findViewById(R.id.textView2);
+            textView3= itemView.findViewById(R.id.textView3);
         }
 
         @Override

@@ -20,7 +20,7 @@ public class MovieAdapternear extends RecyclerView.Adapter<MovieAdapternear.MyVi
 
     List<Adapternear> adapternearList;
     Context mContext;
-    MovieAdapternear(List<Adapternear> adapternearList,Context mContext)
+    public MovieAdapternear(List<Adapternear> adapternearList, Context mContext)
     {
         this.adapternearList=adapternearList;
         this.mContext=mContext;
@@ -58,10 +58,10 @@ public class MovieAdapternear extends RecyclerView.Adapter<MovieAdapternear.MyVi
             this.adapternearList=adapternearList;
             this.mContext=mContext;
             itemView.setOnClickListener(this);
-            imageView = (ImageView)itemView.findViewById(R.id.imageView);
-            textView1= (TextView)itemView.findViewById(R.id.textView1);
-            textView2= (TextView)itemView.findViewById(R.id.textView2);
-            textView3= (TextView)itemView.findViewById(R.id.textView3);
+            imageView = itemView.findViewById(R.id.imageView);
+            textView1= itemView.findViewById(R.id.textView1);
+            textView2= itemView.findViewById(R.id.textView2);
+            textView3= itemView.findViewById(R.id.textView3);
 
         }
 

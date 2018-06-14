@@ -9,7 +9,7 @@ public class Adaptermedical {
     public int image;
     public String name1,name2,name3,name4,name5,name6,name7;
 
-    Adaptermedical(int image,String name1,String name2,String name3,String name4,String name5,String name6,String name7)
+    public Adaptermedical(int image, String name1, String name2, String name3, String name4, String name5, String name6, String name7)
     {
         this.image=image;
         this.name1=name1;

@@ -4,9 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-/**
- * Created by Shivam on 12/19/2017.
- */
+import com.iiitm.android.zaika_e_gwalior.R;
+
 
 public class TransportationHindiActivity extends AppCompatActivity {
 

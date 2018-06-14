@@ -10,7 +10,7 @@ public class Adapterfood {
     public int image;
     public String name1,name2,name3,name4,name5,name6,name7,name8;
 
-    Adapterfood(int image,String name1,String name2,String name3,String name4,String name5,String name6,String name7,String name8)
+    public Adapterfood(int image, String name1, String name2, String name3, String name4, String name5, String name6, String name7, String name8)
     {
         this.image=image;
         this.name1=name1;

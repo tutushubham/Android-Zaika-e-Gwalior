@@ -19,23 +19,23 @@ public class Main22Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main22);
-        imageView = (ImageView)findViewById(R.id.imageView);
-        textView3 = (TextView)findViewById(R.id.textView3);
-        textView5 = (TextView)findViewById(R.id.textView5);
-        textView35 = (TextView)findViewById(R.id.textView35);
-        textView8 = (TextView)findViewById(R.id.textView8);
-        textView10 = (TextView)findViewById(R.id.textView10);
+        imageView = findViewById(R.id.imageView);
+        textView3 = findViewById(R.id.textView3);
+        textView5 = findViewById(R.id.textView5);
+        textView35 = findViewById(R.id.textView35);
+        textView8 = findViewById(R.id.textView8);
+        textView10 = findViewById(R.id.textView10);
         imageView.setImageResource(getIntent().getIntExtra("imageView",00));
         textView3.setText(getIntent().getStringExtra("textView1"));
         textView5.setText(getIntent().getStringExtra("textView2"));
         textView35.setText(getIntent().getStringExtra("textView3"));
         textView8.setText(getIntent().getStringExtra("textView4"));
         textView10.setText(getIntent().getStringExtra("textView5"));
-        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
+        final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar);
         collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.holo_purple));
 
-        CardView cardView = (CardView)findViewById(R.id.cardview3);
+        CardView cardView = findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

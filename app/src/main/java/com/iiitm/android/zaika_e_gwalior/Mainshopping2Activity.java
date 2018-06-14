@@ -19,9 +19,9 @@ public class Mainshopping2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainshopping2);
-        textView3 = (TextView)findViewById(R.id.textView3);
-        textView5= (TextView)findViewById(R.id.textView5);
-        imageView= (ImageView)findViewById(R.id.imageView);
+        textView3 = findViewById(R.id.textView3);
+        textView5= findViewById(R.id.textView5);
+        imageView= findViewById(R.id.imageView);
 
 
         imageView.setImageResource(getIntent().getIntExtra("imageView",00));
@@ -29,10 +29,10 @@ public class Mainshopping2Activity extends AppCompatActivity {
         textView5.setText(getIntent().getStringExtra("textView2"));
 
 
-        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
+        final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar);
         collapsingToolbarLayout.setTitle("Zaika-e-Gwalior");
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.holo_purple));
-        CardView cardView = (CardView)findViewById(R.id.cardview3);
+        CardView cardView = findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
