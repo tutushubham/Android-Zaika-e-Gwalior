@@ -16,44 +16,44 @@
         android:scaleType="fitXY"/>
 
 
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Select Your Language"
+        android:textSize="40dp"
+        android:textColor="#000"
+        android:fontFamily="cursive"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="191dp"
-        android:fontFamily="cursive"
-        android:text="Select Your Language"
-        android:textColor="#000"
-        android:textSize="40sp" />
+        android:layout_marginTop="191dp" />
 
 
     <Button
+        android:background="@drawable/ripple_effect"
         android:id="@+id/button2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView17"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:background="@drawable/ripple_effect"
         android:text="हिन्दी"
+        android:textStyle="italic"
+        android:textSize="15dp"
 
-        android:textSize="20sp"
-        android:textStyle="italic" />
+        android:layout_below="@+id/textView17"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="12dp"
         android:background="@drawable/ripple_effect"
+        android:id="@+id/button3"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:layout_width="200dp"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
         android:text="English"
-        android:textSize="20sp"
-        android:textStyle="italic" />
-
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"

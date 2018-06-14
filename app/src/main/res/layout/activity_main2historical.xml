@@ -131,6 +131,7 @@
                         android:layout_marginLeft="12dp" />
 
                     <ImageView
+                        android:id="@+id/map2"
                         android:layout_width="match_parent"
                         android:layout_height="210dp"
                         android:scaleType="fitXY"

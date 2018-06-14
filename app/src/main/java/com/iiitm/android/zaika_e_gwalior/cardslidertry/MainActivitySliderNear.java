@@ -162,7 +162,7 @@ public class MainActivitySliderNear extends AppCompatActivity {
 //        temperatureSwitcher.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivitySlider.this, Main2historicalActivity.class);
+//                Intent intent = new Intent(MainActivitySlider.this, Mainhistorical2Activity.class);
 //
 //                intent.putExtra("imageView",pics[currentPosition]);
 //                intent.putExtra("textView1",descriptions[currentPosition]);
@@ -374,6 +374,7 @@ public class MainActivitySliderNear extends AppCompatActivity {
             if (clickedPosition == activeCardPosition) {
                 final Intent intent = new Intent(MainActivitySliderNear.this, Main22Activity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
+                intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                 intent.putExtra("textView2",address[activeCardPosition%address.length]);
                 intent.putExtra("textView3",facilities[activeCardPosition%facilities.length]);

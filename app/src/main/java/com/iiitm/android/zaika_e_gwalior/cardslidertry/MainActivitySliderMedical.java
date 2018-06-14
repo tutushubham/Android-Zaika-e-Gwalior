@@ -24,40 +24,37 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.iiitm.android.zaika_e_gwalior.Main82Activity;
-import com.iiitm.android.zaika_e_gwalior.R;
+import com.iiitm.android.zaika_e_gwalior.Main52Activity;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
+import com.iiitm.android.zaika_e_gwalior.R;
 
 import java.util.Random;
 
-public class MainActivitySliderHotels extends AppCompatActivity {
+public class MainActivitySliderMedical extends AppCompatActivity {
 
-    private final int[][] dotCoords = new int[8][2];
+    private final int[][] dotCoords = new int[12][2];
     private final int[] pics = {
-            R.drawable.royalinn,
-            R.drawable.grace,
-            R.drawable.regency,
-            R.drawable.lmark,
-            R.drawable.cpark,
-            R.drawable.shelter,
-            R.drawable.tanseeen, R.drawable.ukiranplace,
+            R.drawable.apoloh,
+            R.drawable.pariwarh,
+            R.drawable.navjeevanh,
+            R.drawable.kalyanmemorialh,
+            R.drawable.shaharah,
+            R.drawable.apex,
+            R.drawable.bimr,
+            R.drawable.charitbal,R.drawable.jaya,R.drawable.rkm,R.drawable.gcivilh,R.drawable.kamalraja,
+
 
     };
-    private final int[] maps ={R.drawable.map_royalinn,R.drawable.map_grace,R.drawable.map_regency,R.drawable.map_landmark,R.drawable.map_central,R.drawable.map_shelter,R.drawable.map_tansen,R.drawable.map_usha};
-    private final String[] descriptions = {  " Located in the heart of Gwalior, The Hotel Royal Inn, hosts most beautiful banquet halls of Gwalior in addition to popular restaurants to satisfy and exceed everyone's hospitality needs.It provide many facilities such as   Television Room, Climate Control, Desk, Cable/Satellite TV, Air Conditioning Room, Child Care, Internet Access, Wakeup Calls, Reading Lamps, Bottled Water in Room,Currency Exchange, Business Facilities, Disabled Facilities, Doctor on Call, Exhibit Space, Conference Hall, Wedding Services, Bar, Coffee Shop/Cafe, Security Guard.","Grace Hotel has spacious rooms with balconies providing full ventilation & natural air. Room facility includes attached bath, running hot and cold water, refrigerator, cable color television and direct dial service.Hotel facilities includes round the clock room service, doctor on call, travel desk, same day laundry and generator back up. Hotel accepts all major credit cards.", "The Gwalior Regency  hotel ensures a favourable ambience for work and leisure. Room service, 24-hour front desk, air conditioning, elevators, laundry, parking, travel desk and 24-hour security are the basal services. The set of business amenities comprise conference facilities, business services, audio visual equipment, conference suite, meeting facilities and meeting rooms. Guests have the pleasure of indulging in scrumptious Indian, Chinese, Mughlai and Continental cuisines at Blue Fox, the multi-cuisine onsite restaurant. Black Cadillac Bar, serves International exotic alcoholic beverages to the patrons. ","Landmark Hotel, Gwalior serves an exciting range of dishes from varied cuisines.Deluxe, Super Deluxe, Suite and Family Room are the four variants in the accommodation types offered to the guests. Some of the amenities provided in the room are an air-conditioner, sofa, television, tea/coffee maker and mini fridge. Apart from the regular facilities the property holds like a front desk, doctor on call, laundry services, the hotel is ideal for business purposes as it offers conference facilities, business services, audio visual equipment, conference suite and meeting facilities. Undoubtedly it is one of the best hotels in Gwalior Madhya Pradesh.", "The Central Park hotel offers modern amenities for a comfortable and hassle-free stay. Primary services include room service, internet access, 24-hour front desk, air conditioning, elevators, parking, travel desk and 24-hour security. A business centre is provided for arranging corporate meets and conventions. The amenities inside the business centre includes conference facilities, business services, audio visual equipment, LCD/projector, conference suite and meeting facilities. A gym, pool, flower shop and health club ensures complete rejuvenation. Banquet facilities for community gatherings are an added advantage. A tantalising gourmet treats can be enjoyed at the multi-cuisine eating outlet, Cafe Royal; a coffee shop, Rosebud and a well-stocked bar within the hotel complex.", "The hotel ensures a favourable ambience for work and leisure. Room service, 24-hour front desk, air conditioning, elevators, laundry, parking, travel desk and 24-hour security are the basal services. The set of business amenities comprise conference facilities, business services, audio visual equipment, conference suite, meeting facilities and meeting rooms. Guests have the pleasure of indulging in scrumptious Indian, Chinese, Mughlai and Continental cuisines at Blue Fox, the multi-cuisine onsite restaurant. Black Cadillac Bar, serves International exotic alcoholic beverages to the patrons.","A range of features are offered to the guests to make the stay convenient and pleasant. Basic features offered the guests are internet, 24-hour front desk, 24-hour room service, elevators, baby sitting, parking, travel desk, wheel chair access and 24-hour security. Business centre, audio visual equipment satiate the needs of corporate guests. Guests can savour delicious meals and enjoy fine liquor offered in the in-house restaurant and bar respectively. One can also enjoy a sip of hot coffee and munch light snacks in the coffee shop.", " Taj Usha Kiran Palace offers accommodation with a balcony and WiFi access.Along with a full-service spa, this hotel has a restaurant and an outdoor pool. Free WiFi in public areas and free self parking are also provided. Additionally, a fitness center, a coffee shop/café, business services, conference suite , cocktail lounge, free newspaper, meeting facility, conference hall , gym and etc.",
-    };
-    private final String[] countries = {"Royal Inn ","Grace Hotel","Gwalior Regency Hotel","Landmark Hotel","The Central Park Hotel","Hotel Shelter","Tansen Residency ","Taj Usha Kiran Place "};
-    private final String[] places = {"City Center,Gwalior","Gandhi Road,Gwalior","Gandhi Road,Gwalior","Manik Vilas Colony,Gwalior","City Center,Gwalior","Tansen Road,Gwalior","Thatipur,Gwalior","Lashkar,Gwalior"};
-    private final String[] times ={"24 hours","24 hours","24 hours","24 hours","24 hours","24 hours","24 hours","24 hours"};
-    private final String[] address={"Royal Inn Hotel, City Center Road\n" +
-            "Gwalior, Madhya Pradesh - 474011 ","40, Manik Vilas Colony, Gandhi Road\n" +
-            "Gwalior, Madhya Pradesh - 474002 ","Gwalior Regency Hotel, Gandhi Road\n" +
-            "Gwalior, Madhya Pradesh - 474002 ","47, Manik Vilas Colony, Near Railway Station, Gwalior, Madhya Pradesh 474002 ",  "City Center, Madhav Rao Scindia Marg, Opposite Vishal Megmart, Patel Nagar, Gwalior, Madhya Pradesh 474001 ", " Near Railway Station, Tansen Road, Padav, Gwalior, Madhya Pradesh 474002 "," LNUPE Campus, Thatipur, Gwalior, Madhya Pradesh 474002 ","Jayendraganj Lashkar, Gwalior, Madhya Pradesh 474009 "};
-    private final String[] contact={"0751234 0892 ","+918191900022 ","+917417300033","07514011271"," 07512232440","07512376209","07512340370"," 07512444000",};
-    private final String[] fee={"Standard Room 2200 INR\n Dulex Room 2700 INR\n Exclusive Siut Room 5000 INR","AC Dulex Room 1100 INR\n EXEcutive Room 1450 INR\n AC Siut Room 1950 INR"," Dulex Room 3500 INR\n EXecutive Room 4800 INR\n Grand Dulex Room 4800 INR","Maximum Room Rate: 4000 INR\n Minimum Room Rate:2500 INR","Maximum Room Rate: 7500 INR\n Minimum Room Rate: 3500 INR","Maximum Room Rate: 6500 INR\n Minimum Room Rate:2200 INR","Maximum Room Rate: 3300 INR\n Minimum Room Rate:2300 INR","Maximum Room Rate: 38000 INR\n Minimum Room Rate: 7000 INR"};
+    private final int[] maps ={R.drawable.map_apolo,R.drawable.map_pariwar,R.drawable.map_navjeevan,R.drawable.map_kalyan,R.drawable.map_sahara,R.drawable.map_apex,R.drawable.map_bimr,R.drawable.map_anandpur,R.drawable.map_jaya,R.drawable.map_rk,R.drawable.map_govern,R.drawable.map_kamla};
+    private final String[] descriptions = {   "Apollo hospital offers superlative care in wide range of surgical specialties including General & Laparoscopic Surgery, Orthopaedic & Spine, Gynaecology, Ophthalmology, to name a few. In addition, the hospital provides comprehensive medical care in specialties like Nephrology, Neurology, Gastroenterology, Cardiology, Dental, Dermatology, Plastic & Cosmetic Surgery.", "Apollo hospital offers superlative care in wide range of surgical specialties including General & Laparoscopic Surgery, Orthopaedic & Spine, Gynaecology, Ophthalmology, to name a few. In addition, the hospital provides comprehensive medical care in specialties like Nephrology, Neurology, Gastroenterology, Cardiology, Dental, Dermatology, Plastic & Cosmetic Surgery.", " in Gwalior, Navjeevan Hospital is a recognized name in patient care. It was incepted in the year 2007. They are one of the well-known Private Hospitals in Moti Mahal Road. Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcaresuch as ICU with central oxygen supply & Multipara monitor ,Ultra modern operation theatres for surgical procedure , ICU with central oxygen supply & Multipara monitor , Ultra modern operation theatres for surgical procedure, Dialysis unit ,Medical Store,24 hours emergency facility,24 h ours Ambulance Service,Cashless and Mediclaim Insurance services ,Physiotherapy etc.", "Kalyan Memorial & KDJ Hospital is an upcomming hospital in gwalior. The hospital has a state of the art 100 bedded super specialty facility providing complete range of latest machines. It has a fully equipped Ortho and Trauma Unit, an emergency department and I.C.C for different facilities assisted  with round the clock post graduate doctors on duty supported Ventilator, Defibrillator, Multiparamonnitors and other Critical care equipment.","In Gwalior, Sahara Hospital is a recognized name in patient care. It was incepted in the year 2000. They are one of the well-known Hospitals in . Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities,", "In Gwalior,Apex Hospital is a recognized name in patient care. It is one of the well-known Private Hospitals in City Centre. Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities such as Dengue Fever Treatment ,Vaccination/Immunization ,Viral Fever Treatment,Diseases in Pregnancy ,General Pediatrics and etc.", "BIMR hospital provide many facilities such as Pharmacy,I.C.C.U., Neo-Natal Intermediate Ward with AHU, Post Operative Surgical Ward with AHU, Medical Intermediate Ward with AHU, Neuro I.C.U. and Neuro Surgery Center, Blood Bank, C.T. Scan, X-Ray (300 M.A.) with Digital Technology, Mobile X-Ray, Ultrasonography, NABL Accredited Laboratory services and etc.","Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities, they are one of the upcoming names in the healthcare industry. Located in , this hospital is easily accessible by various means of transport. A team of well-trained medical staff, non-medical staff and experienced clinical technicians work round-the-clock to offer various services . Their professional services make them a sought after Charitable Hospitals in Gwalior. A team of doctors on board, including specialists are equipped with the knowledge and expertise for handling various types of medical cases.", "At present the bed strength of Hospital is about 1200 beds. Hospital is equipped with the all the modern equipments.  It provide may facilities such as Neurosurgery,Spiral CT Scan and MR Imaging system,Chest Pain Treatment , Clinical Cardiology ,Heart Conditions,Skin Disease Treatment,Specialty Diagnostics in Tuberculosis ,Neurological Conditions ,Eye Checkup General ,Eye Surgery ,Bone Trauma ,Fracture Treatment and etc.","R K Memorial Heart Hospital and Medical Care Centre, Gwalior is among well-known hospital for valuable treatment.This hospital in Gwalior offers a lot of facilities for patient’s treatment like ambulance, ICU/general beds, Pharmacy, Canteen, etc.Along with above facilities, hospital is specialised for Cardiology.R K Memorial Heart Hospital and Medical Care Centre has specialist doctors practicing under different specializations.", "In Gwalior,Goverment  Civil Hospital is a recognized name in patient care. They are one of the well-known Hospitals . Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities, they are one of the upcoming names in the healthcare industry. Located in , this hospital is easily accessible by various means of transport. A team of well-trained medical staff, non-medical staff and experienced clinical technicians work round-the-clock to offer various services . Their professional services make them a sought after Hospitals in Gwalior. A team of doctors on board, including specialists are equipped with the knowledge and expertise for handling various types of medical cases.","There is formation of new neonatology wing (nursery) and also the pediatric ICU with latest gazette. It has Gynaecology and obstetric wards, Children wards, Children ICU, children surgical ward, female Orthopaedics ward, female surgical and burn ward and female ENT ward.At present the hospital is about 450 bedded and has a pediatric ICU under the Pediatric Department, A Burn ward for female Burn patients under Dept. of Surgery and a sonology section in Dept. of Obstetrics and Gynaecology."};
+    private final String[] countries = {"Apolo Spectra","Pariwar Hospital","Navjeevan Hospital","Kalyan Hospital","Shahara Hospital","Apex Hospital","BIMR Hospital","Anandpur Charitable ","Jaya Arogya Hospital","R.K.Memorial Hospital","Government Hospital  "};
+    private final String[] places = {"Lashkar,Gwalior","Lashkar,Gwalior","Moti Mahal Road ,Gwalior","Lashkar,Gwalior","Vasant Vihar,Gwalior","Tagore Nagar,Gwalior","Morar,Gwalior","Purani Chhawani,Gwalior","Kampoo,Gwalior","Kherapati Road,Gwalior","Tansen Nagar,Gwalior","Lashkar,Gwalior"};
+    private final String[] times ={"24 Hours","24 Hours","24 Hours","24 Hours","24 Hours","24 Hours","8am-6am" ,"24 Hours","24 Hours","24 Hours","24 Hours","24 Hours"};
+    private final String[] address={"Lashkar, Gwalior, Madhya Pradesh 474002","Lashkar, Gwalior, Madhya Pradesh 474001","Moti Mahal Road, Gwalior, Madhya Pradesh 474002","Lashkar,Gwalior-474001, Hospital road","Vasant Vihar, Gwalior, Madhya Pradesh 474007"," Tagore Nagar, Anupam Nagar, Saraswati Nagar, Gwalior, Madhya Pradesh 474011","Morar,Gwalior,Madhya Pradesh 474005","NH 3, Purani Chhawani, Gwalior West, Madhya Pradesh 474010","J A Hospital Campus,Kampoo Gwalior - 474001"," Ravi Nagar,Behind Gda Ofiice,Kherapati Road.,Gwalior, Madhya Pradesh","Unnamed Road, Tansen Nagar, Gwalior, Madhya Pradesh 474002"," J. A. Hospital Campus, Lashkar, Gwalior, Madhya Pradesh 474009"};
+    private final String[] contact={"07512454600","07514047000","07514024081","07514006700","09926800870","07512340910","07512405617","07512401200"," 07512403200","07512630329","Not available","09425360494"};
 
-    private final SliderAdapter sliderAdapter = new SliderAdapter(pics, 8, new OnCardClickListener());
+    private final SliderAdapter sliderAdapter = new SliderAdapter(pics, 12, new OnCardClickListener());
 
     private CardSliderLayoutManager layoutManger;
     private RecyclerView recyclerView;
@@ -90,7 +87,7 @@ public class MainActivitySliderHotels extends AppCompatActivity {
     }
 
     private void initRecyclerView() {
-        recyclerView = findViewById(R.id.recycler_view);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setAdapter(sliderAdapter);
         recyclerView.setHasFixedSize(true);
 
@@ -123,21 +120,21 @@ public class MainActivitySliderHotels extends AppCompatActivity {
 
 //        temperatureSwitcher.setText("View More");
 
-        placeSwitcher = findViewById(R.id.ts_place);
+        placeSwitcher = (TextSwitcher) findViewById(R.id.ts_place);
         placeSwitcher.setFactory(new TextViewFactory(R.style.PlaceTextView, false));
         placeSwitcher.setCurrentText(places[0]);
 
-        clockSwitcher = findViewById(R.id.ts_clock);
+        clockSwitcher = (TextSwitcher) findViewById(R.id.ts_clock);
         clockSwitcher.setFactory(new TextViewFactory(R.style.ClockTextView, false));
         clockSwitcher.setCurrentText(times[0]);
 
-        descriptionsSwitcher = findViewById(R.id.ts_description);
+        descriptionsSwitcher = (TextSwitcher) findViewById(R.id.ts_description);
         descriptionsSwitcher.setInAnimation(this, android.R.anim.fade_in);
         descriptionsSwitcher.setOutAnimation(this, android.R.anim.fade_out);
         descriptionsSwitcher.setFactory(new TextViewFactory(R.style.DescriptionTextView, false));
         descriptionsSwitcher.setCurrentText(descriptions[0]);
 
-        mapSwitcher = findViewById(R.id.ts_map);
+        mapSwitcher = (ImageSwitcher) findViewById(R.id.ts_map);
         mapSwitcher.setInAnimation(this, R.anim.fade_in);
         mapSwitcher.setOutAnimation(this, R.anim.fade_out);
         mapSwitcher.setFactory(new ImageViewFactory());
@@ -173,8 +170,8 @@ public class MainActivitySliderHotels extends AppCompatActivity {
         countryAnimDuration = getResources().getInteger(R.integer.labels_animation_duration);
         countryOffset1 = getResources().getDimensionPixelSize(R.dimen.left_offset);
         countryOffset2 = getResources().getDimensionPixelSize(R.dimen.card_width);
-        country1TextView = findViewById(R.id.tv_country_1);
-        country2TextView = findViewById(R.id.tv_country_2);
+        country1TextView = (TextView) findViewById(R.id.tv_country_1);
+        country2TextView = (TextView) findViewById(R.id.tv_country_2);
 
         country1TextView.setX(countryOffset1);
         country2TextView.setX(countryOffset2);
@@ -273,12 +270,12 @@ public class MainActivitySliderHotels extends AppCompatActivity {
 //        temperatureSwitcher.setOutAnimation(MainActivitySlider.this, animH[1]);
 //        temperatureSwitcher.setText(temperatures[pos % temperatures.length]);
 
-        placeSwitcher.setInAnimation(MainActivitySliderHotels.this, animV[0]);
-        placeSwitcher.setOutAnimation(MainActivitySliderHotels.this, animV[1]);
+        placeSwitcher.setInAnimation(MainActivitySliderMedical.this, animV[0]);
+        placeSwitcher.setOutAnimation(MainActivitySliderMedical.this, animV[1]);
         placeSwitcher.setText(places[pos % places.length]);
 
-        clockSwitcher.setInAnimation(MainActivitySliderHotels.this, animV[0]);
-        clockSwitcher.setOutAnimation(MainActivitySliderHotels.this, animV[1]);
+        clockSwitcher.setInAnimation(MainActivitySliderMedical.this, animV[0]);
+        clockSwitcher.setOutAnimation(MainActivitySliderMedical.this, animV[1]);
         clockSwitcher.setText(times[pos % times.length]);
 
         descriptionsSwitcher.setText(descriptions[pos % descriptions.length]);
@@ -318,14 +315,14 @@ public class MainActivitySliderHotels extends AppCompatActivity {
         @SuppressWarnings("deprecation")
         @Override
         public View makeView() {
-            final TextView textView = new TextView(MainActivitySliderHotels.this);
+            final TextView textView = new TextView(MainActivitySliderMedical.this);
 
             if (center) {
                 textView.setGravity(Gravity.CENTER);
             }
 
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-                textView.setTextAppearance(MainActivitySliderHotels.this, styleId);
+                textView.setTextAppearance(MainActivitySliderMedical.this, styleId);
             } else {
                 textView.setTextAppearance(styleId);
             }
@@ -338,7 +335,7 @@ public class MainActivitySliderHotels extends AppCompatActivity {
     private class ImageViewFactory implements ViewSwitcher.ViewFactory {
         @Override
         public View makeView() {
-            final ImageView imageView = new ImageView(MainActivitySliderHotels.this);
+            final ImageView imageView = new ImageView(MainActivitySliderMedical.this);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
             final LayoutParams lp = new ImageSwitcher.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
@@ -364,14 +361,13 @@ public class MainActivitySliderHotels extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
-                final Intent intent = new Intent(MainActivitySliderHotels.this, Main82Activity.class);
+                final Intent intent = new Intent(MainActivitySliderMedical.this, Main52Activity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                 intent.putExtra("textView2",address[activeCardPosition%address.length]);
-                intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
 
-                intent.putExtra("textView3",fee[activeCardPosition%fee.length]);
-                intent.putExtra("textView4",contact[activeCardPosition%contact.length]);
+                ; intent.putExtra("imageView2", maps[activeCardPosition % maps.length]);
+                intent.putExtra("textView3",contact[activeCardPosition%contact.length]);
 
 
 
@@ -381,7 +377,7 @@ public class MainActivitySliderHotels extends AppCompatActivity {
                     final CardView cardView = (CardView) view;
                     final View sharedView = cardView.getChildAt(cardView.getChildCount() - 1);
                     final ActivityOptions options = ActivityOptions
-                            .makeSceneTransitionAnimation(MainActivitySliderHotels.this, sharedView, "shared");
+                            .makeSceneTransitionAnimation(MainActivitySliderMedical.this, sharedView, "shared");
                     startActivity(intent, options.toBundle());
                 }
             } else if (clickedPosition > activeCardPosition) {

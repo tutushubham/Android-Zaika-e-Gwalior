@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderHistorical;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderHotels;
+import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderMedical;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderNear;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderWorship;
 
@@ -98,7 +99,7 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             if(position==4)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, Main5Activity.class);
+                Intent intent = new Intent(this.mContext, MainActivitySliderMedical.class);
                 this.mContext.startActivity(intent);
             }
             if(position==5)

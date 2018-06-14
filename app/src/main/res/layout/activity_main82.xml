@@ -102,6 +102,7 @@
                 android:id="@+id/cardview3"
                 android:padding="3dp"
                 android:layout_marginTop="8dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -122,11 +123,12 @@
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/map3"
                         android:layout_width="match_parent"
-                        android:layout_height="210dp"
+                        android:layout_height="190dp"
+
                         android:layout_margin="12dp"
                         android:scaleType="fitXY"
-
                         android:src="@drawable/thumbnail" />
 
                     <TextView
@@ -137,10 +139,9 @@
                         android:layout_below="@+id/textView3"
                         android:layout_gravity="center"
                         android:layout_marginStart="12dp"
-                        android:layout_marginTop="10dp"
                         android:text="Near Railway Station,Gwalior-474001"
                         android:textColor="#607d8b"
-                        android:textSize="18dp" />
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>

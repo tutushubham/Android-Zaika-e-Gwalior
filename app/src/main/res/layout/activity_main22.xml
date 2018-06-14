@@ -71,14 +71,16 @@
                         android:id="@+id/textView2"
                         android:layout_width="100dp"
                         android:layout_height="35dp"
-                        android:text="ABOUT"
-                        android:layout_marginTop="12dp"
-                        android:textSize="20dp"
-                        android:gravity="center"
-                        android:textColor="#000000"
-                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="ABOUT"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -110,23 +112,24 @@
                         android:id="@+id/textView4"
                         android:layout_width="150dp"
                         android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="12dp"
                         android:text="HOW TO REACH"
                         android:textColor="#000000"
                         android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="16dp" />
+                        android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/map4"
                         android:layout_width="match_parent"
                         android:layout_height="210dp"
-                        android:scaleType="fitXY"
                         android:padding="10dp"
-                        android:src="@drawable/thumbnail"
+                        android:scaleType="fitXY"
 
-                        />
+                        android:src="@drawable/thumbnail" />
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
@@ -134,6 +137,8 @@
                         android:layout_alignStart="@+id/textView3"
                         android:layout_below="@+id/textView3"
                         android:layout_marginTop="15dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:textSize="18dp"
                         android:textColor="#607d8b"
                         android:text="Near Railway Station,Gwalior-474001"/>
@@ -161,12 +166,13 @@
                         android:layout_height="30dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="14dp"
                         android:text="FACILITIES"
                         android:textColor="#000000"
                         android:textSize="20dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView35"
@@ -175,6 +181,8 @@
                         android:layout_alignParentBottom="true"
                         android:layout_alignStart="@+id/textView6"
                         android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:text=""
                         android:textColor="#607d8b"
                         android:textSize="17dp"/>
@@ -194,19 +202,20 @@
                     android:id="@+id/relativelayout5">
 
 
-
                     <TextView
                         android:id="@+id/textView7"
                         android:layout_width="350dp"
                         android:layout_height="30dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+
                         android:layout_marginTop="14dp"
                         android:text="BEST TIME TO VISIT"
                         android:textColor="#000000"
                         android:textSize="20dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView8"
@@ -215,6 +224,8 @@
                         android:layout_alignParentBottom="true"
                         android:layout_alignStart="@+id/textView7"
                         android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:text="10Rs/piece"
                         android:textColor="#607d8b"
                         android:textSize="17dp"/>
@@ -244,7 +255,8 @@
                         android:layout_height="30dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="14dp"
                         android:text="ENTRANCE FEE"
                         android:textColor="#000000"
@@ -258,6 +270,8 @@
                         android:layout_alignParentBottom="true"
                         android:layout_alignStart="@+id/textView9"
                         android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:text="Not Available"
                         android:textColor="#607d8b"
                         android:textSize="17dp"/>

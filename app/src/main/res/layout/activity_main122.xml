@@ -71,14 +71,15 @@
                         android:id="@+id/textView2"
                         android:layout_width="100dp"
                         android:layout_height="35dp"
-                        android:text="HISTORY"
-                        android:layout_marginTop="12dp"
-                        android:textSize="20dp"
-                        android:gravity="center"
-                        android:textColor="#000000"
-                        android:textStyle="bold"
+                        android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_alignParentStart="true" />
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="HISTORY"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView3"
@@ -110,14 +111,14 @@
                         android:id="@+id/textView4"
                         android:layout_width="150dp"
                         android:layout_height="25dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="12dp"
                         android:layout_marginTop="12dp"
                         android:text="HOW TO REACH"
                         android:textColor="#000000"
                         android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentStart="true"
-                        android:layout_marginStart="16dp" />
+                        android:textStyle="bold" />
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -159,12 +160,13 @@
                         android:layout_height="30dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="14dp"
                         android:text="BUILD"
                         android:textColor="#000000"
                         android:textSize="20dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView35"
@@ -192,19 +194,19 @@
                     android:id="@+id/relativelayout5">
 
 
-
                     <TextView
                         android:id="@+id/textView7"
                         android:layout_width="150dp"
                         android:layout_height="30dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="14dp"
                         android:text="TICKET"
                         android:textColor="#000000"
                         android:textSize="20dp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textView8"
@@ -243,7 +245,8 @@
                         android:layout_height="30dp"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:layout_marginStart="22dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="14dp"
                         android:text="CONTACT"
                         android:textColor="#000000"

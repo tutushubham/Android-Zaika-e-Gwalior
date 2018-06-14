@@ -25,10 +25,10 @@ import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
 import com.iiitm.android.zaika_e_gwalior.Main22Activity;
+import com.iiitm.android.zaika_e_gwalior.Main52Activity;
 import com.iiitm.android.zaika_e_gwalior.Main82Activity;
 import com.iiitm.android.zaika_e_gwalior.Mainhistorical2Activity;
 import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
-import com.iiitm.android.zaika_e_gwalior.MedicalHindiActivity;
 import com.iiitm.android.zaika_e_gwalior.R;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
@@ -122,6 +122,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
             ticket = new String[]{"चाइल्ड -40 रुपये / व्यक्ति, वयस्क -75 रुपये / व्यक्ति", "60 रुपये / व्यक्ति", "बाल -40 रुपये / व्यक्ति, वयस्क -75 रुपये / व्यक्ति, विदेशी-250 रुपये / व्यक्ति", "100 रुपये / व्यक्ति "," 50 रुपये / व्यक्ति "," बाल -40 रुपये / व्यक्ति, वयस्क -75 रुपये / व्यक्ति, विदेशी-250 रुपये / व्यक्ति "," 100 रुपये / व्यक्ति "," प्रति व्यक्ति \n "+" कैमरा के लिए 50 "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है ", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है"};
 
             contact = new String[]{"75140407777", "9 301107666", "0751 243 3400", "18002337777", "9781576646", "7514040777", "7512372390", "08 9 85869526", "7512234557", "075140407777", "075140407777", "075140407777" , "07512424125", "75140407777", "075140407777", "075140407777", "075140407777", "075140407777", "757540407777", "075140407777", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "नहीं उपलब्ध "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "};
+
             sliderAdapter = new SliderAdapter(pics, 28, new OnCardClickListener());
         }//historical
         if(select==1)
@@ -205,8 +206,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
             sliderAdapter = new SliderAdapter(pics, 7, new OnCardClickListener());
 
         }//near
-        if(select==3)
-        {
+        if(select==3) {
             pics = new int[]{
                     R.drawable.royalinn,
                     R.drawable.grace,
@@ -218,28 +218,30 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     R.drawable.ukiranplace,
 
             };
-            maps = new int[]{R.drawable.map_tghra, R.drawable.map_orcha, R.drawable.map_madhav, R.drawable.map_satkhand, R.drawable.map_sultan, R.drawable.map_chanderi, R.drawable.map_chambal};
-            descriptions = new String[]{"Tigra Dam creates a freshwater reservoir on the Sank River, about 23 km from Gwalior, Madhya Pradesh, India.It plays a crucial role in supplying water to the city" + "Water output from dam to the Motijheel Filtration Plant Gwalior" + "The dam is 24 metres high at its crest, and 1341 m long. The reservoir has a capacity of 4.8 million cubic metres and the spillway structure can pass up to 1274 cubic metres per second.A dam constructed on this site in 1916 failed on the afternoon of August 4, 1917, due to infiltration into its sandstone foundations. About 1000 people were killed downstream.",
-
-                    "Orchha Fort is situated on the island on Betwa River. The scenic location apart, the fort has more to offer. It houses many palaces and temples. The three most important palaces seen here are Jahangir Mahal, Raj Mahal and the famous Rai Parveen Mahal. Jahangir Mahal reflects the architectural splendor that prevailed in Orchha in the past. The views from the multi-storeyed balconies in the palace are spectacular. Raj Mahal ranks amongst the most ancient historic monuments in Orchha fort.",
-
-                    "Madhav National Park is situated in Shivpuri District of Gwalior region in northwest Madhya Pradesh, India.It was named after Madho Rao Scindia,the Maharaja of Gwalior belonging to the Scindia dynasty of the Marathas.It is the ancestral home of the line of ęAli Khan,a region based in Punjab,and most famous for the laws of commonly credited with defining modern day jurisprudence. Shivpuri town is located at 25°40' North, 77°44' East on Agra to Bombay National Highway-3. Shivpuri is steeped in the royal legacy of its past, when it was the summer capital of the Scindia rulers of Gwalior. Earlier its dense forests were the hunting grounds of the Mughal emperors and Maratha royals. Emperor Akbar captured herds of elephants for his stables while returning from Mandu in year 1564",
-
-                    "Datia Palace also known as Bir Singh Palace or Bir Singh Dev Palace is situated nearly 75 km from Gwalior City in Madhya pradesh.The specialty of this palace is that it is of 7 floor.However neither member from the royal family did ever lived here. The founder of the Datia State in Bundelkhand - Maharaj Birsingh Deo Build many such 52 monuments all around the Country India. Datia's Palace or the Satkhanda Palace is also called Datia Mahal, as well as the Purana Mahal or the \"Old palace\", Historian Abdul Hamid Lahori came to this city with Shahan Jahan on 19 November 1635. He said that the palace was nearly 80 meters long and was also this much broad.He said this as a very beautiful and strong palace.",
-
-                    "The mesmerizing waterfall in the region is the sultan garh waterfall.People’s oftenly visited this place in the rainy season due to the lush greenery in the region.The gathering of various colorful butterfly in the nearby region adds beauty to this place.The Sultan Garh Falls is an ideal picnic spot near Shivpuri,which is generally visited during the monsoon season.It is a natural waterfall on the River Parvati.The people visited this place to spend a whole day with family because of its panoramic beauty and easy location.",
-
-                    "Chanderi is a town of historic importance right from the time of Malwa Sultans and Bundela Rajputs, who ruled the region in 15th and 16th century. Surrounded by exotic hills, lakes, and forest, this attractive destination is incredibly famous for Chanderi saris and historic monuments that draw a large number of tourists to this place every year. Also, the great Jain monuments and their fascinating culture make Chanderi, one of the most preffered tourist destinations in Madhya Pardesh. There are many things that boost Tourism in Chanderi like Chanderi Fort, Chanderi museum, Jain palaces, and exquisite lakes.",
-
-                    "This is a perfect destination for the wildlife enthusiasts. It is a habitat of some of the most endangered species, but the main attraction here are, Gharial, Red crowned turtles, Gangetic Dolphins, Indian skimmers, among others.The beautiful sanctuary is surrounded by the Chambal river, known to be one of the cleanest river of India. It provides you a combination of a unique and unpolluted habitat, abundant wildlife and amazing landscapes, medieval temples and magnificent ancient ruins, animal fairs and naga sadhus, far far away from the chaos of the city. Tourists usually rent a motorized boat and go up and down the river as it flows through the ravines which makes for a serene experience. The boatmen are excellent at maneuvering as close to the birds and animals as possible without disturbing them to give you the opportunity to sight beautiful animals facilities",
+            maps = new int[]{R.drawable.map_royalinn, R.drawable.map_grace, R.drawable.map_regency, R.drawable.map_landmark, R.drawable.map_central, R.drawable.map_shelter, R.drawable.map_tansen, R.drawable.map_usha};
+            descriptions = new String[]{"ग्वालियर के दिल में स्थित, होटल रॉयल इन, लोकप्रिय रेस्तरां के अलावा ग्वालियर के सबसे खूबसूरत भोज के हॉलों को होस्ट करता है ताकि मेहमानों की आतिथ्य की जरूरतों को पूरा किया जा सके और इससे अधिक हो सके। यह टेलीविजन कक्ष, जलवायु नियंत्रण, डेस्क, केबल  सैटेलाइट जैसी कई सुविधाएं प्रदान करता है। टीवी, एयर कंडीशनिंग रूम, चाइल्ड केयर, इंटरनेट एक्सेस, वेक अप कॉल, रीडिंग लैंप, रूम में बोतलबंद पानी, मुद्रा विनिमय, व्यापार सुविधाएं, विकलांग सुविधाएं, डॉक्टर ऑन कॉल, प्रदर्शनी स्थान, सम्मेलन हॉल, वेडिंग सेवाएं, बार, कॉफी शॉप  कैफे, सुरक्षा गार्ड। ", " ग्रेस होटल में विशाल कमरे हैं जो बालकनी के साथ पूर्ण वेंटिलेशन और प्राकृतिक वायु प्रदान करते हैं। कमरे की सुविधा में संलग्न स्नान, गर्म और ठंडा पानी, रेफ्रिजरेटर, केबल रंगीन टेलीविजन और डायरेक्ट डायल सेवा चलाना शामिल है। होटल सुविधाओं में घड़ी के दौरान कक्ष सेवा, कॉल पर डॉक्टर, यात्रा डेस्क, उसी दिन कपड़े धोने और जनरेटर का बैक अप। होटल सभी प्रमुख क्रेडिट कार्ड स्वीकार करता है। ", " ग्वालियर रीजेंसी होटल डब्ल्यू के लिए अनुकूल वातावरण सुनिश्चित करता है ओर्क और अवकाश। कक्ष सेवा, 24 घंटे का फ्रंट डेस्क, एयर कंडीशनिंग, लिफ्ट, कपड़े धोने, पार्किंग, यात्रा डेस्क और 24 घंटे की सुरक्षा बेसल सेवाएं हैं। व्यापार सुविधाओं के सेट में सम्मेलन सुविधाएं, व्यापार सेवाएं, ऑडियो विजुअल उपकरण, सम्मेलन सुइट, मीटिंग सुविधाएं और मीटिंग रूम शामिल हैं। मेहमान ब्लू फॉक्स, बहु-व्यंजन ऑनसाइट रेस्तरां में शानदार भारतीय, चीनी, मुगलई और कॉन्टिनेंटल व्यंजनों में शामिल होने का आनंद लेते हैं। ब्लैक कैडिलैक बार, संरक्षक को अंतरराष्ट्रीय विदेशी मादक पेय पेश करता है। ", " लैंडमार्क होटल, ग्वालियर विभिन्न व्यंजनों से व्यंजनों की एक रोमांचक श्रृंखला पेश करता है। डीलक्स, सुपर डीलक्स, सुइट और फ़ैमिली रूम मेहमानों को प्रदान किए जाने वाले आवास प्रकारों में चार प्रकार हैं। कमरे में उपलब्ध कुछ सुविधाएं एयर कंडीशनर, सोफा, टेलीविजन, चाय  कॉफी मेकर और मिनी फ्रिज हैं। नियमित सुविधाओं के अलावा संपत्ति में फ्रंट डेस्क, डॉक्टर ऑन कॉल, कपड़े धोने की सेवाएं, होटल व्यवसाय उद्देश्यों के लिए आदर्श है क्योंकि यह सम्मेलन सुविधाएं, व्यापार सेवाएं, ऑडियो विजुअल उपकरण, सम्मेलन सुइट और मीटिंग सुविधाएं प्रदान करता है। निस्संदेह यह ग्वालियर मध्य प्रदेश में सबसे अच्छे होटलों में से एक है। ", " सेंट्रल पार्क होटल आरामदायक और परेशानी रहित रहने के लिए आधुनिक सुविधाएं प्रदान करता है। प्राथमिक सेवाओं में रूम सर्विस, इंटरनेट का उपयोग, 24 घंटे का फ्रंट डेस्क, एयर कंडीशनिंग, लिफ्ट, पार्किंग, यात्रा डेस्क और 24 घंटे की सुरक्षा शामिल है। कॉरपोरेट मीटिंग्स और सम्मेलनों की व्यवस्था के लिए एक व्यापार केंद्र प्रदान किया जाता है। व्यापार केंद्र के अंदर सुविधाओं में सम्मेलन सुविधाएं, व्यापार सेवाएं, ऑडियो विजुअल उपकरण, एलसीडी  प्रोजेक्टर, सम्मेलन सुइट और मीटिंग सुविधाएं शामिल हैं। एक जिम, पूल, फूलों की दुकान और स्वास्थ्य क्लब पूर्ण कायाकल्प सुनिश्चित करता है। सामुदायिक सभाओं के लिए भोज सुविधाएं एक अतिरिक्त लाभ हैं। बहु-व्यंजन खाने के आउटलेट, कैफे रॉयल में एक स्वादिष्ट भोजन व्यवहार का आनंद लिया जा सकता है; कॉफी कॉम्प्लेक्स, रोज़बड और होटल कॉम्प्लेक्स के भीतर एक अच्छी तरह से स्टॉक बार। ", "होटल काम और अवकाश के लिए अनुकूल माहौल सुनिश्चित करता है। कक्ष सेवा, 24 घंटे का फ्रंट डेस्क, एयर कंडीशनिंग, लिफ्ट, कपड़े धोने, पार्किंग, यात्रा डेस्क और 24 घंटे की सुरक्षा बेसल सेवाएं हैं। व्यापार सुविधाओं के सेट में सम्मेलन सुविधाएं शामिल हैं , व्यापार सेवाएं, ऑडियो विजुअल उपकरण, सम्मेलन सुइट, मीटिंग सुविधाएं और मीटिंग रूम। मेहमानों को ब्लू फॉक्स, बहु-व्यंजन ऑनसाइट रेस्तरां में शानदार भारतीय, चीनी, मुगलई और कॉन्टिनेंटल व्यंजनों में शामिल होने का आनंद मिलता है। ब्लैक कैडिलैक बार, अंतर्राष्ट्रीय सेवा प्रदान करता है संरक्षकों के लिए विदेशी मादक पेय। ", "मेहमानों को सुविधाजनक और सुखद बनाने के लिए सुविधाओं की एक श्रृंखला की पेशकश की जाती है। मेहमानों को इंटरनेट, 24 घंटे का फ्रंट डेस्क, 24 घंटे रूम सर्विस, लिफ्ट, बेबी, बैठे, पार्किंग, यात्रा डेस्क, व्हील चेयर का उपयोग और 24 घंटे की सुरक्षा। व्यापार केंद्र, ऑडियो विजुअल उपकरण कॉर्पोरेट मेहमानों की जरूरतों को पूरा करते हैं। मेहमान स्वादिष्ट भोजन का आनंद ले सकते हैं और बढ़िया तरल का आनंद ले सकते हैं या क्रमशः इन-हाउस रेस्तरां और बार में पेश किया जाता है। कॉफी कॉफी में गर्म कॉफी और मोर्च लाइट स्नैक्स का एक सिप भी आनंद ले सकता है। ", " ताज उषा किरण पैलेस बालकनी और वाईफाई के उपयोग के साथ आवास प्रदान करता है। पूर्ण सेवा स्पा के साथ, इस होटल में एक रेस्तरां और आउटडोर है पूल। सार्वजनिक क्षेत्रों में नि: शुल्क वाईफाई और नि: शुल्क आत्म पार्किंग भी प्रदान की जाती है। इसके अतिरिक्त, एक फिटनेस सेंटर, एक कॉफी शॉप  कैफे, व्यापार सेवाएं, सम्मेलन सुइट, कॉकटेल लाउंज, मुफ्त समाचार पत्र, मीटिंग सुविधा, सम्मेलन कक्ष, जिम आदि। ",
             };
-            countries = new String[]{"Tighra Dam", "Orchha", "Madhav National Park", "Satkhand Mahal ", "Sultangadh Waterfall", "Chanderi", "Chambal Sanctuary"};
-            places = new String[]{"Tighra,M.P.", "Orchha,Gwalior", "Shivpuri,M.P.", "Datiya,M.P.", "Shivpuri,M.P", " Ashoknagar,M.P", " Dholpur (Rajasthan)"};
-            times = new String[]{"7A.M-7P.m", "08:00 am - 08:00 pm", "06:00 am - 05:00 pm", "08:00 am- 11:00 pm", "10:00 am - 06:00 pm", "10:00 am - 06:00 pm", "05:00 am - 07:00 pm"};
-            address= new String[]{"Tighra,Gwalior 474001", "Kanchanghat, Distt. Tikamgarh, Orachha, Madhya Pradesh 472246", "Shivpuri-Jhansi Road,M.P 473551", "Datiya-Jhansi Road,M.P.", "Shivpuri,M.p. 475330", " Ashoknagar District,Madhya Pradesh", " Dhaulpur ,Madhya Pradesh"};
-            facilities= new String[]{"Boating and water scooter", "Cafe and restaurent including indian,chinese and continental", "Boating,Hotel and Cafe", "Hotel and Shopping", "Bike Riding", "Hotels and Shopping", "Jeep safari, this national park offers river safari, bicycle ride, camel safari."};
-            timeVisit= new String[]{"Summer Season", "Summer Season", "Winter Season", "Any Time", "Winter Season", " winter between October and April", "Nov-Mar is the best time to visit."};
-            fee= new String[]{"Not Applicable", "Not Applicable", "15Rs/Person", "Not Applicable", "Not Applicable", "Not Applicable", " Indians: 50INR , Foreigners: 600INR"};
+
+
+            countries = new String[]{"रॉयल इन", "ग्रेस होटल", "ग्वालियर रीजेंसी होटल", "लैंडमार्क होटल", "सेंट्रल पार्क होटल", "होटल शेल्टर", "तानसेन रेजीडेंसी", "ताज उषा किरण प्लेस"};
+
+
+            places = new String[]{"गांधी रोड, ग्वालियर", "गांधी रोड, ग्वालियर", "माणिक विलास कॉलोनी, ग्वालियर", "सिटी सेंटर, ग्वालियर", "तानसेन रोड, ग्वालियर", "थियिपुर, ग्वालियर", "लश्कर, ग्वालियर"};
+
+
+            times = new String[]{"24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे"};
+
+
+            address = new String[]{"रॉयल इन होटल, सिटी सेंटर रोड \n" +
+                    "ग्वालियर, मध्य प्रदेश - 474011", "40, माणिक विलास कॉलोनी, गांधी रोड \n" +
+                    "ग्वालियर, मध्य प्रदेश - 474002", "ग्वालियर रीजेंसी होटल, गांधी रोड \n" +
+                    "ग्वालियर, मध्य प्रदेश - 474002", "47, माणिक विलास कॉलोनी, रेलवे स्टेशन के पास, ग्वालियर, मध्य प्रदेश 474002", "सिटी सेंटर, माधव राव स्किनडीए मार्ग, अपोजिट विशाल मेग्मार्त, पटेल नगर, ग्वालियर, मध्य प्रदेश 474001 ", " नियर रेलवे स्टेशन, तानसेन रोड, पड़ाव, ग्वालियर, मध्य प्रदेश 474002 ", " लनुपे कैंपस, थाटीपुर, ग्वालियर, मध्य प्रदेश 474002 ", "जयेन्द्रगंज लश्कर, ग्वालियर, मध्य प्रदेश 474009 "};
+
+
+            contact = new String[]{"0751234 0892 ", "+918191900022 ", "+917417300033", "07514011271", " 07512232440", "07512376209", "07512340370", " 07512444000",};
+
+
+            fee = new String[]{"स्टैंडर्ड रूम 2200 आईएनआर \n ड्यूलेक्स रूम 2700 आईएनआर \n एक्सक्लूसिव सूट रूम 5000 आईएनआर", "एसी ड्यूलेक्स रूम 1100 आईएनआर \n एक्स्टिवेटिव रूम 1450 आईएनआर  एन एसी सिट रूम 1 9 50 आईएनआर", "डुलेक्स रूम 3500 आईएनआर \n प्रेरक कक्ष 4800 INR \n ग्रैंड ड्यूलेक्स कक्ष 4800 आईएनआर ", " अधिकतम कक्ष दर: 4000 INR \n न्यूनतम कक्ष दर: 2500 INR ", " अधिकतम कक्ष दर: 7500 INR \n न्यूनतम कक्ष दर: 3500 INR ", " अधिकतम कक्ष दर: 6500 INR \n न्यूनतम कक्ष दर: 2200 INR ", " अधिकतम कक्ष दर: 3300 INR \n न्यूनतम कक्ष दर: 2300 INR ", " अधिकतम कक्ष दर: 38000 INR \n न्यूनतम कक्ष दर: 7000 INR "};
 
             sliderAdapter = new SliderAdapter(pics, 8, new OnCardClickListener());
 
@@ -533,6 +535,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     intent = new Intent(MainActivitySliderHindi.this, Mainhistorical2Activity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1", descriptions[activeCardPosition % descriptions.length]);
+                    intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                     intent.putExtra("textView2", address[activeCardPosition % address.length]);
                     intent.putExtra("textView3", build[activeCardPosition % build.length]);
                     intent.putExtra("textView4", ticket[activeCardPosition % ticket.length]);
@@ -542,6 +545,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     intent = new Intent(MainActivitySliderHindi.this, Main82Activity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
+                    intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                     intent.putExtra("textView2",address[activeCardPosition%address.length]);
                     intent.putExtra("textView3",facilities[activeCardPosition%facilities.length]);
                     intent.putExtra("textView4",timeVisit[activeCardPosition%timeVisit.length]);
@@ -551,6 +555,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     intent = new Intent(MainActivitySliderHindi.this, Main22Activity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
+                    intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                     intent.putExtra("textView2",address[activeCardPosition%address.length]);
                     intent.putExtra("textView3",facilities[activeCardPosition%facilities.length]);
                     intent.putExtra("textView4",timeVisit[activeCardPosition%timeVisit.length]);
@@ -560,12 +565,14 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     intent = new Intent(MainActivitySliderHindi.this, Mainworship2Activity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
+                    intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                     intent.putExtra("textView2",address[activeCardPosition%address.length]);
                 }
                 if(select==4){ //medical
-                    intent = new Intent(MainActivitySliderHindi.this, MedicalHindiActivity.class);
+                    intent = new Intent(MainActivitySliderHindi.this, Main52Activity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
+                    intent.putExtra("imageView2", maps[activeCardPosition % maps.length]);
                     intent.putExtra("textView2",address[activeCardPosition%address.length]);
                 }
                 if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP) {

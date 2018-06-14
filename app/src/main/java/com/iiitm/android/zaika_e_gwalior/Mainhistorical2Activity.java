@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Mainhistorical2Activity extends AppCompatActivity {
-    ImageView imageView;
+    ImageView imageView,imageView1;
     TextView textView3,textView5,textView35,textView8,textView10;
 
 
@@ -19,15 +19,17 @@ public class Mainhistorical2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2historical);
-        imageView = findViewById(R.id.imageView);
-        textView3 = findViewById(R.id.textView3);
-        textView5 = findViewById(R.id.textView5);
-        textView35 = findViewById(R.id.textView35);
-        textView8 = findViewById(R.id.textView8);
-        textView10 = findViewById(R.id.textView10);
+        imageView = (ImageView)findViewById(R.id.imageView);
+        imageView1 = (ImageView)findViewById(R.id.map2);
+        textView3 = (TextView)findViewById(R.id.textView3);
+        textView5 = (TextView)findViewById(R.id.textView5);
+        textView35 = (TextView)findViewById(R.id.textView35);
+        textView8 = (TextView)findViewById(R.id.textView8);
+        textView10 = (TextView)findViewById(R.id.textView10);
 
 
         imageView.setImageResource(getIntent().getIntExtra("imageView",00));
+        imageView1.setImageResource(getIntent().getIntExtra("imageView1",00));
         textView3.setText(getIntent().getStringExtra("textView1"));
         textView5.setText(getIntent().getStringExtra("textView2"));
         textView35.setText(getIntent().getStringExtra("textView3"));
@@ -35,10 +37,10 @@ public class Mainhistorical2Activity extends AppCompatActivity {
         textView10.setText(getIntent().getStringExtra("textView5"));
 
 
-        final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar);
+        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
         collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.holo_purple));
-        CardView cardView = findViewById(R.id.cardview3);
+        CardView cardView = (CardView)findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,15 +55,17 @@ public class Mainhistorical2Activity extends AppCompatActivity {
 
 
 
-        CardView cardView2 = findViewById(R.id.cardview6);
+        CardView cardView2 = (CardView)findViewById(R.id.cardview6);
 
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               String url= textView10.getText().toString();
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:url"));
-                startActivity(intent);
+                String phone;
+                phone=textView10.getText().toString();
+                String uri = "tel:" + phone.trim() ;
 
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(uri));
+                startActivity(intent);
             }
         });
 

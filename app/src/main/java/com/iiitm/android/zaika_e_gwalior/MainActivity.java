@@ -67,15 +67,15 @@ public class MainActivity extends AppCompatActivity {
     private void prepareMovieData() {
 
         int[] covers = new int[]{
-                R.drawable.newhistorical,
-                R.drawable.worship,
-                R.drawable.nbyp,
-                R.drawable.hotel,
-                R.drawable.medical,
-                R.drawable.newphone,
-                R.drawable.toilets,
-                R.drawable.about,
-                R.drawable.transpotation
+                R.drawable.jai_bg,
+                R.drawable.sun_bg,
+                R.drawable.orcha_bg,
+                R.drawable.hotels_bg,
+                R.drawable.mediacal_bg,
+                R.drawable.contact_bg,
+                R.drawable.toilets_bg,
+                R.drawable.aboutus_bg,
+               // R.drawable.transpotation
 
         };
 
@@ -103,8 +103,8 @@ public class MainActivity extends AppCompatActivity {
         adapterlist.add(a);
         a = new Adapter("Feedback",covers[7]);
         adapterlist.add(a);
-        a = new Adapter("Transportation",covers[8]);
-        adapterlist.add(a);
+//        a = new Adapter("Transportation",covers[8]);
+//        adapterlist.add(a);
 
 
     }

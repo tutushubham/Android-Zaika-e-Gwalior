@@ -123,11 +123,12 @@
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:id="@+id/map1"
                         android:layout_width="match_parent"
                         android:layout_height="210dp"
                         android:layout_margin="12dp"
-                        android:scaleType="fitXY"
 
+                        android:scaleType="fitXY"
                         android:src="@drawable/thumbnail" />
 
                     <TextView
