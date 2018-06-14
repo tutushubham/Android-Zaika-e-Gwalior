@@ -378,6 +378,7 @@ public class MainActivitySlider extends AppCompatActivity {
             if (clickedPosition == activeCardPosition) {
                 final Intent intent = new Intent(MainActivitySlider.this, Main2historicalActivity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
+                intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                 intent.putExtra("textView2",address[activeCardPosition%address.length]);
                 intent.putExtra("textView3",build[activeCardPosition%build.length]);

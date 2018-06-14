@@ -26,6 +26,8 @@ import android.widget.ViewSwitcher;
 
 import com.iiitm.android.zaika_e_gwalior.Main22Activity;
 import com.iiitm.android.zaika_e_gwalior.Main2historicalActivity;
+import com.iiitm.android.zaika_e_gwalior.Main52Activity;
+import com.iiitm.android.zaika_e_gwalior.Main82Activity;
 import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
@@ -33,41 +35,30 @@ import com.iiitm.android.zaika_e_gwalior.R;
 
 import java.util.Random;
 
-public class MainActivitySliderNear extends AppCompatActivity {
+public class MainActivitySliderMedical extends AppCompatActivity {
 
-    private final int[][] dotCoords = new int[7][2];
+    private final int[][] dotCoords = new int[12][2];
     private final int[] pics = {
-            R.drawable.td,
-            R.drawable.orchha,
-            R.drawable.mnp,
-            R.drawable.skm,
-            R.drawable.swf, R.drawable.chanderi, R.drawable.nsnactuary,
+            R.drawable.apoloh,
+            R.drawable.pariwarh,
+            R.drawable.navjeevanh,
+            R.drawable.kalyanmemorialh,
+            R.drawable.shaharah,
+            R.drawable.apex,
+            R.drawable.bimr,
+            R.drawable.charitbal,R.drawable.jaya,R.drawable.rkm,R.drawable.gcivilh,R.drawable.kamalraja,
+
 
     };
-    private final int[] maps ={R.drawable.map_tghra,R.drawable.map_orcha,R.drawable.map_madhav,R.drawable.map_satkhand,R.drawable.map_sultan,R.drawable.map_chanderi,R.drawable.map_chambal};
-    private final String[] descriptions = {"Tigra Dam creates a freshwater reservoir on the Sank River, about 23 km from Gwalior, Madhya Pradesh, India.It plays a crucial role in supplying water to the city"+"Water output from dam to the Motijheel Filtration Plant Gwalior" + "The dam is 24 metres high at its crest, and 1341 m long. The reservoir has a capacity of 4.8 million cubic metres and the spillway structure can pass up to 1274 cubic metres per second.A dam constructed on this site in 1916 failed on the afternoon of August 4, 1917, due to infiltration into its sandstone foundations. About 1000 people were killed downstream.",
+    private final int[] maps ={R.drawable.map_apolo,R.drawable.map_pariwar,R.drawable.map_navjeevan,R.drawable.map_kalyan,R.drawable.map_sahara,R.drawable.map_apex,R.drawable.map_bimr,R.drawable.map_anandpur,R.drawable.map_jaya,R.drawable.map_rk,R.drawable.map_govern,R.drawable.map_kamla};
+    private final String[] descriptions = {   "Apollo hospital offers superlative care in wide range of surgical specialties including General & Laparoscopic Surgery, Orthopaedic & Spine, Gynaecology, Ophthalmology, to name a few. In addition, the hospital provides comprehensive medical care in specialties like Nephrology, Neurology, Gastroenterology, Cardiology, Dental, Dermatology, Plastic & Cosmetic Surgery.", "Apollo hospital offers superlative care in wide range of surgical specialties including General & Laparoscopic Surgery, Orthopaedic & Spine, Gynaecology, Ophthalmology, to name a few. In addition, the hospital provides comprehensive medical care in specialties like Nephrology, Neurology, Gastroenterology, Cardiology, Dental, Dermatology, Plastic & Cosmetic Surgery.", " in Gwalior, Navjeevan Hospital is a recognized name in patient care. It was incepted in the year 2007. They are one of the well-known Private Hospitals in Moti Mahal Road. Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcaresuch as ICU with central oxygen supply & Multipara monitor ,Ultra modern operation theatres for surgical procedure , ICU with central oxygen supply & Multipara monitor , Ultra modern operation theatres for surgical procedure, Dialysis unit ,Medical Store,24 hours emergency facility,24 h ours Ambulance Service,Cashless and Mediclaim Insurance services ,Physiotherapy etc.", "Kalyan Memorial & KDJ Hospital is an upcomming hospital in gwalior. The hospital has a state of the art 100 bedded super specialty facility providing complete range of latest machines. It has a fully equipped Ortho and Trauma Unit, an emergency department and I.C.C for different facilities assisted  with round the clock post graduate doctors on duty supported Ventilator, Defibrillator, Multiparamonnitors and other Critical care equipment.","In Gwalior, Sahara Hospital is a recognized name in patient care. It was incepted in the year 2000. They are one of the well-known Hospitals in . Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities,", "In Gwalior,Apex Hospital is a recognized name in patient care. It is one of the well-known Private Hospitals in City Centre. Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities such as Dengue Fever Treatment ,Vaccination/Immunization ,Viral Fever Treatment,Diseases in Pregnancy ,General Pediatrics and etc.", "BIMR hospital provide many facilities such as Pharmacy,I.C.C.U., Neo-Natal Intermediate Ward with AHU, Post Operative Surgical Ward with AHU, Medical Intermediate Ward with AHU, Neuro I.C.U. and Neuro Surgery Center, Blood Bank, C.T. Scan, X-Ray (300 M.A.) with Digital Technology, Mobile X-Ray, Ultrasonography, NABL Accredited Laboratory services and etc.","Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities, they are one of the upcoming names in the healthcare industry. Located in , this hospital is easily accessible by various means of transport. A team of well-trained medical staff, non-medical staff and experienced clinical technicians work round-the-clock to offer various services . Their professional services make them a sought after Charitable Hospitals in Gwalior. A team of doctors on board, including specialists are equipped with the knowledge and expertise for handling various types of medical cases.", "At present the bed strength of Hospital is about 1200 beds. Hospital is equipped with the all the modern equipments.  It provide may facilities such as Neurosurgery,Spiral CT Scan and MR Imaging system,Chest Pain Treatment , Clinical Cardiology ,Heart Conditions,Skin Disease Treatment,Specialty Diagnostics in Tuberculosis ,Neurological Conditions ,Eye Checkup General ,Eye Surgery ,Bone Trauma ,Fracture Treatment and etc.","R K Memorial Heart Hospital and Medical Care Centre, Gwalior is among well-known hospital for valuable treatment.This hospital in Gwalior offers a lot of facilities for patient’s treatment like ambulance, ICU/general beds, Pharmacy, Canteen, etc.Along with above facilities, hospital is specialised for Cardiology.R K Memorial Heart Hospital and Medical Care Centre has specialist doctors practicing under different specializations.", "In Gwalior,Goverment  Civil Hospital is a recognized name in patient care. They are one of the well-known Hospitals . Backed with a vision to offer the best in patient care and equipped with technologically advanced healthcare facilities, they are one of the upcoming names in the healthcare industry. Located in , this hospital is easily accessible by various means of transport. A team of well-trained medical staff, non-medical staff and experienced clinical technicians work round-the-clock to offer various services . Their professional services make them a sought after Hospitals in Gwalior. A team of doctors on board, including specialists are equipped with the knowledge and expertise for handling various types of medical cases.","There is formation of new neonatology wing (nursery) and also the pediatric ICU with latest gazette. It has Gynaecology and obstetric wards, Children wards, Children ICU, children surgical ward, female Orthopaedics ward, female surgical and burn ward and female ENT ward.At present the hospital is about 450 bedded and has a pediatric ICU under the Pediatric Department, A Burn ward for female Burn patients under Dept. of Surgery and a sonology section in Dept. of Obstetrics and Gynaecology."};
+    private final String[] countries = {"Apolo Spectra","Pariwar Hospital","Navjeevan Hospital","Kalyan Hospital","Shahara Hospital","Apex Hospital","BIMR Hospital","Anandpur Charitable ","Jaya Arogya Hospital","R.K.Memorial Hospital","Government Hospital  "};
+    private final String[] places = {"Lashkar,Gwalior","Lashkar,Gwalior","Moti Mahal Road ,Gwalior","Lashkar,Gwalior","Vasant Vihar,Gwalior","Tagore Nagar,Gwalior","Morar,Gwalior","Purani Chhawani,Gwalior","Kampoo,Gwalior","Kherapati Road,Gwalior","Tansen Nagar,Gwalior","Lashkar,Gwalior"};
+    private final String[] times ={"24 Hours","24 Hours","24 Hours","24 Hours","24 Hours","24 Hours","8am-6am" ,"24 Hours","24 Hours","24 Hours","24 Hours","24 Hours"};
+    private final String[] address={"Lashkar, Gwalior, Madhya Pradesh 474002","Lashkar, Gwalior, Madhya Pradesh 474001","Moti Mahal Road, Gwalior, Madhya Pradesh 474002","Lashkar,Gwalior-474001, Hospital road","Vasant Vihar, Gwalior, Madhya Pradesh 474007"," Tagore Nagar, Anupam Nagar, Saraswati Nagar, Gwalior, Madhya Pradesh 474011","Morar,Gwalior,Madhya Pradesh 474005","NH 3, Purani Chhawani, Gwalior West, Madhya Pradesh 474010","J A Hospital Campus,Kampoo Gwalior - 474001"," Ravi Nagar,Behind Gda Ofiice,Kherapati Road.,Gwalior, Madhya Pradesh","Unnamed Road, Tansen Nagar, Gwalior, Madhya Pradesh 474002"," J. A. Hospital Campus, Lashkar, Gwalior, Madhya Pradesh 474009"};
+    private final String[] contact={"07512454600","07514047000","07514024081","07514006700","09926800870","07512340910","07512405617","07512401200"," 07512403200","07512630329","Not available","09425360494"};
 
-            "Orchha Fort is situated on the island on Betwa River. The scenic location apart, the fort has more to offer. It houses many palaces and temples. The three most important palaces seen here are Jahangir Mahal, Raj Mahal and the famous Rai Parveen Mahal. Jahangir Mahal reflects the architectural splendor that prevailed in Orchha in the past. The views from the multi-storeyed balconies in the palace are spectacular. Raj Mahal ranks amongst the most ancient historic monuments in Orchha fort.",
-
-            "Madhav National Park is situated in Shivpuri District of Gwalior region in northwest Madhya Pradesh, India.It was named after Madho Rao Scindia,the Maharaja of Gwalior belonging to the Scindia dynasty of the Marathas.It is the ancestral home of the line of ęAli Khan,a region based in Punjab,and most famous for the laws of commonly credited with defining modern day jurisprudence. Shivpuri town is located at 25°40' North, 77°44' East on Agra to Bombay National Highway-3. Shivpuri is steeped in the royal legacy of its past, when it was the summer capital of the Scindia rulers of Gwalior. Earlier its dense forests were the hunting grounds of the Mughal emperors and Maratha royals. Emperor Akbar captured herds of elephants for his stables while returning from Mandu in year 1564",
-
-            "Datia Palace also known as Bir Singh Palace or Bir Singh Dev Palace is situated nearly 75 km from Gwalior City in Madhya pradesh.The specialty of this palace is that it is of 7 floor.However neither member from the royal family did ever lived here. The founder of the Datia State in Bundelkhand - Maharaj Birsingh Deo Build many such 52 monuments all around the Country India. Datia's Palace or the Satkhanda Palace is also called Datia Mahal, as well as the Purana Mahal or the \"Old palace\", Historian Abdul Hamid Lahori came to this city with Shahan Jahan on 19 November 1635. He said that the palace was nearly 80 meters long and was also this much broad.He said this as a very beautiful and strong palace.",
-
-            "The mesmerizing waterfall in the region is the sultan garh waterfall.People’s oftenly visited this place in the rainy season due to the lush greenery in the region.The gathering of various colorful butterfly in the nearby region adds beauty to this place.The Sultan Garh Falls is an ideal picnic spot near Shivpuri,which is generally visited during the monsoon season.It is a natural waterfall on the River Parvati.The people visited this place to spend a whole day with family because of its panoramic beauty and easy location.",
-
-            "Chanderi is a town of historic importance right from the time of Malwa Sultans and Bundela Rajputs, who ruled the region in 15th and 16th century. Surrounded by exotic hills, lakes, and forest, this attractive destination is incredibly famous for Chanderi saris and historic monuments that draw a large number of tourists to this place every year. Also, the great Jain monuments and their fascinating culture make Chanderi, one of the most preffered tourist destinations in Madhya Pardesh. There are many things that boost Tourism in Chanderi like Chanderi Fort, Chanderi museum, Jain palaces, and exquisite lakes.",
-
-            "This is a perfect destination for the wildlife enthusiasts. It is a habitat of some of the most endangered species, but the main attraction here are, Gharial, Red crowned turtles, Gangetic Dolphins, Indian skimmers, among others.The beautiful sanctuary is surrounded by the Chambal river, known to be one of the cleanest river of India. It provides you a combination of a unique and unpolluted habitat, abundant wildlife and amazing landscapes, medieval temples and magnificent ancient ruins, animal fairs and naga sadhus, far far away from the chaos of the city. Tourists usually rent a motorized boat and go up and down the river as it flows through the ravines which makes for a serene experience. The boatmen are excellent at maneuvering as close to the birds and animals as possible without disturbing them to give you the opportunity to sight beautiful animals facilities",
-    };
-    private final String[] countries = {"Tighra Dam","Orchha","Madhav National Park","Satkhand Mahal ","Sultangadh Waterfall","Chanderi","Chambal Sanctuary"};
-    private final String[] places = {"Tighra,M.P.","Orchha,Gwalior","Shivpuri,M.P.","Datiya,M.P.","Shivpuri,M.P"," Ashoknagar,M.P"," Dholpur (Rajasthan)"};
-    private final String[] times ={"7A.M-7P.m","08:00 am - 08:00 pm","06:00 am - 05:00 pm","08:00 am- 11:00 pm","10:00 am - 06:00 pm","10:00 am - 06:00 pm","05:00 am - 07:00 pm"};
-    private final String[] address={"Tighra,Gwalior 474001","Kanchanghat, Distt. Tikamgarh, Orachha, Madhya Pradesh 472246","Shivpuri-Jhansi Road,M.P 473551","Datiya-Jhansi Road,M.P.","Shivpuri,M.p. 475330"," Ashoknagar District,Madhya Pradesh"," Dhaulpur ,Madhya Pradesh"};
-    private final String[] facilities={"Boating and water scooter","Cafe and restaurent including indian,chinese and continental","Boating,Hotel and Cafe","Hotel and Shopping","Bike Riding","Hotels and Shopping","Jeep safari, this national park offers river safari, bicycle ride, camel safari."};
-    private final String [] timeVisit={"Summer Season","Summer Season","Winter Season","Any Time","Winter Season"," winter between October and April","Nov-Mar is the best time to visit."};
-    private final String[] fee={"Not Applicable","Not Applicable","15Rs/Person","Not Applicable","Not Applicable","Not Applicable"," Indians: 50INR , Foreigners: 600INR"};
-
-    private final SliderAdapter sliderAdapter = new SliderAdapter(pics, 7, new OnCardClickListener());
+    private final SliderAdapter sliderAdapter = new SliderAdapter(pics, 12, new OnCardClickListener());
 
     private CardSliderLayoutManager layoutManger;
     private RecyclerView recyclerView;
@@ -283,12 +274,12 @@ public class MainActivitySliderNear extends AppCompatActivity {
 //        temperatureSwitcher.setOutAnimation(MainActivitySlider.this, animH[1]);
 //        temperatureSwitcher.setText(temperatures[pos % temperatures.length]);
 
-        placeSwitcher.setInAnimation(MainActivitySliderNear.this, animV[0]);
-        placeSwitcher.setOutAnimation(MainActivitySliderNear.this, animV[1]);
+        placeSwitcher.setInAnimation(MainActivitySliderMedical.this, animV[0]);
+        placeSwitcher.setOutAnimation(MainActivitySliderMedical.this, animV[1]);
         placeSwitcher.setText(places[pos % places.length]);
 
-        clockSwitcher.setInAnimation(MainActivitySliderNear.this, animV[0]);
-        clockSwitcher.setOutAnimation(MainActivitySliderNear.this, animV[1]);
+        clockSwitcher.setInAnimation(MainActivitySliderMedical.this, animV[0]);
+        clockSwitcher.setOutAnimation(MainActivitySliderMedical.this, animV[1]);
         clockSwitcher.setText(times[pos % times.length]);
 
         descriptionsSwitcher.setText(descriptions[pos % descriptions.length]);
@@ -328,14 +319,14 @@ public class MainActivitySliderNear extends AppCompatActivity {
         @SuppressWarnings("deprecation")
         @Override
         public View makeView() {
-            final TextView textView = new TextView(MainActivitySliderNear.this);
+            final TextView textView = new TextView(MainActivitySliderMedical.this);
 
             if (center) {
                 textView.setGravity(Gravity.CENTER);
             }
 
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-                textView.setTextAppearance(MainActivitySliderNear.this, styleId);
+                textView.setTextAppearance(MainActivitySliderMedical.this, styleId);
             } else {
                 textView.setTextAppearance(styleId);
             }
@@ -348,7 +339,7 @@ public class MainActivitySliderNear extends AppCompatActivity {
     private class ImageViewFactory implements ViewSwitcher.ViewFactory {
         @Override
         public View makeView() {
-            final ImageView imageView = new ImageView(MainActivitySliderNear.this);
+            final ImageView imageView = new ImageView(MainActivitySliderMedical.this);
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
             final LayoutParams lp = new ImageSwitcher.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
@@ -374,14 +365,14 @@ public class MainActivitySliderNear extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
-                final Intent intent = new Intent(MainActivitySliderNear.this, Main22Activity.class);
+                final Intent intent = new Intent(MainActivitySliderMedical.this, Main52Activity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
-                intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                 intent.putExtra("textView2",address[activeCardPosition%address.length]);
-                intent.putExtra("textView3",facilities[activeCardPosition%facilities.length]);
-                intent.putExtra("textView4",timeVisit[activeCardPosition%timeVisit.length]);
-                intent.putExtra("textView5",fee[activeCardPosition%fee.length]);
+
+                ; intent.putExtra("imageView2", maps[activeCardPosition % maps.length]);
+                intent.putExtra("textView3",contact[activeCardPosition%contact.length]);
+
 
 
                 if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
@@ -390,7 +381,7 @@ public class MainActivitySliderNear extends AppCompatActivity {
                     final CardView cardView = (CardView) view;
                     final View sharedView = cardView.getChildAt(cardView.getChildCount() - 1);
                     final ActivityOptions options = ActivityOptions
-                            .makeSceneTransitionAnimation(MainActivitySliderNear.this, sharedView, "shared");
+                            .makeSceneTransitionAnimation(MainActivitySliderMedical.this, sharedView, "shared");
                     startActivity(intent, options.toBundle());
                 }
             } else if (clickedPosition > activeCardPosition) {

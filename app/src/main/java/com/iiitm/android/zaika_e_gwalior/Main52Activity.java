@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Main52Activity extends AppCompatActivity {
-    ImageView imageView;
+    ImageView imageView,imageView1;
     TextView textView3,textView5,textView35,textView8,textView10;
 
 
@@ -20,6 +20,7 @@ public class Main52Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main52);
         imageView = (ImageView)findViewById(R.id.imageView);
+        imageView1 = (ImageView)findViewById(R.id.map1);
         textView3 = (TextView)findViewById(R.id.textView3);
         textView5 = (TextView)findViewById(R.id.textView5);
        // textView35 = (TextView)findViewById(R.id.textView35);
@@ -27,6 +28,7 @@ public class Main52Activity extends AppCompatActivity {
         textView10 = (TextView)findViewById(R.id.textView10);
 
         imageView.setImageResource(getIntent().getIntExtra("imageView",00));
+        imageView1.setImageResource(getIntent().getIntExtra("imageView2",00));
         textView3.setText(getIntent().getStringExtra("textView1"));
         textView5.setText(getIntent().getStringExtra("textView2"));
       //  textView35.setText(getIntent().getStringExtra("textView3"));
@@ -57,9 +59,13 @@ public class Main52Activity extends AppCompatActivity {
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url= textView10.getText().toString();
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:url"));
+                String phone;
+                phone=textView10.getText().toString();
+                String uri = "tel:" + phone.trim() ;
+
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(uri));
                 startActivity(intent);
+
 
             }
         });
