@@ -61,7 +61,7 @@
         <activity android:name=".cardslidertry.MainActivitySliderWorship" />
         <activity android:name=".cardslidertry.MainActivitySliderNear" />
         <activity android:name=".cardslidertry.MainActivitySliderHotels" />
-        <activity android:name=".cardslidertry.MainActivitySliderMedical"></activity>
+        <activity android:name=".cardslidertry.MainActivitySliderMedical"/>
     </application>
 
 </manifest>
