@@ -8,7 +8,6 @@
 
     <application
         android:allowBackup="true"
-        android:hardwareAccelerated="false"
         android:icon="@drawable/appicon"
         android:label="Gwalior-Jharokha"
         android:largeHeap="true"
@@ -22,45 +21,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".MainfoodActivity" />
-        <activity android:name=".MainhistoricalActivity" />
-        <activity android:name=".MainworshipActivity" />
-        <activity android:name=".MainshoppingActivity" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity" />
-        <activity android:name=".Main4Activity" />
-        <activity android:name=".Main5Activity" />
-        <activity android:name=".Mainfood2Activity" />
-        <activity android:name=".Mainhistorical2Activity" />
-        <activity android:name=".Mainworship2Activity" />
-        <activity android:name=".Mainshopping2Activity" />
-        <activity android:name=".Main22Activity" />
-        <activity android:name=".Main32Activity" />
-        <activity android:name=".Main52Activity" />
-        <activity android:name=".Main42Activity" />
-        <activity android:name=".Main6Activity" />
-        <activity android:name=".Main7Activity" />
-        <activity android:name=".Main8Activity" />
-        <activity android:name=".Main9Activity" />
-        <activity android:name=".Main82Activity" />
-        <activity android:name=".MaintransportationActivity" />
-        <activity android:name=".Main10Activity" />
-        <activity android:name=".Main11Activity" />
-        <!--<activity android:name=".Main12Activity" />-->
-        <activity android:name=".worshipHindiActivity" />
-        <activity android:name=".Main122Activity" />
-        <activity android:name=".NearByPlacesHindiActivity" />
-        <activity android:name=".HotelsHindiActivity" />
+        <activity android:name=".MainEnglishActivity" />
+        <activity android:name=".HistoricalActivity" />
+        <activity android:name=".WorshipActivity" />
+        <activity android:name=".NearbyActivity" />
+        <activity android:name=".MedicalActivity" />
+        <activity android:name=".KeyNumberActivity" />
+        <activity android:name=".EnglishAboutActivity" />
+        <activity android:name=".ToiletActivity" />
+        <activity android:name=".HotelActivity" />
+        <activity android:name=".LanguageScreen" />
+        <activity android:name=".MainHindiActivity" />
         <activity android:name=".ToiletsHindiActivity" />
-        <activity android:name=".MedicalHindiActivity" />
         <activity android:name=".KeyNumbersHindiActivity" />
-        <activity android:name=".FeedbackHindiActivity" />
-        <activity android:name=".TransportationHindiActivity" />
+        <activity android:name=".HindiAboutActivity" />
         <activity android:name=".cardslidertry.MainActivitySliderHistorical" />
         <activity android:name=".cardslidertry.MainActivitySliderWorship" />
         <activity android:name=".cardslidertry.MainActivitySliderNear" />
-        <activity android:name=".cardslidertry.MainActivitySliderHotels"></activity>
+        <activity android:name=".cardslidertry.MainActivitySliderHotels" />
+        <activity android:name=".cardslidertry.MainActivitySliderMedical" />
         <activity android:name=".cardslidertry.MainActivitySliderHindi" />
     </application>
 

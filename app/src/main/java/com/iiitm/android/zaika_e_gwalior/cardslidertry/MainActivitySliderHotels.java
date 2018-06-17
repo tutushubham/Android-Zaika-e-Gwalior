@@ -24,7 +24,7 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.iiitm.android.zaika_e_gwalior.Main82Activity;
+import com.iiitm.android.zaika_e_gwalior.HotelActivity;
 import com.iiitm.android.zaika_e_gwalior.R;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
@@ -364,7 +364,7 @@ public class MainActivitySliderHotels extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
-                final Intent intent = new Intent(MainActivitySliderHotels.this, Main82Activity.class);
+                final Intent intent = new Intent(MainActivitySliderHotels.this, HotelActivity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                 intent.putExtra("textView2",address[activeCardPosition%address.length]);

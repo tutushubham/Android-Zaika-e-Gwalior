@@ -10,11 +10,7 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Shivam on 12/19/2017.
- */
-
-public class KeyNumbersHindiActivity extends AppCompatActivity{
+public class KeyNumberActivity extends AppCompatActivity {
 
     List<Adapterkey> adapterkeyList = new ArrayList<>();
     Context mContext;
@@ -26,7 +22,7 @@ public class KeyNumbersHindiActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainkeynum);
         Toolbar toolbar= findViewById(R.id.toolbar);
-        toolbar.setTitle("महत्वपूर्ण फोन नंबर ");
+        toolbar.setTitle("Key Numbers");
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -37,32 +33,32 @@ public class KeyNumbersHindiActivity extends AppCompatActivity{
     }
 
     private void prepareMovieData() {
-        Adapterkey a = new Adapterkey("पुलिस कंट्रोल रूम","07512445222");
+        Adapterkey a = new Adapterkey("Police Control Room","07512445222");
         adapterkeyList.add(a);
 
-        a = new Adapterkey("रोगी वाहन","09914111122");
+        a = new Adapterkey("Ambulance","09914111122");
         adapterkeyList.add(a);
-        a = new Adapterkey("अग्निशामक दल","07512342101");
+        a = new Adapterkey("Fire Brigade","07512342101");
         adapterkeyList.add(a);
-        a = new Adapterkey("महिला हेल्पलाइन","07049112018");
+        a = new Adapterkey("Women Helpline","07049112018");
         adapterkeyList.add(a);
-        a = new Adapterkey("बाल हेल्पलाइन","1098");
+        a = new Adapterkey("Child Helpline","1098");
         adapterkeyList.add(a);
-        a = new Adapterkey("आयुक्त हेल्पलाइन","07512438387");
+        a = new Adapterkey("Commisioner Helpline","07512438387");
         adapterkeyList.add(a);
-        a = new Adapterkey("कलेक्टर हेल्पलाइन","07512446200");
+        a = new Adapterkey("Collector Helpline","07512446200");
         adapterkeyList.add(a);
-        a = new Adapterkey("सुपरपरेंटेंट पुलिस हेल्पलाइन","07512445200");
+        a = new Adapterkey("Suprintendent Police Helpline","07512445200");
         adapterkeyList.add(a);
-        a = new Adapterkey("मेयर हेल्पलाइन","07514011151");
+        a = new Adapterkey("Mayer Helpline","07514011151");
         adapterkeyList.add(a);
-        a = new Adapterkey("एयर वेे बुकिंग","07512326872");
+        a = new Adapterkey("Air Ways Booking","07512326872");
         adapterkeyList.add(a);
-        a = new Adapterkey("रेलवे जांच","131");
+        a = new Adapterkey("Railways Enquiry","131");
         adapterkeyList.add(a);
-        a = new Adapterkey("बस स्टैंड पूछताछ","07512341350");
+        a = new Adapterkey("Bus Stand Enquiry","07512341350");
         adapterkeyList.add(a);
-        a = new Adapterkey("एयर वेे बुकिंग","07512326872");
+        a = new Adapterkey("Air Ways Booking","07512326872");
         adapterkeyList.add(a);
 
 

@@ -7,10 +7,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
-import com.iiitm.android.zaika_e_gwalior.Adaptertoilets;
-import com.iiitm.android.zaika_e_gwalior.MovieAdaptertoilets;
-import com.iiitm.android.zaika_e_gwalior.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +23,7 @@ public class ToiletsHindiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main9);
+        setContentView(R.layout.activity_maintoilet);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

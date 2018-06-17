@@ -24,10 +24,10 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
+import com.iiitm.android.zaika_e_gwalior.R;
+import com.iiitm.android.zaika_e_gwalior.WorshipActivity;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
-import com.iiitm.android.zaika_e_gwalior.R;
 
 import java.util.Random;
 
@@ -379,7 +379,7 @@ public class MainActivitySliderWorship extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
-                final Intent intent = new Intent(MainActivitySliderWorship.this, Mainworship2Activity.class);
+                final Intent intent = new Intent(MainActivitySliderWorship.this, WorshipActivity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                 intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);

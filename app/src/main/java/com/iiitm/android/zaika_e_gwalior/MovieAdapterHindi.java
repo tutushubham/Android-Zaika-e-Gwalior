@@ -113,14 +113,14 @@ public class MovieAdapterHindi extends RecyclerView.Adapter<MovieAdapterHindi.My
             }
             if(position==7){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, FeedbackHindiActivity.class);
+                Intent intent = new Intent(this.mContext, HindiAboutActivity.class);
                 this.mContext.startActivity(intent);
             }
-            if(position==8){
+            /*if(position==8){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, TransportationHindiActivity.class);
+                Intent intent = new Intent(this.mContext, RedundantTransport.class);
                 this.mContext.startActivity(intent);
-            }
+            }*/
 
         }
     }
