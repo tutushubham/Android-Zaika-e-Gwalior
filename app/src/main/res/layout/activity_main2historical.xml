@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinator"
-    tools:context="com.iiitm.android.zaika_e_gwalior.MainfoodActivity">
+    tools:context="com.iiitm.android.zaika_e_gwalior.Mainhistorical2Activity">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
