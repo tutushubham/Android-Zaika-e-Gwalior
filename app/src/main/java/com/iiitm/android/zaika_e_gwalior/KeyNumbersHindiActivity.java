@@ -7,6 +7,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.iiitm.android.zaika_e_gwalior.Adapterkey;
+import com.iiitm.android.zaika_e_gwalior.Movieadapterkey;
+import com.iiitm.android.zaika_e_gwalior.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,9 +29,9 @@ public class KeyNumbersHindiActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
-        Toolbar toolbar= (Toolbar)findViewById(R.id.toolbar);
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("महत्वपूर्ण फोन नंबर ");
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         movieadapterkey = new Movieadapterkey(adapterkeyList,this);

@@ -24,7 +24,6 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.iiitm.android.zaika_e_gwalior.Main2historicalActivity;
 import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
@@ -170,7 +169,7 @@ public class MainActivitySliderWorship extends AppCompatActivity {
 //        temperatureSwitcher.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivitySlider.this, Main2historicalActivity.class);
+//                Intent intent = new Intent(MainActivitySliderHistorical.this, Mainhistorical2Activity.class);
 //
 //                intent.putExtra("imageView",pics[currentPosition]);
 //                intent.putExtra("textView1",descriptions[currentPosition]);
@@ -285,8 +284,8 @@ public class MainActivitySliderWorship extends AppCompatActivity {
 
         setCountryText(countries[pos % countries.length], left2right);
 
-//        temperatureSwitcher.setInAnimation(MainActivitySlider.this, animH[0]);
-//        temperatureSwitcher.setOutAnimation(MainActivitySlider.this, animH[1]);
+//        temperatureSwitcher.setInAnimation(MainActivitySliderHistorical.this, animH[0]);
+//        temperatureSwitcher.setOutAnimation(MainActivitySliderHistorical.this, animH[1]);
 //        temperatureSwitcher.setText(temperatures[pos % temperatures.length]);
 
         placeSwitcher.setInAnimation(MainActivitySliderWorship.this, animV[0]);

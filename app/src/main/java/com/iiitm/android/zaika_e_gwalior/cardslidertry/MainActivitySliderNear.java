@@ -25,11 +25,9 @@ import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
 import com.iiitm.android.zaika_e_gwalior.Main22Activity;
-import com.iiitm.android.zaika_e_gwalior.Main2historicalActivity;
-import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
+import com.iiitm.android.zaika_e_gwalior.R;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
-import com.iiitm.android.zaika_e_gwalior.R;
 
 import java.util.Random;
 
@@ -164,7 +162,7 @@ public class MainActivitySliderNear extends AppCompatActivity {
 //        temperatureSwitcher.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivitySlider.this, Main2historicalActivity.class);
+//                Intent intent = new Intent(MainActivitySlider.this, Mainhistorical2Activity.class);
 //
 //                intent.putExtra("imageView",pics[currentPosition]);
 //                intent.putExtra("textView1",descriptions[currentPosition]);

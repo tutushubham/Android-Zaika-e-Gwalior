@@ -6,7 +6,7 @@ public class Adapterhindi {
 
     public  String name;
     public int image;
-    Adapterhindi(String name,int image)
+    public Adapterhindi(String name, int image)
     {
         this.name= name;
         this.image= image;

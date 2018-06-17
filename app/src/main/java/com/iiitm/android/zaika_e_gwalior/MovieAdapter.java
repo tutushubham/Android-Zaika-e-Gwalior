@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySlider;
+import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderHistorical;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderHotels;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderMedical;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderNear;
@@ -64,8 +64,8 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             this.adapterlist=adapterlist;
             this.mContext=mContext;
             itemView.setOnClickListener(this);
-            imageView = (ImageView)itemView.findViewById(R.id.imageView);
-            textView= (TextView)itemView.findViewById(R.id.textView);
+            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            textView= (TextView) itemView.findViewById(R.id.textView);
         }
 
         @Override
@@ -74,7 +74,7 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             if(position==0)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, MainActivitySlider.class); //historical
+                Intent intent = new Intent(this.mContext, MainActivitySliderHistorical.class); //historical
                 this.mContext.startActivity(intent);
             }
 

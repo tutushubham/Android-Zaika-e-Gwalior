@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.iiitm.android.zaika_e_gwalior.cardslidertry.MainActivitySliderHindi;
+
 import java.util.List;
 
 /**
@@ -60,8 +62,8 @@ public class MovieAdapterHindi extends RecyclerView.Adapter<MovieAdapterHindi.My
             this.adapterlist=adapterlist;
             this.mContext=mContext;
             itemView.setOnClickListener(this);
-            imageView = (ImageView)itemView.findViewById(R.id.imageView);
-            textView= (TextView)itemView.findViewById(R.id.textView);
+            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            textView= (TextView) itemView.findViewById(R.id.textView);
         }
 
         @Override
@@ -70,28 +72,33 @@ public class MovieAdapterHindi extends RecyclerView.Adapter<MovieAdapterHindi.My
             int position = getAdapterPosition();
             if(position==0){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, Main12Activity.class);
+                Intent intent = new Intent(this.mContext, MainActivitySliderHindi.class);
+                intent.putExtra("arg", position);
                 this.mContext.startActivity(intent);
             }
             if(position==1){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, worshipHindiActivity.class);
+                Intent intent = new Intent(this.mContext, MainActivitySliderHindi.class);
+                intent.putExtra("arg", position);
                 this.mContext.startActivity(intent);
             }
 
             if(position==2){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, NearByPlacesHindiActivity.class);
+                Intent intent = new Intent(this.mContext, MainActivitySliderHindi.class);
+                intent.putExtra("arg", position);
                 this.mContext.startActivity(intent);
             }
             if(position==3){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, HotelsHindiActivity.class);
+                Intent intent = new Intent(this.mContext, MainActivitySliderHindi.class);
+                intent.putExtra("arg", position);
                 this.mContext.startActivity(intent);
             }
             if(position==4){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, MedicalHindiActivity.class);
+                Intent intent = new Intent(this.mContext, MainActivitySliderHindi.class);
+                intent.putExtra("arg", position);
                 this.mContext.startActivity(intent);
             }
             if(position==5){
@@ -109,11 +116,11 @@ public class MovieAdapterHindi extends RecyclerView.Adapter<MovieAdapterHindi.My
                 Intent intent = new Intent(this.mContext, FeedbackHindiActivity.class);
                 this.mContext.startActivity(intent);
             }
-            if(position==8){
-                Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, TransportationHindiActivity.class);
-                this.mContext.startActivity(intent);
-            }
+//            if(position==8){
+//                Adapterhindi adapter = adapterlist.get(position);
+//                Intent intent = new Intent(this.mContext, TransportationHindiActivity.class);
+//                this.mContext.startActivity(intent);
+//            }
 
         }
     }

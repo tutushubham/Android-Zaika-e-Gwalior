@@ -16,9 +16,9 @@ public class Main42Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main42);
 
 
-        imageView = (ImageView)findViewById(R.id.imageView);
-        textView3 = (TextView)findViewById(R.id.textView3);
-        textView2 = (TextView)findViewById(R.id.textView2);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        textView3 = (TextView) findViewById(R.id.textView3);
+        textView2 = (TextView) findViewById(R.id.textView2);
 
         imageView.setImageResource(getIntent().getIntExtra("imageView",00));
         textView2.setText(getIntent().getStringExtra("textView1"));

@@ -7,7 +7,7 @@ package com.iiitm.android.zaika_e_gwalior;
 public class Adapterkey {
 
     public  String name1,name2;
-    Adapterkey(String name1,String name2)
+    public Adapterkey(String name1, String name2)
     {
         this.name1=name1;
         this.name2=name2;

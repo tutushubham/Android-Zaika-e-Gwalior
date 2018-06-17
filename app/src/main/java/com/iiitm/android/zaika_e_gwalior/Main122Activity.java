@@ -23,12 +23,12 @@ public class Main122Activity extends AppCompatActivity {
 
 
 
-        imageView = (ImageView)findViewById(R.id.imageView);
-        textView3 = (TextView)findViewById(R.id.textView3);
-        textView5 = (TextView)findViewById(R.id.textView5);
-        textView35 = (TextView)findViewById(R.id.textView35);
-        textView8 = (TextView)findViewById(R.id.textView8);
-        textView10 = (TextView)findViewById(R.id.textView10);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        textView3 = (TextView) findViewById(R.id.textView3);
+        textView5 = (TextView) findViewById(R.id.textView5);
+        textView35 = (TextView) findViewById(R.id.textView35);
+        textView8 = (TextView) findViewById(R.id.textView8);
+        textView10 = (TextView) findViewById(R.id.textView10);
 
 
         imageView.setImageResource(getIntent().getIntExtra("imageView",00));
@@ -42,7 +42,7 @@ public class Main122Activity extends AppCompatActivity {
         final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
         collapsingToolbarLayout.setTitle("ग्वालियर-झरोखा ");
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.holo_purple));
-        CardView cardView = (CardView)findViewById(R.id.cardview3);
+        CardView cardView = (CardView) findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,7 +57,7 @@ public class Main122Activity extends AppCompatActivity {
 
 
 
-        CardView cardView2 = (CardView)findViewById(R.id.cardview6);
+        CardView cardView2 = (CardView) findViewById(R.id.cardview6);
 
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override

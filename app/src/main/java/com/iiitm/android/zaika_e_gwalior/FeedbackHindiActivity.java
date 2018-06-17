@@ -3,6 +3,8 @@ package com.iiitm.android.zaika_e_gwalior;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.iiitm.android.zaika_e_gwalior.R;
+
 /**
  * Created by Shivam on 12/19/2017.
  */

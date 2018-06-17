@@ -57,10 +57,10 @@ public class MovieAdapterevent extends RecyclerView.Adapter <MovieAdapterevent.M
             this.adaptereventList=adaptereventList;
             this.mContext=mContext;
             itemView.setOnClickListener(this);
-            imageView = (ImageView)itemView.findViewById(R.id.imageView);
-            textView1= (TextView)itemView.findViewById(R.id.textView1);
-            textView2= (TextView)itemView.findViewById(R.id.textView2);
-            textView3= (TextView)itemView.findViewById(R.id.textView3);
+            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            textView1= (TextView) itemView.findViewById(R.id.textView1);
+            textView2= (TextView) itemView.findViewById(R.id.textView2);
+            textView3= (TextView) itemView.findViewById(R.id.textView3);
         }
 
         @Override

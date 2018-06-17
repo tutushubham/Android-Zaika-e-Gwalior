@@ -4,7 +4,7 @@ public class Adaptergharana {
 
     public int image;
     String name1,name2;
-      Adaptergharana(int image,String name1,String name2)
+      public Adaptergharana(int image, String name1, String name2)
       {
           this.image=image;
           this.name1=name1;

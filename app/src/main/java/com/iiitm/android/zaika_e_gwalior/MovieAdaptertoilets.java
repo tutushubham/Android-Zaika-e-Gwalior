@@ -58,10 +58,10 @@ public class MovieAdaptertoilets extends RecyclerView.Adapter<MovieAdaptertoilet
           this.adaptertoiletsList= adaptertoiletsList;
             this.mContext=mContext;
             itemView.setOnClickListener(this);
-            textView1= (TextView)itemView.findViewById(R.id.textView11);
-            textView2= (TextView)itemView.findViewById(R.id.textView12);
-            textView3= (TextView)itemView.findViewById(R.id.textView13);
-            textView4= (TextView)itemView.findViewById(R.id.textView14);
+            textView1= (TextView) itemView.findViewById(R.id.textView11);
+            textView2= (TextView) itemView.findViewById(R.id.textView12);
+            textView3= (TextView) itemView.findViewById(R.id.textView13);
+            textView4= (TextView) itemView.findViewById(R.id.textView14);
         }
 
         @Override

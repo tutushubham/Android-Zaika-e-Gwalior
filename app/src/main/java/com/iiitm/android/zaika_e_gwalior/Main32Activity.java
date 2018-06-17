@@ -19,12 +19,12 @@ public class Main32Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main32);
-        imageView = (ImageView)findViewById(R.id.imageView);
-        textView3 = (TextView)findViewById(R.id.textView3);
-        textView5 = (TextView)findViewById(R.id.textView5);
-        textView35 = (TextView)findViewById(R.id.textView35);
-        textView8 = (TextView)findViewById(R.id.textView8);
-        textView10 = (TextView)findViewById(R.id.textView10);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        textView3 = (TextView) findViewById(R.id.textView3);
+        textView5 = (TextView) findViewById(R.id.textView5);
+        textView35 = (TextView) findViewById(R.id.textView35);
+        textView8 = (TextView) findViewById(R.id.textView8);
+        textView10 = (TextView) findViewById(R.id.textView10);
 
 
         imageView.setImageResource(getIntent().getIntExtra("imageView",00));
@@ -38,7 +38,7 @@ public class Main32Activity extends AppCompatActivity {
         final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
         collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.holo_purple));
-        CardView cardView = (CardView)findViewById(R.id.cardview3);
+        CardView cardView = (CardView) findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
