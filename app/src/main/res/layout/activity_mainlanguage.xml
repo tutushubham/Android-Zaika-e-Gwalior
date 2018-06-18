@@ -21,7 +21,7 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Your Language"
+        android:text="@string/lang"
         android:textSize="40dp"
         android:textColor="#000"
         android:fontFamily="cursive"

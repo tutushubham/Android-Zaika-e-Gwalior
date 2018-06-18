@@ -42,6 +42,7 @@ public class HistoricalActivity extends AppCompatActivity {
         collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
         collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.black));
+
         CardView cardView = findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +58,6 @@ public class HistoricalActivity extends AppCompatActivity {
 
 
         CardView cardView2 = findViewById(R.id.cardview6);
-
         cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
