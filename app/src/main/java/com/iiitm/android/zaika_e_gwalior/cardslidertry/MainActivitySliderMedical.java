@@ -6,6 +6,7 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.DrawableRes;
@@ -160,6 +161,20 @@ public class MainActivitySliderMedical extends AppCompatActivity {
                 mapSwitcher.showNext();
             }
         };
+
+        mapSwitcher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final CardSliderLayoutManager lm =  (CardSliderLayoutManager) recyclerView.getLayoutManager();
+                final int activeCardPosition = lm.getActiveCardPosition();
+                String address1;
+                // address="City Centre, Opp Tadon Kothi, Gole ka Mandir, Kalpi Road, Gwalior, Madhya Pradesh 474005";
+                address1 = address[activeCardPosition%address.length];
+                String url = "http://maps.google.com/maps?daddr="+address1;
+                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,  Uri.parse(url));
+                startActivity(intent);
+            }
+        });
 
 //        temperatureSwitcher.setOnClickListener(new View.OnClickListener() {
 //            @Override

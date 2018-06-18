@@ -9,4 +9,13 @@
     <string name="hindiAbout">ग्वालियर-झरोख़ा एक एंड्रॉइड एप्लिकेशन है जो ग्वालियर के सबसे पुराना और ज्ञात व्यंजनों के बारे में विस्तृत जानकारी प्रदान करता है जो शहर को परिभाषित करता है। रेस्तरां और होटल के अलावा इन अमीर पुराने स्थान भोजन जोड़ों और सांस्कृतिक महत्व हैं जो शहर के स्वाद को परिभाषित करता है। मराठा, मुगल और उत्तर भारतीय खाद्य संस्कृति के मिश्रण के रूप में आरंभिक संस्करण 1 लॉन्च किया गया है और यह संस्करण केवल खाद्य स्थानों के बारे में जानकारी देता है। निकट भविष्य में अगले संस्करण का उद्देश्य सभी क्षेत्रों को विरासत, पूजा स्थल, संगीत घर और घटनाक्रम सिटी के रूप में लाने का लक्ष्य है।</string>
     <string name="hindiAboutTitle">एप्लिकेशन के बारे में</string>
     <string name="aboutTIIC">तकनीकी नवाचार एवं उद्भावन केन्द्र अटल बिहारी वाजपयी भारतीय सूचना प्रौद्योगिकी एवं प्रबंधन संस्थान, ग्वालियर ने 2008 में स्थापित किया था। एमपी एक्ट 1973 के तहत एक पंजीकृत समाज। आईआईटीएम संकाय मजबूत पूर्व छात्रों द्वारा उठाए गए प्रयासों के कारण यह केंद्र स्थापित किया गया है।</string>
+    <string name="history">History :</string>
+    <string name="how_to_reach">How to Reach :</string>
+    <string name="defaultlocation">Near Railway Station,Gwalior-474001</string>
+    <string name="build">Build :</string>
+    <string name="ticket">Ticket :</string>
+    <string name="contact">Contact :</string>
+    <string name="speciality">Speciality :</string>
+    <string name="cost">Cost per Night :</string>
+    <string name="lang">Select Your Language</string>
 </resources>
