@@ -6,9 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:elevation="3dp"
-        cardCornerRadius="0dp">
+        android:layout_margin="3dp"
+        cardCornerRadius="25dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -16,24 +15,32 @@
 
             <ImageView
                 android:id="@+id/imageView"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="165dp"
+                android:src="@drawable/sun_bg"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:scaleType="fitXY" />
+                />
 
-            <TextView
-                android:id="@+id/textView"
+
+            <Button
+                android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageView"
-                android:paddingLeft="7dp"
-                android:paddingRight="7dp"
-                android:paddingTop="8dp"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="2dp"
-                android:gravity="center"/>
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Button"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

@@ -25,23 +25,23 @@ public class ToiletsHindiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintoilet);
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        Toolbar toolbar= findViewById(R.id.toolbar);
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("शौचालय");
         movieAdaptertoilets = new MovieAdaptertoilets(adaptertoiletsList,this);
         recyclerView.setAdapter(movieAdaptertoilets);
         prepareMovieData();
 
-        hideNavigationBar();
+        //hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        hideNavigationBar();
+      //  hideNavigationBar();
     }
 
 

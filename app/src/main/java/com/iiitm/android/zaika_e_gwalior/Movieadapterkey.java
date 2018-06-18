@@ -59,8 +59,8 @@ public class Movieadapterkey extends RecyclerView.Adapter<Movieadapterkey.MyView
 
             itemView.setOnClickListener(this);
 
-            textView1= itemView.findViewById(R.id.textView1);
-            textView2= itemView.findViewById(R.id.textView2);
+            textView1= (TextView) itemView.findViewById(R.id.textView1);
+            textView2= (TextView) itemView.findViewById(R.id.textView2);
         }
 
         @Override

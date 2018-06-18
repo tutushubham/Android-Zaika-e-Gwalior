@@ -14,8 +14,8 @@ public class LanguageScreen extends AppCompatActivity {
         setContentView(R.layout.activity_mainlanguage);
 
 
-        but1 = findViewById(R.id.button2);
-        but2 = findViewById(R.id.button3);
+        but1 = (Button) findViewById(R.id.button2);
+        but2 = (Button) findViewById(R.id.button3);
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,13 +38,13 @@ public class LanguageScreen extends AppCompatActivity {
 
             }
         });
-        hideNavigationBar();
+        //hideNavigationBar();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        hideNavigationBar();
+      //  hideNavigationBar();
     }
 
 

@@ -9,6 +9,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
@@ -25,8 +26,8 @@ public class MainHindiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainhindi);
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,2);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
 
@@ -34,8 +35,8 @@ public class MainHindiActivity extends AppCompatActivity {
         recyclerView.setAdapter(movieAdapter);
 
 
-        final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar);
-        collapsingToolbarLayout.setTitle("ग्वालियर-झरोखा ");
+        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
+        collapsingToolbarLayout.setTitle("ग्वालियर झरोखा ");
         collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.black));
 
@@ -63,14 +64,14 @@ public class MainHindiActivity extends AppCompatActivity {
         prepareMovieData();
 
 
-        hideNavigationBar();
+        //hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        hideNavigationBar();
+       // hideNavigationBar();
     }
 
 

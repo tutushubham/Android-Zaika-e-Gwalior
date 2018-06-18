@@ -17,6 +17,7 @@
             android:layout_height="200dp"
             android:src="@drawable/iiitm"
             android:scaleType="fitXY"
+            android:alpha="0.4"
             android:id="@+id/imageView4" />
 
         <android.support.v7.widget.CardView

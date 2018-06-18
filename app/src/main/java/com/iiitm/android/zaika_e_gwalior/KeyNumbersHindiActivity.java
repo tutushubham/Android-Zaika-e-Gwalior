@@ -26,23 +26,23 @@ public class KeyNumbersHindiActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainkeynum);
-        Toolbar toolbar= findViewById(R.id.toolbar);
+        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("महत्वपूर्ण फोन नंबर ");
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         movieadapterkey = new Movieadapterkey(adapterkeyList,this);
         recyclerView.setAdapter(movieadapterkey);
 
         prepareMovieData();
-        hideNavigationBar();
+        //hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        hideNavigationBar();
+      //  hideNavigationBar();
     }
 
 

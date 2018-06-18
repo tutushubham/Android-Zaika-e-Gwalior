@@ -12,7 +12,7 @@
         android:layout_height="250dp"
         android:id="@+id/appbarlayout"
         android:fitsSystemWindows="true"
-        android:background="#ffe5e5e5"
+        android:background="@color/colorPrimary"
 
         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 

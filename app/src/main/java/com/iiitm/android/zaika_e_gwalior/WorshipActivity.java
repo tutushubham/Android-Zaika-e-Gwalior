@@ -20,10 +20,10 @@
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainworship);
-        imageView = findViewById(R.id.imageView);
-        imageView1 = findViewById(R.id.map5);
-        textView3 = findViewById(R.id.textView3);
-        textView5 = findViewById(R.id.textView5);
+        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView1 = (ImageView) findViewById(R.id.map5);
+        textView3 = (TextView) findViewById(R.id.textView3);
+        textView5 = (TextView) findViewById(R.id.textView5);
        /* textView35 = (TextView)findViewById(R.id.textView35);
         textView8 = (TextView)findViewById(R.id.textView8);
         textView10 = (TextView)findViewById(R.id.textView10);*/
@@ -37,13 +37,13 @@
         textView10.setText(getIntent().getStringExtra("textView5"));*/
 
 
-        final CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsingtoolbar);
-        collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
+        final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
+        collapsingToolbarLayout.setTitle("Gwalior झरोखा");
         collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.black));
 
 
-        CardView cardView = findViewById(R.id.cardview3);
+        CardView cardView = (CardView) findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,14 +56,14 @@
             }
         });
 
-        hideNavigationBar();
+        //hideNavigationBar();
 
     }
 
       @Override
       protected void onResume() {
           super.onResume();
-          hideNavigationBar();
+          //hideNavigationBar();
       }
 
 

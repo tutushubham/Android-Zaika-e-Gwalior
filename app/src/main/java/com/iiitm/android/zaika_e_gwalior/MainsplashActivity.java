@@ -22,9 +22,9 @@ public class MainsplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainsplash);
 
-        mGwalior= findViewById(R.id.textView);
-        mJharokha= findViewById(R.id.textView2);
-        mSpalah= findViewById(R.id.imageView);
+        mGwalior= (TextView) findViewById(R.id.textView);
+        mJharokha= (TextView) findViewById(R.id.textView2);
+        mSpalah= (ImageView) findViewById(R.id.imageView);
 
         // load the animation
         animFadein = AnimationUtils.loadAnimation(getApplicationContext(),
@@ -52,14 +52,14 @@ public class MainsplashActivity extends AppCompatActivity {
 
         };
         thread.start();
-        hideNavigationBar();
+        //hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        hideNavigationBar();
+      //  hideNavigationBar();
     }
 
 
