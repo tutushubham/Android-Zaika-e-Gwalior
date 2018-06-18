@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="blue">#348af7</color>
+    <color name="black">#FF000000</color>
 
     <color name="temperature_background">@color/blue</color>
     <color name="temperature_text">@android:color/white</color>

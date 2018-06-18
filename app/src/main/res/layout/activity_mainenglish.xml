@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinator"
+    android:background="#ffe5e5e5"
     tools:context="com.iiitm.android.zaika_e_gwalior.MainEnglishActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -12,7 +13,7 @@
         android:layout_height="250dp"
         android:id="@+id/appbarlayout"
         android:fitsSystemWindows="true"
-        android:background="@android:color/holo_purple"
+        android:background="#ffe5e5e5"
         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -27,7 +28,9 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/gwaliorf"
                 android:id="@+id/imageview"
-                app:layout_collapseMode="parallax"/>
+                android:alpha="0.4"
+                android:background="#ffe5e5e5"
+                app:layout_collapseMode="parallax" />
             <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
