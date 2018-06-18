@@ -24,13 +24,10 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.iiitm.android.zaika_e_gwalior.Main22Activity;
-//import com.iiitm.android.zaika_e_gwalior.Main2historicalActivity;
-import com.iiitm.android.zaika_e_gwalior.Main82Activity;
-import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
+import com.iiitm.android.zaika_e_gwalior.HotelActivity;
+import com.iiitm.android.zaika_e_gwalior.R;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
-import com.iiitm.android.zaika_e_gwalior.R;
 
 import java.util.Random;
 
@@ -157,7 +154,7 @@ public class MainActivitySliderHotels extends AppCompatActivity {
 //        temperatureSwitcher.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivitySlider.this, Main2historicalActivity.class);
+//                Intent intent = new Intent(MainActivitySlider.this, Mainhistorical2Activity.class);
 //
 //                intent.putExtra("imageView",pics[currentPosition]);
 //                intent.putExtra("textView1",descriptions[currentPosition]);
@@ -367,7 +364,7 @@ public class MainActivitySliderHotels extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
-                final Intent intent = new Intent(MainActivitySliderHotels.this, Main82Activity.class);
+                final Intent intent = new Intent(MainActivitySliderHotels.this, HotelActivity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                 intent.putExtra("textView2",address[activeCardPosition%address.length]);

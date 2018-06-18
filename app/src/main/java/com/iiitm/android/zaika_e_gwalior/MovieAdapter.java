@@ -105,19 +105,19 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             if(position==5)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, Main6Activity.class);
+                Intent intent = new Intent(this.mContext, KeyNumberActivity.class);
                 this.mContext.startActivity(intent);
             }
             if(position==6)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, Main9Activity.class);
+                Intent intent = new Intent(this.mContext, ToiletActivity.class);
                 this.mContext.startActivity(intent);
             }
             if(position==7)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, Main7Activity.class);
+                Intent intent = new Intent(this.mContext, EnglishAboutActivity.class);
                 this.mContext.startActivity(intent);
             }
            /*if(position==8)
@@ -135,13 +135,13 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             if(position==10)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, Main9Activity.class);
+                Intent intent = new Intent(this.mContext, ToiletActivity.class);
                 this.mContext.startActivity(intent);
             }
             if(position==11)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, Main7Activity.class);
+                Intent intent = new Intent(this.mContext, EnglishAboutActivity.class);
                 this.mContext.startActivity(intent);
             }*/
 

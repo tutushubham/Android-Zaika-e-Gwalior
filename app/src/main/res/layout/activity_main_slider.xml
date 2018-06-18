@@ -47,7 +47,7 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="210dp"
-        android:layout_marginTop="18dp"
+        android:layout_margin="12dp"
         android:layout_marginStart="@dimen/recycler_view_left_offset"
         android:clipChildren="true"
         android:overScrollMode="never"
@@ -81,55 +81,60 @@
     </FrameLayout>
 
     <RelativeLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:animateLayoutChanges="true">
 
         <ImageSwitcher
             android:id="@+id/ts_map"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/timeset"
+            android:layout_margin="12dp" />
 
-        <View
+        <!--<View
             android:id="@+id/gradient_top"
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@android:color/white"/>
+            android:layout_height="90dp" />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/gradient_map"
-            android:layout_below="@+id/gradient_top"/>
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="55dp" />-->
 
         <TextSwitcher
             android:id="@+id/ts_description"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_marginStart="@dimen/left_offset"
-            android:layout_marginEnd="10dp"/>
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="@dimen/left_offset" />
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_below="@id/ts_description">
+            android:id="@+id/timeset"
+            android:layout_below="@id/ts_description"
+            android:layout_marginTop="10dp">
 
             <ImageView
                 android:layout_width="13dp"
                 android:layout_height="13dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="30dp"
-                android:src="@drawable/clock"
-                android:scaleType="fitCenter"/>
+                android:scaleType="fitCenter"
+                android:src="@drawable/clock" />
 
             <TextSwitcher
                 android:id="@+id/ts_clock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/left_offset"/>
+                android:layout_marginStart="@dimen/left_offset" />
 
         </FrameLayout>
 
@@ -141,14 +146,14 @@
             <View
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:background="@drawable/green_dot_big"
-                android:alpha="0.5"/>
+                android:alpha="0.5"
+                android:background="@drawable/green_dot_big" />
 
             <View
                 android:layout_width="14dp"
                 android:layout_height="14dp"
                 android:layout_gravity="center"
-                android:background="@drawable/green_dot_small"/>
+                android:background="@drawable/green_dot_small" />
 
         </FrameLayout>
 

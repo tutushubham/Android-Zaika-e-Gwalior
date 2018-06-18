@@ -24,10 +24,10 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.iiitm.android.zaika_e_gwalior.Main52Activity;
+import com.iiitm.android.zaika_e_gwalior.MedicalActivity;
+import com.iiitm.android.zaika_e_gwalior.R;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
-import com.iiitm.android.zaika_e_gwalior.R;
 
 import java.util.Random;
 
@@ -361,12 +361,12 @@ public class MainActivitySliderMedical extends AppCompatActivity {
 
             final int clickedPosition = recyclerView.getChildAdapterPosition(view);
             if (clickedPosition == activeCardPosition) {
-                final Intent intent = new Intent(MainActivitySliderMedical.this, Main52Activity.class);
+                final Intent intent = new Intent(MainActivitySliderMedical.this, MedicalActivity.class);
                 intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                 intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                 intent.putExtra("textView2",address[activeCardPosition%address.length]);
 
-                ; intent.putExtra("imageView2", maps[activeCardPosition % maps.length]);
+                intent.putExtra("imageView2", maps[activeCardPosition % maps.length]);
                 intent.putExtra("textView3",contact[activeCardPosition%contact.length]);
 
 

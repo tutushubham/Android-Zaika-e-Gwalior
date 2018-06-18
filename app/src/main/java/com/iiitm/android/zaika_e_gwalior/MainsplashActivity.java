@@ -40,7 +40,7 @@ public class MainsplashActivity extends AppCompatActivity {
 
                 try {
                     sleep(4000);
-                    Intent intent = new Intent(MainsplashActivity.this, Main10Activity.class);
+                    Intent intent = new Intent(MainsplashActivity.this, LanguageScreen.class);
                     startActivity(intent);
                     finish();
                 } catch (InterruptedException e) {

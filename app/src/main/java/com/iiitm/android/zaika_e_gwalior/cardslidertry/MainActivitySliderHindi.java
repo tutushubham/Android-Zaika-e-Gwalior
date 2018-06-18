@@ -24,12 +24,12 @@ import android.widget.TextSwitcher;
 import android.widget.TextView;
 import android.widget.ViewSwitcher;
 
-import com.iiitm.android.zaika_e_gwalior.Main22Activity;
-import com.iiitm.android.zaika_e_gwalior.Main52Activity;
-import com.iiitm.android.zaika_e_gwalior.Main82Activity;
-import com.iiitm.android.zaika_e_gwalior.Mainhistorical2Activity;
-import com.iiitm.android.zaika_e_gwalior.Mainworship2Activity;
+import com.iiitm.android.zaika_e_gwalior.HistoricalActivity;
+import com.iiitm.android.zaika_e_gwalior.HotelActivity;
+import com.iiitm.android.zaika_e_gwalior.MedicalActivity;
+import com.iiitm.android.zaika_e_gwalior.NearbyActivity;
 import com.iiitm.android.zaika_e_gwalior.R;
+import com.iiitm.android.zaika_e_gwalior.WorshipActivity;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.cards.SliderAdapter;
 import com.iiitm.android.zaika_e_gwalior.cardslidertry.utils.DecodeBitmapTask;
 
@@ -41,13 +41,8 @@ public class MainActivitySliderHindi extends AppCompatActivity {
     private final int[][] dotCoords = new int[27][2];
 
     int[] pics,maps;
-    String[] descriptions, countries, places, times, address, build, ticket, contact, timeVisit, fee, facilities;
+    String[] descriptions, name, places, times, address, build, ticket, contact, timeVisit, fee, facilities;
     //String s=""+option1;
-
-
-
-
-
     //final SliderAdapter sliderAdapter = new SliderAdapter(pics, 28, new OnCardClickListener());
     SliderAdapter sliderAdapter;
     private CardSliderLayoutManager layoutManger;
@@ -106,7 +101,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     "बाद में, मन सिंह तोमर ने मुस्लिम शासकों के प्रवास के लिए 15-16 वीं शताब्दी एडी में एक सराई का निर्माण किया। जौनपुर के शासक हुसैनशाह शंकी यहां रहे। \n" +
                     "यहां एक मस्जिद भी मौजूद थी। अब केवल द्वार जीवित है।", "ग्वालियर (मध्य प्रदेश)", "लद्देदी गेट अयोध्या के प्रशासक लद्दाखन द्वारा बनाया गया था।"};
 
-            countries = new String[]{"ग्वालियर किला", "जय विलास पैलेश", "गोपाचल पर्वत", "मानसिंह महल", "सहस्त्र बाहु मंदिर", "सुरजकुण्ड", "सिंधिया म्यूजियम", "गुजरी महल म्यूजियम", "मोहम्मद गौस का मकबरा", "कर्ण महल", "जहांगीर-शाहजहाँ महल", "जौहर कुंड", "Mमोतीमहल", "हमाम खाणा गढ", "भीम सिंह राणा छत्री", "विक्रम मंदिर महल", "रानी लक्ष्मी बाई की छत्री", "झिलमिलेष्वर महादेव मंदिर", "किला पिछोर बावड़ी", "गढ़ी बेहट", "चतुर्भुज मंदिर", "ितावली मंदिर", "पढ़ावली मंदिर", "बटेश्वर मंदिर", "धुमेस्वर मंदिर", "किला बेहत", "रासलीला घर", "लाधेड़ी गेट"};
+            name = new String[]{"ग्वालियर किला", "जय विलास पैलेश", "गोपाचल पर्वत", "मानसिंह महल", "सहस्त्र बाहु मंदिर", "सुरजकुण्ड", "सिंधिया म्यूजियम", "गुजरी महल म्यूजियम", "मोहम्मद गौस का मकबरा", "कर्ण महल", "जहांगीर-शाहजहाँ महल", "जौहर कुंड", "Mमोतीमहल", "हमाम खाणा गढ", "भीम सिंह राणा छत्री", "विक्रम मंदिर महल", "रानी लक्ष्मी बाई की छत्री", "झिलमिलेष्वर महादेव मंदिर", "किला पिछोर बावड़ी", "गढ़ी बेहट", "चतुर्भुज मंदिर", "ितावली मंदिर", "पढ़ावली मंदिर", "बटेश्वर मंदिर", "धुमेस्वर मंदिर", "किला बेहत", "रासलीला घर", "लाधेड़ी गेट"};
 
             places = new String[]{"ग्वालियर (एमपी।)", "लश्कर, ग्वालियर", "लश्कर, ग्वालियर", "मिताओली, ग्वालियर", "स्वर्ग का मंदिर", "एजियन सागर"};
             // private final String[] temperatures = {"21°C", "19°C", "17°C", "23°C", "20°C"};
@@ -121,7 +116,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
             build = new String[]{"महाराजा मानसिंह द्वारा 8 वीं शताब्दी", "वर्ष 1874 में महाराजा जयजीराव सिंधिया द्वारा", "तोमर किंग्स - वीरमदेव, डुंगर सिंह और कीर्ति सिंह के शासनकाल के दौरान बनाया गया", "1486 और 1516 के बीच तोमर शासक मन सिंह द्वारा निर्मित" , "कच्छपघाता राजवंश के राजा महिपाल द्वारा 10 9 2 में निर्मित", "15 वीं शताब्दी में सूरज सेन नामक राजकुमार की याद में निर्मित", "ग्वालियर किले से कैदियों का उपयोग करते हुए महाराजा जयजीराव द्वारा निर्मित", "यह मंसिंगह के दौरान बनाया गया था नियम "," बाबर द्वारा उनकी सहायता की गई जब उन्होंने 1526 में ग्वालियर के किले पर विजय प्राप्त की। "," 1480-1486 एडी की अवधि के दौरान क्रिटी सिंह द्वारा "," शेरशाह द्वारा निर्मित और बाद में मुगल ने जहांगीर और शाहजहां के नियमों का पालन किया। "," बाबुर ने 1526 में ग्वालियर के किले पर विजय प्राप्त की थी। "," 1827 ईस्वी में महाराजा जयजी रवि विज्ञान द्वारा निर्मित "," 15 वीं शताब्दी ईस्वी में तोमर राजा करण सिंह द्वारा "," जाट शासक द्वारा निर्मित ग्वालियर किले में जोहरकुंड "," मन सिंह तोमर (1516-1523 ईस्वी) के पुत्र विक्रमादित्य द्वारा निर्मित", "महारानी के स्मारक में निर्मित लक्ष्मी बाई। "," यह छोटा मंदिर प्राचीन काल में शिव मंदिर की जगह पर बनाया गया है। "," जाट महल और बावड़ी पिचोर के किले में निर्मित "," \n "+" \n "+" गहराई से बनाया गया था इमारत के चारों ओर खंभे निर्मित वर्ग के कंगन के भीतर तैयार की गई थी। "," \n "+" \n "+" ऐसा माना जाता था कि वर्ष 875 ईस्वी में, नगरवत्रा के पोते प्रहारों के दौरान बनाया जाना था। "," यह मंदिर कच्छपघाता राजा देवपाला द्वारा बनाया गया था "," यह मंदिर 10 वीं शताब्दी ईस्वी के प्रतिहार वंश द्वारा बनाया गया था "," यह प्रतिहार वंश द्वारा बनाया गया था। "," यह मंदिर 17 वीं शताब्दी ईस्वी के दौरान बुंदेला शासक वार्निशिंग द्वारा बनाया गया था। "," किला या दरवार हॉल जाट राजा चतुरसिंह द्वारा बनाया गया है "," यह स्मारक मलबे के पत्थर और नींबू मोर्टार और पीरलेस सक्सेक्ट्रे द्वारा बनाया गया है "," लद्देदी गेट अयोध्या के प्रशासक लद्दाखन द्वारा बनाया गया था। "};
             ticket = new String[]{"चाइल्ड -40 रुपये / व्यक्ति, वयस्क -75 रुपये / व्यक्ति", "60 रुपये / व्यक्ति", "बाल -40 रुपये / व्यक्ति, वयस्क -75 रुपये / व्यक्ति, विदेशी-250 रुपये / व्यक्ति", "100 रुपये / व्यक्ति "," 50 रुपये / व्यक्ति "," बाल -40 रुपये / व्यक्ति, वयस्क -75 रुपये / व्यक्ति, विदेशी-250 रुपये / व्यक्ति "," 100 रुपये / व्यक्ति "," प्रति व्यक्ति \n "+" कैमरा के लिए 50 "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है ", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है"};
 
-            contact = new String[]{"75140407777", "9 301107666", "0751 243 3400", "18002337777", "9781576646", "7514040777", "7512372390", "08 9 85869526", "7512234557", "075140407777", "075140407777", "075140407777" , "07512424125", "75140407777", "075140407777", "075140407777", "075140407777", "075140407777", "757540407777", "075140407777", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "नहीं उपलब्ध "," उपलब्ध नहीं है "," उपलब्ध नहीं है "," उपलब्ध नहीं है "};
+            contact = new String[]{"75140407777", "9301107666", "0751 243 3400", "18002337777", "9781576646", "7514040777", "7512372390", "08 9 85869526", "7512234557", "075140407777", "075140407777", "075140407777", "07512424125", "75140407777", "075140407777", "075140407777", "075140407777", "075140407777", "757540407777", "075140407777", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "उपलब्ध नहीं है", "नहीं उपलब्ध ", " उपलब्ध नहीं है ", " उपलब्ध नहीं है ", " उपलब्ध नहीं है "};
 
             sliderAdapter = new SliderAdapter(pics, 28, new OnCardClickListener());
         }//historical
@@ -162,7 +157,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
 
             };
 
-            countries = new String[]{"अचलेश्वर टेम्पल","गरगज के हनुमान","गुप्तेश्वर टेम्पल","गुरुद्वारा दाता बंदी","दरगाह ख्वाजा","शीतला माता मंदिर","सुन टेम्पल","सत.जॉन कैथेड्रल","शनिश्चरा टेम्पल"};
+            name = new String[]{"अचलेश्वर टेम्पल", "गरगज के हनुमान", "गुप्तेश्वर टेम्पल", "गुरुद्वारा दाता बंदी", "दरगाह ख्वाजा", "शीतला माता मंदिर", "सुन टेम्पल", "सत.जॉन कैथेड्रल", "शनिश्चरा टेम्पल"};
             places = new String[]{"ग्वालियर, एमपी", "बहादुर, ग्वालियर", "तिघरा रोड, ग्वालियर", "ग्वालियर किला, ग्वालियर", "ग्वालियर किला के पास", "शिवाजी नगर, ग्वालियर", "बीआईएमआर के पास, ग्वालियर", "फलक बाज़ार, ग्वालियर "," एटी बरहवाली, ग्वालियर "};
 
             times = new String[]{"10:00 पूर्वाह्न - 06:00 बजे", "10:00 पूर्वाह्न - 06:00 बजे", "09:00 पूर्वाह्न - 08:00 बजे", "24 घंटे", "06:00 पूर्वाह्न 10:00 अपराह्न "," 10:00 पूर्वाह्न - 08:00 अपराह्न "," 8:00 पूर्वाह्न -5: 00 बजे "," 10:00 पूर्वाह्न -10: 00 बजे "," 10:00 पूर्वाह्न -10: 00 बजे "};
@@ -196,7 +191,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
 
                     "यह वन्यजीव उत्साही लोगों के लिए एक आदर्श गंतव्य है। यह कुछ सबसे लुप्तप्राय प्रजातियों का निवास स्थान है, लेकिन यहां मुख्य आकर्षण है, घरियल, रेड क्राउन कछुए, गंगा के डॉल्फिन, भारतीय स्कीमर्स, दूसरों के बीच। सुंदर अभयारण्य घिरा हुआ है चंबल नदी द्वारा, जिसे भारत की सबसे स्वच्छ नदी में से एक माना जाता है। यह आपको एक अद्वितीय और अप्रचलित आवास, प्रचुर मात्रा में वन्यजीवन और अद्भुत परिदृश्य, मध्ययुगीन मंदिरों और शानदार प्राचीन खंडहर, पशु मेले और नागा साधु का संयोजन प्रदान करता है, बहुत दूर शहर के अराजकता से। पर्यटक आमतौर पर एक मोटरसाइकिल वाली नाव किराए पर लेते हैं और नदी के ऊपर और नीचे जाते हैं क्योंकि यह एक शांत अनुभव के लिए बहती है। नावियों को परेशान किए बिना पक्षियों और जानवरों के करीब जितना संभव हो सके उन्हें आपको सुंदर जानवरों की सुविधाओं को देखने का मौका देने के लिए "
             };
-            countries = new String[]{"तिघरा बांध", "ओरछा", "माधव राष्ट्रीय उद्यान", "सतखंड महल", "सुल्तानगढ़ झरना", "चंदेरी", "चंबल अभयारण्य"};
+            name = new String[]{"तिघरा बांध", "ओरछा", "माधव राष्ट्रीय उद्यान", "सतखंड महल", "सुल्तानगढ़ झरना", "चंदेरी", "चंबल अभयारण्य"};
             places = new String[]{"तिघरा,म.प.", "ओरछा,ग्वालियर", "शिवपुरी,म.प.", "दतिया,म.प.", "शिवपुरी,म.प", " अशोकनगर,म.प", " धौलपुर (राजस्थान)"};
             times = new String[]{"7 एएम-7 पीएम", "08:00 पूर्वाह्न - 08:00 अपराह्न", "06:00 पूर्वाह्न - 05:00 बजे", "08:00 पूर्वाह्न - 11:00 बजे", "10:00 हूँ - 06:00 बजे "," 10:00 पूर्वाह्न - 06:00 बजे "," 05:00 पूर्वाह्न - 07:00 बजे "};
             address= new String[]{"तिघरा,ग्वालियर 474001", "कंचनघाट, डिस्त्त. टीकमगढ़, ओरछा, मध्य प्रदेश 472246", "शिवपुरी-झांसी रोड,म.प 473551", "दतिया-झांसी रोड,म.प.", "शिवपुरी,म.प. 475330", " अशोकनगर डिस्ट्रिक्ट,मध्य प्रदेश", " धौलपुर ,मध्य प्रदेश"};
@@ -223,7 +218,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
             };
 
 
-            countries = new String[]{"रॉयल इन", "ग्रेस होटल", "ग्वालियर रीजेंसी होटल", "लैंडमार्क होटल", "सेंट्रल पार्क होटल", "होटल शेल्टर", "तानसेन रेजीडेंसी", "ताज उषा किरण प्लेस"};
+            name = new String[]{"रॉयल इन", "ग्रेस होटल", "ग्वालियर रीजेंसी होटल", "लैंडमार्क होटल", "सेंट्रल पार्क होटल", "होटल शेल्टर", "तानसेन रेजीडेंसी", "ताज उषा किरण प्लेस"};
 
 
             places = new String[]{"गांधी रोड, ग्वालियर", "गांधी रोड, ग्वालियर", "माणिक विलास कॉलोनी, ग्वालियर", "सिटी सेंटर, ग्वालियर", "तानसेन रोड, ग्वालियर", "थियिपुर, ग्वालियर", "लश्कर, ग्वालियर"};
@@ -246,14 +241,41 @@ public class MainActivitySliderHindi extends AppCompatActivity {
             sliderAdapter = new SliderAdapter(pics, 8, new OnCardClickListener());
 
         }//hotel
-        {}//medical
+        if (select == 4) {
+            pics = new int[]{
+                    R.drawable.apoloh,
+                    R.drawable.pariwarh,
+                    R.drawable.navjeevanh,
+                    R.drawable.kalyanmemorialh,
+                    R.drawable.shaharah,
+                    R.drawable.apex,
+                    R.drawable.bimr,
+                    R.drawable.charitbal, R.drawable.jaya, R.drawable.rkm, R.drawable.gcivilh, R.drawable.kamalraja,
+
+
+            };
+            maps = new int[]{R.drawable.map_apolo, R.drawable.map_pariwar, R.drawable.map_navjeevan, R.drawable.map_kalyan, R.drawable.map_sahara, R.drawable.map_apex, R.drawable.map_bimr, R.drawable.map_anandpur, R.drawable.map_jaya, R.drawable.map_rk, R.drawable.map_govern, R.drawable.map_kamla};
+            descriptions = new String[]{"अपोलो अस्पताल कुछ नामों के लिए जनरल एंड लैप्रोस्कोपिक सर्जरी, ऑर्थोपेडिक एंड स्पाइन, गायनकोलॉजी, ओप्थाल्मोलॉजी सहित शल्य चिकित्सा विशेषताओं की विस्तृत श्रृंखला में उत्कृष्ट देखभाल प्रदान करता है। इसके अलावा, अस्पताल नेफ्रोलोजी, न्यूरोलॉजी, गैस्ट्रोएंटेरोलॉजी, कार्डियोलॉजी जैसे विशिष्टताओं में व्यापक चिकित्सा देखभाल प्रदान करता है। , डेंटल, त्वचाविज्ञान, प्लास्टिक और प्रसाधन सामग्री सर्जरी। ", " अपोलो अस्पताल कुछ नामों के लिए सामान्य और लैप्रोस्कोपिक सर्जरी, आर्थोपेडिक और रीढ़, स्त्री रोग, ओप्थाल्मोलॉजी सहित शल्य चिकित्सा विशेषताओं की विस्तृत श्रृंखला में उत्कृष्ट देखभाल प्रदान करता है। इसके अलावा, अस्पताल व्यापक प्रदान करता है नेफ्रोलोजी, न्यूरोलॉजी, गैस्ट्रोएंटेरोलॉजी, कार्डियोलॉजी, डेंटल, त्वचाविज्ञान, प्लास्टिक और प्रसाधन सामग्री सर्जरी जैसी विशेषताओं में चिकित्सा देखभाल। ", " ग्वालियर में, नवजीवन अस्पताल रोगी देखभाल में एक मान्यता प्राप्त नाम है। इसे वर्ष 2007 में अस्वीकार कर दिया गया था। वे एक हैं मोती महल रोड में जाने-माने निजी अस्पताल। रोगी देखभाल में सर्वोत्तम पेशकश करने और तकनीकी से लैस एक दृष्टि के साथ समर्थित केंद्रीय ऑक्सीजन आपूर्ति और मल्टीपारा मॉनीटर के साथ आईसीयू के रूप में उन्नत रूप से उन्नत स्वास्थ्य, शल्य चिकित्सा प्रक्रिया के लिए अल्ट्रा आधुनिक ऑपरेशन थिएटर, केंद्रीय ऑक्सीजन आपूर्ति और मल्टीपारा मॉनिटर के साथ आईसीयू, सर्जिकल प्रक्रिया के लिए अल्ट्रा आधुनिक ऑपरेशन थिएटर, डायलिसिस यूनिट, मेडिकल स्टोर, 24 घंटे आपातकालीन सुविधा, 24 एच हमारी एम्बुलेंस सेवा, कैशलेस और मेडिक्लेम बीमा सेवाएं, फिजियोथेरेपी इत्यादि। ", "कल्याण मेमोरियल और केडीजे अस्पताल ग्वालियर में एक असाधारण अस्पताल है। अस्पताल में 100 मशीनों की सुपर स्पेशलिटी सुविधा है जो नवीनतम मशीनों की पूरी श्रृंखला प्रदान करती है। इसमें पूरी तरह से सुसज्जित ऑर्थो और ट्रामा यूनिट, एक आपातकालीन विभाग और विभिन्न सुविधाओं के लिए आईसीसी है जो ड्यूटी समर्थित वेंटिलेटर, डिफिब्रिलेटर, मल्टीपार्मोनिटर और अन्य गंभीर देखभाल उपकरणों पर पोस्ट ग्रेजुएट डॉक्टरों के साथ सहायता करते हैं। ", "ग्वालियर में, सहारा अस्पताल एक है रोगी देखभाल में मान्यता प्राप्त नाम। इसे वर्ष 2000 में अस्वीकार कर दिया गया था। वे प्रसिद्ध अस्पतालों में से एक हैं। रोगी देखभाल में सर्वोत्तम पेशकश करने और तकनीकी रूप से उन्नत स्वास्थ्य सुविधाओं से लैस एक दृष्टि के साथ समर्थित, ", "ग्वालियर में, एपेक्स अस्पताल रोगी देखभाल में एक मान्यता प्राप्त नाम है। यह सिटी सेंटर के जाने-माने निजी अस्पतालों में से एक है। रोगी देखभाल में सर्वोत्तम पेशकश करने के लिए एक दृष्टि से समर्थित और तकनीकी रूप से उन्नत स्वास्थ्य सुविधाओं जैसे लैंगू बुखार से सुसज्जित उपचार, टीकाकरण / टीकाकरण, वायरल बुखार उपचार, गर्भावस्था में रोग, सामान्य बाल चिकित्सा और आदि ", " बीआईएमआर अस्पताल एएचयू के साथ फार्मेसी, आईसीसीयू, नियो-नेटाल इंटरमीडिएट वार्ड जैसी कई सुविधाएं प्रदान करता है, एएचयू के साथ पोस्ट ऑपरेटिव सर्जिकल वार्ड, मेडिकल इंटरमीडिएट एएचयू, न्यूरो आईसीयू और न्यूरो सर्जरी सेंटर, ब्लड बैंक, सीटी स्कैन, एक्स-रे (300 एमए) डिजिटल प्रौद्योगिकी, मोबाइल एक्स-रे, अल्ट्रासोनोग्राफी, एनएबीएल मान्यताप्राप्त प्रयोगशाला सेवाएं आदि के साथ वार्ड ", " एक दृष्टि के साथ समर्थित रोगी देखभाल में सर्वोत्तम पेशकश करें और तकनीकी रूप से उन्नत स्वास्थ्य सुविधाओं से सुसज्जित, वे हेल्थकेयर उद्योग में आगामी नामों में से एक हैं। इस अस्पताल में ट्रांसपो के विभिन्न साधनों से आसानी से पहुंचा जा सकता है। RT। अच्छी तरह से प्रशिक्षित चिकित्सा कर्मचारियों, गैर-चिकित्सा कर्मचारियों और अनुभवी नैदानिक ​​तकनीशियनों की एक टीम विभिन्न सेवाओं की पेशकश के लिए घूमती है। उनकी पेशेवर सेवाएं उन्हें ग्वालियर में चैरिटेबल अस्पतालों के बाद मांगी जाती हैं। विशेषज्ञों समेत बोर्ड पर डॉक्टरों की एक टीम विभिन्न प्रकार के चिकित्सा मामलों को संभालने के लिए ज्ञान और विशेषज्ञता से लैस है। ", " वर्तमान में अस्पताल की बिस्तर की ताकत लगभग 1200 बिस्तर है। अस्पताल सभी आधुनिक उपकरणों से लैस है। यह न्यूरोसर्जरी, सर्पिल सीटी स्कैन और एमआर इमेजिंग सिस्टम, चेस्ट पेन ट्रीटमेंट, क्लिनिकल कार्डियोलॉजी, हार्ट कंडीशंस, स्किन रोग उपचार, क्षय रोग में विशेषता निदान, न्यूरोलॉजिकल स्थितियां, आई चेकअप जनरल, आई सर्जरी, हड्डी आघात, फ्रैक्चर ट्रीटमेंट जैसी सुविधाएं प्रदान कर सकती है। और आदि।", "आरके मेमोरियल हार्ट अस्पताल और मेडिकल केयर सेंटर, ग्वालियर मूल्यवान उपचार के लिए प्रसिद्ध अस्पताल में से एक है। ग्वालियर में यह अस्पताल रोगी के उपचार जैसे एम्बुलेंस, आईसीयू / सामान्य बिस्तर, फार्मेसी, कैंटीन इत्यादि के लिए बहुत सी सुविधाएं प्रदान करता है। सुविधाएं, अस्पताल कार्डियोलॉजी के लिए विशिष्ट है। आरके मेमोरियल हार्ट अस्पताल और मेडिकल केयर सेंटर में विशेषज्ञ विशेषज्ञ हैं जो विभिन्न विशेषज्ञताओं के तहत अभ्यास कर रहे हैं। ", " ग्वालियर में, गोवर्टर सिविल अस्पताल रोगी देखभाल में एक मान्यता प्राप्त नाम है। वे प्रसिद्ध अस्पतालों में से एक हैं रोगी देखभाल में सर्वोत्तम पेशकश करने और तकनीकी रूप से उन्नत स्वास्थ्य सुविधाओं से लैस एक दृष्टि के साथ समर्थित, वे स्वास्थ्य देखभाल उद्योग के आने वाले नामों में से एक हैं। इस अस्पताल में परिवहन के विभिन्न साधनों से आसानी से पहुंचा जा सकता है। अच्छी तरह से एक टीम प्रशिक्षित चिकित्सा कर्मचारी, गैर-चिकित्सा कर्मचारी और अनुभवी नैदानिक ​​तकनीशियन विभिन्न सेवाओं की पेशकश के लिए घूमते हैं। उनकी पेशेवर सेवाएं उन्हें बनाती हैं ग्वालियर में अस्पतालों की मांग विशेषज्ञों समेत बोर्ड पर डॉक्टरों की एक टीम विभिन्न प्रकार के चिकित्सा मामलों को संभालने के लिए ज्ञान और विशेषज्ञता से लैस है। ", " नए नवजात विज्ञान विंग (नर्सरी) का गठन और नवीनतम राजपत्र के साथ बाल चिकित्सा आईसीयू भी है। इसमें स्त्री रोग और प्रसूति वार्ड, बच्चों के वार्ड, बच्चे आईसीयू, बच्चों को सर्जिकल वार्ड, मादा ऑर्थोपेडिक्स वार्ड, मादा सर्जिकल और जला वार्ड और मादा ईएनटी वार्ड है। वर्तमान में अस्पताल 450 बिस्तरों वाला है और बाल चिकित्सा विभाग, ए के तहत बाल चिकित्सा आईसीयू है। मादा के लिए वार्ड जलाएं सर्जरी विभाग के तहत रोगियों को जलाएं और ओबस्टेट्रिक्स और गायनकोलॉजी विभाग में एक सोनोलॉजी अनुभाग। "};
+
+            name = new String[]{"अपोलो स्पेक्ट्रा", "पारिवार अस्पताल", "नवजीवन अस्पताल", "कल्याण अस्पताल", "शाहारा अस्पताल", "सर्वोच्च अस्पताल", "बीआईएमआर अस्पताल", "आनंदपुर चैरिटेबल", "जया आरोग्य अस्पताल", "आरके मेमोरियल अस्पताल ", " सरकारी अस्पताल "};
+
+            places = new String[]{"लश्कर, ग्वालियर", "लश्कर, ग्वालियर", "मोती महल रोड, ग्वालियर", "लश्कर, ग्वालियर", "वसंत विहार, ग्वालियर", "टैगोर नगर, ग्वालियर", "मोरार, ग्वालियर", "पुरानी छवानी, ग्वालियर ", " कम्पा, ग्वालियर ", " खेरापति रोड, ग्वालियर ", " तानसेन नगर, ग्वालियर ", " लश्कर, ग्वालियर "};
+
+            times = new String[]{"24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "8 पूर्वाह्न 6 बजे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे", "24 घंटे"};
+
+            address = new String[]{"लश्कर, ग्वालियर, मध्य प्रदेश 474002 ", " लश्कर, ग्वालियर, मध्य प्रदेश 474001 ", " मोती महल रोड, ग्वालियर, मध्य प्रदेश 474002 ", " लश्कर, ग्वालियर -474001, अस्पताल सड़क ", " वसंत विहार, ग्वालियर, मध्य प्रदेश 474007 ", " टैगोर नगर, अनुपम नगर, सरस्वती नगर, ग्वालियर, मध्य प्रदेश 474011 ", " मोरार, ग्वालियर, मध्य प्रदेश 474005 ", " एनएच 3, पुरानी छवानी, ग्वालियर पश्चिम, मध्य प्रदेश 474010 ", " जेए अस्पताल कैंपस, कम्पा ग्वालियर - 474001 ", " रवि नगर, जीडीए ऑफिस, खेरापाटी रोड, ग्वालियर, मध्य प्रदेश के पीछे ", " अनाम सड़क, तानसेन नगर, ग्वालियर, मध्य प्रदेश 474002 ", " जेए अस्पताल कैंपस, लश्कर, ग्वालियर, मध्य प्रदेश 474009 "};
+
+            contact = new String[]{"07512454600", "07514047000", "07514024081", "07514006700", "09926800870", "07512340910", "07512405617", "07512401200", " 07512403200", "07512630329", "उपलब्ध नहीं है", "09425360494"};
+
+            sliderAdapter = new SliderAdapter(pics, 12, new OnCardClickListener());
+        }//medical
 
 
         initRecyclerView();
         initCountryText();
         initSwitchers();
         initGreenDot();
-    }
+    }//medical
 
     private void initRecyclerView() {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -320,7 +342,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
 //        temperatureSwitcher.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivitySliderHistorical.this, Mainhistorical2Activity.class);
+//                Intent intent = new Intent(MainActivitySliderHistorical.this, HistoricalActivity.class);
 //
 //                intent.putExtra("imageView",pics[currentPosition]);
 //                intent.putExtra("textView1",descriptions[currentPosition]);
@@ -344,7 +366,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
 
         country1TextView.setX(countryOffset1);
         country2TextView.setX(countryOffset2);
-        country1TextView.setText(countries[0]);
+        country1TextView.setText(name[0]);
         country2TextView.setAlpha(0f);
 
         country1TextView.setTypeface(Typeface.createFromAsset(getAssets(), "open-sans-extrabold.ttf"));
@@ -433,7 +455,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
             animV[1] = R.anim.slide_out_top;
         }
 
-        setCountryText(countries[pos % countries.length], left2right);
+        setCountryText(name[pos % name.length], left2right);
 
 //        temperatureSwitcher.setInAnimation(MainActivitySliderHistorical.this, animH[0]);
 //        temperatureSwitcher.setOutAnimation(MainActivitySliderHistorical.this, animH[1]);
@@ -532,7 +554,7 @@ public class MainActivitySliderHindi extends AppCompatActivity {
             if (clickedPosition == activeCardPosition) {
                 Intent intent = null;
                 if(select==0) { //historical
-                    intent = new Intent(MainActivitySliderHindi.this, Mainhistorical2Activity.class);
+                    intent = new Intent(MainActivitySliderHindi.this, HistoricalActivity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1", descriptions[activeCardPosition % descriptions.length]);
                     intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
@@ -542,17 +564,17 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     intent.putExtra("textView5", contact[activeCardPosition % contact.length]);
                 }
                 if(select==3){ //hotel
-                    intent = new Intent(MainActivitySliderHindi.this, Main82Activity.class);
+                    intent = new Intent(MainActivitySliderHindi.this, HotelActivity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
-                    intent.putExtra("textView2",address[activeCardPosition%address.length]);
                     intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
-
-                    intent.putExtra("textView3",fee[activeCardPosition%fee.length]);
-                    intent.putExtra("textView4",contact[activeCardPosition%contact.length]);
+                    intent.putExtra("textView2",address[activeCardPosition%address.length]);
+                    //intent.putExtra("textView3",facilities[activeCardPosition%facilities.length]);
+                    intent.putExtra("textView4", contact[activeCardPosition % contact.length]);
+                    intent.putExtra("textView3", fee[activeCardPosition % fee.length]);
                 }
                 if(select==2){ //near
-                    intent = new Intent(MainActivitySliderHindi.this, Main22Activity.class);
+                    intent = new Intent(MainActivitySliderHindi.this, NearbyActivity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                     intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
@@ -562,18 +584,19 @@ public class MainActivitySliderHindi extends AppCompatActivity {
                     intent.putExtra("textView5",fee[activeCardPosition%fee.length]);
                 }
                 if(select==1){ //worship
-                    intent = new Intent(MainActivitySliderHindi.this, Mainworship2Activity.class);
+                    intent = new Intent(MainActivitySliderHindi.this, WorshipActivity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
                     intent.putExtra("imageView1", maps[activeCardPosition % maps.length]);
                     intent.putExtra("textView2",address[activeCardPosition%address.length]);
                 }
                 if(select==4){ //medical
-                    intent = new Intent(MainActivitySliderHindi.this, Main52Activity.class);
+                    intent = new Intent(MainActivitySliderHindi.this, MedicalActivity.class);
                     intent.putExtra("imageView", pics[activeCardPosition % pics.length]);
                     intent.putExtra("textView1",descriptions[activeCardPosition%descriptions.length]);
+                    intent.putExtra("textView2", address[activeCardPosition % address.length]);
                     intent.putExtra("imageView2", maps[activeCardPosition % maps.length]);
-                    intent.putExtra("textView2",address[activeCardPosition%address.length]);
+                    intent.putExtra("textView3", contact[activeCardPosition % contact.length]);
                 }
                 if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP) {
                     startActivity(intent);
