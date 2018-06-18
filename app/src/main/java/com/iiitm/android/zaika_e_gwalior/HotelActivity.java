@@ -38,7 +38,7 @@ public class HotelActivity extends AppCompatActivity {
 
 
         final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
-        collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
+        collapsingToolbarLayout.setTitle("Gwalior झरोखा");
         collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.black));
 

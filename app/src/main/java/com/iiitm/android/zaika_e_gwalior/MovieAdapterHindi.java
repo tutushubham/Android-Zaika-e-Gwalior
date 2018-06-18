@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -55,7 +56,7 @@ public class MovieAdapterHindi extends RecyclerView.Adapter<MovieAdapterHindi.My
 
     public  class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView imageView;
-        TextView textView;
+        Button textView;
         List<Adapterhindi> adapterlist; Context mContext;
         public MyViewHolder(View itemView,List<Adapterhindi> adapterlist,Context mContext) {
             super(itemView);
@@ -63,7 +64,7 @@ public class MovieAdapterHindi extends RecyclerView.Adapter<MovieAdapterHindi.My
             this.mContext=mContext;
             itemView.setOnClickListener(this);
             imageView = (ImageView) itemView.findViewById(R.id.imageView);
-            textView= (TextView) itemView.findViewById(R.id.textView);
+            textView= (Button) itemView.findViewById(R.id.button);
         }
 
         @Override

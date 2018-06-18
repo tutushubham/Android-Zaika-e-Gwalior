@@ -36,7 +36,7 @@ public class NearbyActivity extends AppCompatActivity {
         textView8.setText(getIntent().getStringExtra("textView4"));
         textView10.setText(getIntent().getStringExtra("textView5"));
         final CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsingtoolbar);
-        collapsingToolbarLayout.setTitle("Gwalior-Jharokha");
+        collapsingToolbarLayout.setTitle("Gwalior झरोखा");
         collapsingToolbarLayout.setCollapsedTitleTextColor(Color.BLACK);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.black));
 

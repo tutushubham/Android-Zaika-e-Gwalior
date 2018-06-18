@@ -16,24 +16,26 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="350dp"
+                android:layout_height="165dp"
+                android:src="@drawable/sun_bg"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:scaleType="fitXY" />
+                />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/imageView"
-                android:paddingLeft="7dp"
-                android:paddingRight="7dp"
-                android:paddingTop="8dp"
-                android:textColor="#000000"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:layout_marginBottom="2dp"
-                android:gravity="center"/>
+
+                android:layout_alignParentTop="true"
+                android:background="@drawable/btn_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="135dp"
+                android:text="Button"
+                android:textColor="#ffffff"/>
 
         </RelativeLayout>
 
