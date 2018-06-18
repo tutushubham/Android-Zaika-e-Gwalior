@@ -14,7 +14,6 @@ public class LanguageScreen extends AppCompatActivity {
         setContentView(R.layout.activity_mainlanguage);
 
 
-
         but1 = findViewById(R.id.button2);
         but2 = findViewById(R.id.button3);
         but1.setOnClickListener(new View.OnClickListener() {
@@ -22,7 +21,7 @@ public class LanguageScreen extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(LanguageScreen.this, MainHindiActivity.class);
-                      startActivity(intent);
+                startActivity(intent);
 
             }
         });
@@ -39,6 +38,18 @@ public class LanguageScreen extends AppCompatActivity {
 
             }
         });
+        hideNavigationBar();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        hideNavigationBar();
+    }
+
+
+    private void hideNavigationBar() {
+        this.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
     }
 }
 
