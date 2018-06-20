@@ -1,9 +1,13 @@
 package com.iiitm.android.zaika_e_gwalior;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.security.PublicKey;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class DataParser {
 
@@ -36,6 +40,24 @@ public class DataParser {
 
         return googlePlaceMap;
 
+    }
+    private List<HashMap<String,String >> getPlaces(JSONArray jsonArray) throws JSONException {
+        int count=jsonArray.length();
+        List<HashMap<String ,String >>placesList=new ArrayList<>();
+        HashMap<String ,String>placeMap= null;
+        for(int i=0;i<count;i++){
+            placeMap=getPlace((JSONObject)jsonArray.get(i));
+            placesList.add(placeMap);
+
+        }
+        return placesList;
+    }
+    public List<HashMap<String ,String>>parse(String jsonData) throws JSONException {
+        JSONArray jsonArray=null;
+        JSONObject jsonObject;
+        jsonObject=new JSONObject(jsonData);
+        jsonArray=jsonObject.getJSONArray("results");
+        return getPlaces(jsonArray);
     }
 
 }

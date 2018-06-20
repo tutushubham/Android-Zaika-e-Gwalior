@@ -24,10 +24,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:id="@+id/fragmenttoilet"/>
+            android:id="@+id/fragmenttoilet"
+            />
+
 
 
     </android.support.design.widget.AppBarLayout>
+
 
 
     <android.support.v4.widget.NestedScrollView
@@ -36,6 +39,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:background="#ffe5e5e5"
         android:scrollbars="vertical"/>
+
 
     <include layout="@layout/content" />
 

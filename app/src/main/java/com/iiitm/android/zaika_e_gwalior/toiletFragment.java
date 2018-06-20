@@ -14,6 +14,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,6 +47,9 @@ public class toiletFragment extends Fragment implements OnMapReadyCallback,
     GoogleApiClient mGoogleApiClient;
     Location mLastLocation;
     Marker mCurrLocationMarker;
+
+    int PROXIMITY_RADIUS = 5000;
+    double latitude,longitude;
 
     @Override
     public void onResume() {
@@ -142,6 +146,13 @@ public class toiletFragment extends Fragment implements OnMapReadyCallback,
 
     @Override
     public void onLocationChanged(Location location) {
+
+        Object dataTransfer[] = new Object[2];
+        GetNearbyPlaces getNearbyPlaces = new GetNearbyPlaces();
+
+        latitude = location.getLatitude();
+        longitude = location.getLongitude();
+
         mLastLocation = location;
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker.remove();
@@ -155,10 +166,33 @@ public class toiletFragment extends Fragment implements OnMapReadyCallback,
         markerOptions.title("Current Position");
         markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
         mCurrLocationMarker = mGoogleMap.addMarker(markerOptions);
+        mGoogleMap.animateCamera(CameraUpdateFactory.zoomBy(10));
 
-        //move map camera
+       // move map camera
         mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,11));
 
+
+        String toilets = "toilets";
+        String url = getUrl(latitude, longitude,toilets);
+        dataTransfer[0] = mGoogleMap;
+        dataTransfer[1] = url;
+
+        getNearbyPlaces.execute(dataTransfer);
+
+    }
+    private String getUrl(double latitude , double longitude , String nearbyPlace)
+    {
+
+        StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
+        googlePlaceUrl.append("location="+latitude+","+longitude);
+        googlePlaceUrl.append("&radius="+PROXIMITY_RADIUS);
+        googlePlaceUrl.append("&type="+nearbyPlace);
+        googlePlaceUrl.append("&sensor=true");
+        googlePlaceUrl.append("&key="+"AIzaSyCuTiFWOYRVdgyCZCCeH90KBUDtch2rYNA");
+
+        Log.d("ToiletActivity", "url = "+googlePlaceUrl.toString());
+
+        return googlePlaceUrl.toString();
     }
 
 

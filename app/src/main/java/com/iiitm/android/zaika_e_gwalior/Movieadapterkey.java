@@ -70,9 +70,11 @@ public class Movieadapterkey extends RecyclerView.Adapter<Movieadapterkey.MyView
             int position = getAdapterPosition();
             Adapterkey adapter = adapterkeyList.get(position);
 
-            String url= adapter.getName2();
+            String phone= adapter.getName2();
 
-            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:url"));
+            String uri = "tel:" + phone.trim() ;
+
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(uri));
             this.mContext.startActivity(intent);
 
 
