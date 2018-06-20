@@ -16,20 +16,25 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_marginLeft="12dp"
-                android:layout_width="350dp"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
                 android:layout_height="165dp"
-                android:src="@drawable/sun_bg"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                />
+                android:scaleType="fitCenter"
+                android:src="@drawable/mediacal_bg" />
 
 
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="300dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:alpha="1"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/btn_bg"
                 android:layout_centerHorizontal="true"
