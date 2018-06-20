@@ -1,7 +1,8 @@
 package com.iiitm.android.zaika_e_gwalior;
 
-import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +15,7 @@ public class ToiletActivity extends AppCompatActivity {
     public List<Adaptertoilets> adaptertoiletsList = new ArrayList<>();
 
     MovieAdaptertoilets movieAdaptertoilets;
-
+boolean status = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,12 @@ public class ToiletActivity extends AppCompatActivity {
         recyclerView.setAdapter(movieAdaptertoilets);
         prepareMovieData();
 
+        FragmentManager fragmentManager=getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+        if(!status){
+            toiletFragment t1=new toiletFragment();
+            fragmentTransaction.add(R.id.fragmenttoilet,t1).commit();
+        }
     }
 
     private void prepareMovieData() {
