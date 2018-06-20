@@ -43,7 +43,7 @@
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.black));
 
 
-        CardView cardView = (CardView) findViewById(R.id.cardview3);
+        CardView cardView = findViewById(R.id.cardview3);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,14 +56,14 @@
             }
         });
 
-        hideNavigationBar();
+       // hideNavigationBar();
 
     }
 
       @Override
       protected void onResume() {
           super.onResume();
-          hideNavigationBar();
+       //   hideNavigationBar();
       }
 
 

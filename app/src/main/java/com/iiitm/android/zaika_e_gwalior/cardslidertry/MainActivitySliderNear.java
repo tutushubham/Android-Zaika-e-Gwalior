@@ -96,14 +96,14 @@ public class MainActivitySliderNear extends AppCompatActivity {
         initCountryText();
         initSwitchers();
         initGreenDot();
-        hideNavigationBar();
+     //   hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        hideNavigationBar();
+     //   hideNavigationBar();
     }
 
 

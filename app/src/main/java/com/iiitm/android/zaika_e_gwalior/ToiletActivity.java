@@ -1,7 +1,10 @@
 package com.iiitm.android.zaika_e_gwalior;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -9,32 +12,53 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.UiSettings;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ToiletActivity extends AppCompatActivity {
     public List<Adaptertoilets> adaptertoiletsList = new ArrayList<>();
-    Context mContext;
     MovieAdaptertoilets movieAdaptertoilets;
-boolean status = false;
+    boolean status = false;
+    MapFragment map;
+    UiSettings mapSettings;
+    toiletFragment t1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maintoilet);
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-          recyclerView.setLayoutManager(layoutManager);
-        Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
+        recyclerView.setLayoutManager(layoutManager);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("Toilets");
-        movieAdaptertoilets = new MovieAdaptertoilets(adaptertoiletsList,this);
+        movieAdaptertoilets = new MovieAdaptertoilets(adaptertoiletsList, this);
         recyclerView.setAdapter(movieAdaptertoilets);
         prepareMovieData();
+
 
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
         if(!status){
-            toiletFragment t1=new toiletFragment();
+            t1=new toiletFragment();
             fragmentTransaction.add(R.id.fragmenttoilet,t1).commit();
+
+        }
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        if (requestCode == toiletFragment.MY_PERMISSIONS_REQUEST_LOCATION){
+            t1.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+        else {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 
