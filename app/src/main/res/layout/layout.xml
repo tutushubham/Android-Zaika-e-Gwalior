@@ -6,9 +6,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:elevation="3dp"
-        cardCornerRadius="0dp">
+        android:layout_margin="3dp"
+        cardCornerRadius="25dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -16,31 +15,32 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_marginTop="12dp"
-                android:layout_width="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="match_parent"
                 android:layout_height="165dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
+                android:src="@drawable/sun_bg"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:scaleType="fitCenter"
-                android:src="@drawable/mediacal_bg" />
-
+                />
 
 
             <Button
                 android:id="@+id/button"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:alpha="1"
-                android:layout_alignParentTop="true"
+                android:layout_below="@id/imageView"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
                 android:background="@drawable/btn_bg"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="135dp"
+                android:fontFamily="sans-serif-condensed"
                 android:text="Button"
-                android:textColor="#ffffff"/>
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
