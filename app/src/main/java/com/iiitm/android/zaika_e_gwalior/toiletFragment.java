@@ -17,7 +17,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 
 public class toiletFragment extends Fragment implements OnMapReadyCallback{
 
-    SupportMapFragment mapFragment;
+    private SupportMapFragment mapFragment;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
