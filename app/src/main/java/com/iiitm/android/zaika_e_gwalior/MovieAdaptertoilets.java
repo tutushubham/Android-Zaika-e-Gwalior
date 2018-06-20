@@ -11,6 +11,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
+/**
+ * Created by rohit on 30/9/17.
+ */
+
 public class MovieAdaptertoilets extends RecyclerView.Adapter<MovieAdaptertoilets.MyViewHolder> {
 
     List<Adaptertoilets> adaptertoiletsList;
@@ -49,7 +53,7 @@ public class MovieAdaptertoilets extends RecyclerView.Adapter<MovieAdaptertoilet
         TextView textView1,textView2,textView3,textView4;
         List<Adaptertoilets> adaptertoiletsList;
         Context mContext;
-        MyViewHolder(View itemView, List<Adaptertoilets> adaptertoiletsList, Context mContext) {
+        public MyViewHolder(View itemView, List<Adaptertoilets> adaptertoiletsList,Context mContext) {
             super(itemView);
           this.adaptertoiletsList= adaptertoiletsList;
             this.mContext=mContext;

@@ -52,14 +52,14 @@ public class MainsplashActivity extends AppCompatActivity {
 
         };
         thread.start();
-        //hideNavigationBar();
+        hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-      //  hideNavigationBar();
+        hideNavigationBar();
     }
 
 

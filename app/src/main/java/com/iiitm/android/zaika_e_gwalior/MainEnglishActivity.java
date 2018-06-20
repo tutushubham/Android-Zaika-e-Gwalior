@@ -62,7 +62,7 @@ public class MainEnglishActivity extends AppCompatActivity {
 
 
         prepareMovieData();
-        //hideNavigationBar();
+        hideNavigationBar();
 
 
     }
@@ -70,7 +70,7 @@ public class MainEnglishActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-       // hideNavigationBar();
+        hideNavigationBar();
     }
 
 

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ToiletActivity extends AppCompatActivity {
     public List<Adaptertoilets> adaptertoiletsList = new ArrayList<>();
-
+    Context mContext;
     MovieAdaptertoilets movieAdaptertoilets;
 boolean status = false;
     @Override
@@ -22,10 +22,9 @@ boolean status = false;
         setContentView(R.layout.activity_maintoilet);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
+          recyclerView.setLayoutManager(layoutManager);
         Toolbar toolbar= (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Toilets");
-
         movieAdaptertoilets = new MovieAdaptertoilets(adaptertoiletsList,this);
         recyclerView.setAdapter(movieAdaptertoilets);
         prepareMovieData();

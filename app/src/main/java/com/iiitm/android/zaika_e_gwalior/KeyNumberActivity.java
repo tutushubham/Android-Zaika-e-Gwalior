@@ -31,14 +31,14 @@ public class KeyNumberActivity extends AppCompatActivity {
         recyclerView.setAdapter(movieadapterkey);
 
         prepareMovieData();
-        //hideNavigationBar();
+        hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-       // hideNavigationBar();
+        hideNavigationBar();
     }
 
 

@@ -56,14 +56,14 @@
             }
         });
 
-        //hideNavigationBar();
+        hideNavigationBar();
 
     }
 
       @Override
       protected void onResume() {
           super.onResume();
-          //hideNavigationBar();
+          hideNavigationBar();
       }
 
 
