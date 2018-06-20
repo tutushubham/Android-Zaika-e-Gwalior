@@ -64,14 +64,14 @@ public class MainHindiActivity extends AppCompatActivity {
         prepareMovieData();
 
 
-        hideNavigationBar();
+       // hideNavigationBar();
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        hideNavigationBar();
+      //  hideNavigationBar();
     }
 
 

@@ -26,6 +26,7 @@
             android:layout_height="250dp"
             android:id="@+id/fragmenttoilet"/>
 
+
     </android.support.design.widget.AppBarLayout>
 
 
