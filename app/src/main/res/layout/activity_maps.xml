@@ -1,0 +1,37 @@
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:padding="12dp">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/button4"
+        tools:context="com.iiitm.android.zaika_e_gwalior.MapsActivity" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_bg"
+        android:text="Nearby Toilets"
+        android:textColor="#ffff" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/map_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/map" />
+
+</RelativeLayout>
