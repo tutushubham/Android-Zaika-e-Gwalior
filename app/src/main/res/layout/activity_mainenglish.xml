@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/coordinator"
     android:background="#ffe5e5e5"
-    tools:context="com.iiitm.android.zaika_e_gwalior.MainEnglishActivity">
+    tools:context="com.iiitm.android.gwalior_jharoka.MainEnglishActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
