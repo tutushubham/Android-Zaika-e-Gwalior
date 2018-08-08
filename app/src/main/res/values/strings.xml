@@ -19,5 +19,6 @@
     <string name="cost">Cost per Night :</string>
     <string name="lang">Select Your Language</string>
     <string name="title_activity_toilet">Map</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
