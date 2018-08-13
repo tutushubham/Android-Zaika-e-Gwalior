@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.iiitm.android.gwalior_jharoka.cardslidertry.MainActivitySliderHindi;
 
@@ -109,7 +108,8 @@ public class MovieAdapterHindi extends RecyclerView.Adapter<MovieAdapterHindi.My
             }
             if(position==6){
                 Adapterhindi adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, ToiletsHindiActivity.class);
+                Intent intent = new Intent(this.mContext, MapsActivity.class);
+                intent.putExtra("lang",1);
                 this.mContext.startActivity(intent);
             }
             if(position==7){

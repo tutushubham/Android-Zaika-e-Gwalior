@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.iiitm.android.gwalior_jharoka.cardslidertry.MainActivitySliderHistorical;
 import com.iiitm.android.gwalior_jharoka.cardslidertry.MainActivitySliderHotels;
@@ -112,7 +111,8 @@ public class MovieAdapter extends RecyclerView.Adapter <MovieAdapter.MyViewHolde
             if(position==6)
             {
                 Adapter adapter = adapterlist.get(position);
-                Intent intent = new Intent(this.mContext, ToiletActivity.class);
+                Intent intent = new Intent(this.mContext, MapsActivity.class);
+                intent.putExtra("lang",0);
                 this.mContext.startActivity(intent);
             }
             if(position==7)

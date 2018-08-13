@@ -20,7 +20,7 @@ public class ToiletActivity extends AppCompatActivity {
     boolean status = false;
     MapFragment map;
     UiSettings mapSettings;
-    toiletFragment t1;
+//    toiletFragment t1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,27 +35,27 @@ public class ToiletActivity extends AppCompatActivity {
         recyclerView.setAdapter(movieAdaptertoilets);
         prepareMovieData();
 
-
-        FragmentManager fragmentManager=getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-        if(!status){
-            t1=new toiletFragment();
-            fragmentTransaction.add(R.id.fragmenttoilet,t1).commit();
-
-        }
+//
+//        FragmentManager fragmentManager=getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+//        if(!status){
+//            t1=new toiletFragment();
+//            fragmentTransaction.add(R.id.fragmenttoilet,t1).commit();
+//
+//        }
     }
 
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
-        if (requestCode == toiletFragment.MY_PERMISSIONS_REQUEST_LOCATION){
-            t1.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-        else {
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-    }
+//    @Override
+//    public void onRequestPermissionsResult(int requestCode,
+//                                           String permissions[], int[] grantResults) {
+//        if (requestCode == toiletFragment.MY_PERMISSIONS_REQUEST_LOCATION){
+//            t1.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//        }
+//        else {
+//            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//        }
+//    }
 
     private void prepareMovieData() {
 
