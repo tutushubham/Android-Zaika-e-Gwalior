@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_below="@+id/button4"
-        tools:context="com.iiitm.android.gwalior_jharoka.ToiletActivity" />
+        tools:context="com.iiitm.android.gwalior_tourism.ToiletActivity" />
 
     <Button
         android:id="@+id/button4"

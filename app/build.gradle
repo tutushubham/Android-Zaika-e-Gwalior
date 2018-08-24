@@ -4,11 +4,11 @@ android {
     compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "com.iiitm.android.gwalior_jharoka"
+        applicationId "com.iiitm.android.gwalior_tourism"
         minSdkVersion 20
         targetSdkVersion 27
-        versionCode 2
-        versionName "1.2"
+        versionCode 4
+        versionName "1.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -36,6 +36,3 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:15.0.1'
     implementation 'com.google.android.gms:play-services-location:15.0.1'
 }
-
-
-

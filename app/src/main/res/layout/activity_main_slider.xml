@@ -51,8 +51,8 @@
         android:layout_marginStart="@dimen/recycler_view_left_offset"
         android:clipChildren="true"
         android:overScrollMode="never"
-        app:layoutManager="com.iiitm.android.gwalior_jharoka.cardslidertry.CardSliderLayoutManager"
-        app:viewUpdater="com.iiitm.android.gwalior_jharoka.cardslidertry.cards.CardsUpdater"
+        app:layoutManager="com.iiitm.android.gwalior_tourism.cardslidertry.CardSliderLayoutManager"
+        app:viewUpdater="com.iiitm.android.gwalior_tourism.cardslidertry.cards.CardsUpdater"
         android:layout_marginLeft="@dimen/recycler_view_left_offset" />
 
     <FrameLayout
