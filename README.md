@@ -2,6 +2,8 @@
 
 Gwalior Jharokha is an android application providing the detailed information about the best old and known Tourism sites of Gwalior that defines the city.Apart from the historical and worship these rich old places ar of cultural importance that define the taste of the city as a blend of maratha,mughal, and north indian culture.A must have app for any tourist visiting Gwalior.
 
+* Challenge for open sourcers: MAKE THIS APP DYNAMIC FOR ALL CITIES.
+
 # UI/UX
 ![1](1.png)  |  ![2](2.png) |  ![3](3.png)  |   ![4](4.png)
 
@@ -10,6 +12,8 @@ The application supports Android 4.4 KitKat (API level 19) and above.
 Features include:
 
   * An easy-to-use interface.
+  
+  * Hindi and English UI.
 
   * **Nearby Hotels**: A List of all prominent and famous hotels of Gwalior.
 
